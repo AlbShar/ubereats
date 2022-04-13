@@ -1,0 +1,10 @@
+.form {
+    &__footer{
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+}

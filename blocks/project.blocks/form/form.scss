@@ -1,0 +1,26 @@
+.form {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin: 0 auto; 
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px; 
+    height: auto; 
+}
+
+@import "__imgcontainer/form__imgcontainer.scss";
+@import "__img/form__img.scss";
+@import "__container/form__container.scss";
+@import "__close/form__close.scss";
+@import "__list/form__list.scss";
+@import "__list-item/form__list-item.scss";
+@import "__label/form__label.scss";
+@import "__input/form__input.scss";
+@import "__submit/form__submit.scss";
+@import "__socialmedia/form__socialmedia.scss";
+@import "__social-item/form__social-item.scss";
+@import "__footer/form__footer.scss";
+@import "__registr/form__registr.scss";
+@import "__text/form__text.scss";
+@import "__quest/form__quest.scss";

@@ -1,2 +1,1 @@
-import "../index.html";
-import "./blocks.scss";
+import "./project.blocks/modal/modal.js";

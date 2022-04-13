@@ -1,0 +1,5 @@
+.form{
+    &__label{
+        @include font($font-family, 700, 1rem, $color_black);
+    }
+}

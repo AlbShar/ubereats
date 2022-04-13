@@ -1,0 +1,7 @@
+.form {
+    &__text > a{
+        @include font($font-family, 400, 0.9rem, $color_black);
+        text-decoration: none;
+        color: blue;
+    }
+}
