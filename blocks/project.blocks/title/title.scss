@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  // .title__name
+  &__name {
+    position: absolute;
+    top: 195px;
+    left: 5px;
+    @include font($font-family, 400, 1.375rem, $color_black);
+    line-height: 34px;
+    position: absolute;
+  }
+}

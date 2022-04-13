@@ -1,0 +1,11 @@
+
+.dish{
+&__name-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color_black;
+    margin: 0;
+    height: 2.2em;
+    font-family: $font-family;
+  }
+}

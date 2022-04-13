@@ -1,0 +1,31 @@
+.search-form {
+  &__input {
+    border: {
+      color: transparent transparent rgba(151, 151, 151, 0.3) transparent;
+      width: 1px;
+      radius: 0;
+    }
+    width: 99%;
+    -webkit-appearance: none;
+    color: rgb(151, 151, 151);
+
+    // .search-form__input:invalid
+    &:invalid {
+      outline: 1px solid red;
+    }
+
+    // .search-form__input:valid
+    &:valid {
+      outline: inherit;
+    }
+
+    &::placeholder {
+      @include font($font-family, 400, 1rem, $color_gray);
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
+}

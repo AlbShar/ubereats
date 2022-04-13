@@ -1,0 +1,14 @@
+.slider {
+&__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $color_gray;
+    width: 30px;
+    height: 100%;
+    color: white;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+}

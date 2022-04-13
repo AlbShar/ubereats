@@ -1,0 +1,23 @@
+.restaurant {
+  background-image: url(https://i.ibb.co/RvpHycv/photo.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 1150px;
+  height: 255px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "__pos/restaurant__pos.scss";
+@import "__cuisine-text/restaurant__cuisune-text.scss";
+@import "__container/restaurant__container.scss";
+@import "__currency/restaurant__currency.scss";
+@import "__currency-svg/restaurant__currency-svg.scss";
+@import "__info/restaurant__info.scss";
+@import "__name/restaurant__name.scss";
+@import "__name-text/restaurant__name-text.scss";
+@import "__pos/restaurant__pos.scss";
+@import "__time/restaurant__time.scss";
+@import "__time-text/restaurant__time-text.scss";

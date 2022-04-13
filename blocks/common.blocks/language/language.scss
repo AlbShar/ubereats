@@ -1,0 +1,9 @@
+.language {
+position: relative;
+  width: 173px;
+  height: 40px;
+}
+
+@import "__arrowDown/language__arrowDown.scss";
+@import "__select/language__select.scss";
+@import "__world/language__world.scss";

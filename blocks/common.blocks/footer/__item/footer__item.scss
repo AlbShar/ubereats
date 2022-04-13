@@ -1,0 +1,8 @@
+.footer {
+&__item {
+    @include font($font-family, 400, 0.8125rem, $color_white);
+    margin-bottom: 24px;
+    list-style-type: none;
+    line-height: 15px;
+  }
+}

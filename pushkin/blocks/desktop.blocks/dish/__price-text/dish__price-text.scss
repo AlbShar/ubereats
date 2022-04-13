@@ -1,0 +1,12 @@
+
+.dish{
+&__price-text {
+    font-size: 0.8125rem;
+    color: $color_black;
+    font-family: $font-family;
+    margin: 0;
+    line-height: 21px;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,10 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 128px;
+}
+
+
+@import "__sign-in/actions__sign-in.scss";
+@import "__sign-in-text/actions__sign-in-text.scss";

@@ -1,0 +1,14 @@
+.header {  
+    &__container {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+      padding-right: 11px;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+  }

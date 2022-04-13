@@ -1,0 +1,9 @@
+.social {
+  &__icons {
+    margin-top: 16px;
+    display: flex;
+    max-width: 96px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

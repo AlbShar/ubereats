@@ -1,0 +1,12 @@
+.dish {
+&__info-container {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    height: 101px;
+    margin-bottom: 17px;
+  }
+}

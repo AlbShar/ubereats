@@ -1,0 +1,14 @@
+.restaurant {
+&__time {
+    height: 100%;
+    margin-top: 16px;
+    margin-left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 32px;
+    background-color: #262626;
+    border-radius: 15px;
+  }
+}

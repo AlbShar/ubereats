@@ -1,0 +1,14 @@
+
+.menu {
+&__item-link {
+    text-decoration: none;
+    font-family: $font-family;
+    font-size: 1rem;
+    margin-right: 37px;
+    color: #626262;
+
+    &:hover {
+      color: #327430;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.dish {
+&__products-text {
+    font-size: 0.8125rem;
+    color: $color_gray;
+    margin: 0;
+    height: 1em;
+    font-weight: 400;
+    font-family: $font-family;
+  }
+}

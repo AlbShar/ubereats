@@ -1,0 +1,15 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+}
+
+@import "__food/info__food.scss";
+@import "__food-currency/info__food-currency.scss";
+@import "__food-text/info__food-text.scss";
+@import "__restaurant/info__restaurant.scss";
+@import "__restaurant-text/info__restaurant-text.scss";
+@import "__ruble-svg/info__ruble-svg.scss";
+@import "__time/info__time.scss";
+@import "__time-text/info__time-text.scss";

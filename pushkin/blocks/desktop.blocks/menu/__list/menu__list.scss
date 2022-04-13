@@ -1,0 +1,19 @@
+.menu {
+    &__list {
+      margin-top: 23px;
+      height: 42px;
+      padding: 8px;
+      position: relative;
+      
+  
+      &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 57px;
+        left: 0;
+        background-color: rgba(117, 117, 117, 0.2);
+      }
+    }
+}

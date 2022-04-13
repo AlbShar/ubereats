@@ -1,0 +1,31 @@
+.shop {
+box-sizing: border-box;
+    margin-top: 50px;
+    padding-top: 7px;
+    position: relative;
+    height: 84px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $color_gray;
+      width: 100%;
+      left: 0%;
+      top: -1px;
+      height: 1px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $color_gray;
+      width: 100%;
+      bottom: -1px;
+      height: 1px;
+    }
+}
+
+@import "__appstore/shop__appstore.scss";
+@import "__googleplay/shop__googleplay.scss";
+@import "__png/shop__png.scss";
+@import "__wrapper/shop__wrapper.scss";

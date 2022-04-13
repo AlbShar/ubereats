@@ -1,0 +1,6 @@
+.info {
+ // .info__restaurant-text
+  &__restaurant-text {
+    @include font($font-family, 400, 1rem, $color_black);
+  }
+}

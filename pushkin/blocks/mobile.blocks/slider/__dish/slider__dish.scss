@@ -1,0 +1,14 @@
+.slider {
+ &__dish {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 16px;
+      width: 50px;
+      height: 1px;
+      background-color: $color_gray;
+    }
+  }
+}

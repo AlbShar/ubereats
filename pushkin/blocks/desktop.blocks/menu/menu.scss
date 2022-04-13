@@ -1,0 +1,10 @@
+.menu {
+ max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@import "__list/menu__list.scss";
+@import "__list-item/menu__list-item.scss";
+@import "__item-link/menu__item-link.scss";
+@import "__name/menu__name.scss";
+@import "__name-text/menu__name-text.scss";

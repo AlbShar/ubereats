@@ -1,0 +1,10 @@
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+@import "__item/list__item.scss";

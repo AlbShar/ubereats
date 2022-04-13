@@ -1,0 +1,5 @@
+.info {
+&__time-text {
+    @include font($font-family, 400, 0.8125rem, $color_black);
+  }
+}

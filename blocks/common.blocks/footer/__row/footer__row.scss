@@ -1,0 +1,10 @@
+.footer {
+&__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 580px;
+    position: relative;
+  }
+}

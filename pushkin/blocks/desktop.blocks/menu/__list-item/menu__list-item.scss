@@ -1,0 +1,7 @@
+.menu {
+&__list-item {
+    display: inline-block;
+  }
+}
+
+@import "--active/menu__list-item--active.scss";

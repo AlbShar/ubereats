@@ -1,0 +1,28 @@
+.actions {
+  &__sign-in {
+    &:hover {
+      animation-name: background-color;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+    }
+    @keyframes background-color {
+      100% {
+        background-color: $color_black;
+      }
+    }
+  }
+
+  &__sign-in-text {
+    &:hover {
+      animation-name: color;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes color {
+      100% {
+        color: white;
+      }
+    }
+  }
+}

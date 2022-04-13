@@ -1,0 +1,11 @@
+.header {
+  height: 73px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: $color_white;
+  box-shadow: 0 5px 25px #e0e0e0;
+}
+
+@import "__container/header__container.scss";

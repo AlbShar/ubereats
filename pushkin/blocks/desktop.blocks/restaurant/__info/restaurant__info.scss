@@ -1,0 +1,13 @@
+.restaurant {
+&__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 128px;
+    height: 32px;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+}

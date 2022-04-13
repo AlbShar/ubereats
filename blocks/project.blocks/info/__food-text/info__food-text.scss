@@ -1,0 +1,6 @@
+.info {
+ &__food-text {
+    @include font($font-family, 400, 0.875rem, #626262);
+    margin-left: 2px;
+  }
+}

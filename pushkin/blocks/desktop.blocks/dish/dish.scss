@@ -1,0 +1,13 @@
+.dish {
+  display: flex;
+  justify-content: space-between;
+}
+
+@import "__info-container/dish__info-container.scss";
+@import "__photo/dish__photo.scss";
+@import "__png/dish__photo-png.scss";
+@import "__currency/dish__currency.scss";
+@import "__name-text/dish__name-text.scss";
+@import "__price/dish__price.scss";
+@import "__price-text/dish__price-text.scss";
+@import "__products-text/dish__products-text.scss";

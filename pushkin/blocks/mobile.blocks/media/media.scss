@@ -1,0 +1,345 @@
+//  Ширина экрана менее 320px
+@media screen and (max-width: 320px) {
+    .footer {
+      &__row {
+        flex-wrap: wrap;
+      }
+  
+      &__lists {
+        flex-basis: 70%;
+      }
+    }
+  
+    .social {
+      margin-bottom: 35px;
+    }
+  }
+  
+  //  Ширина экрана более 321px
+  @media screen and (min-width: 321px) {
+    // .slider__container {
+    //   display: none;
+    // }
+  }
+  
+  //  Ширина экрана менее 768px
+  @media screen and (max-width: 767px) {
+    .menu,
+    .header__cart {
+      display: none;
+    }
+  
+    .header__actions {
+      width: 78px;
+    }
+  }
+  
+  //  Ширина экрана более 768px
+  @media screen and (min-width: 768px) {
+    .header__container {
+      height: 72px;
+      max-width: 99%;
+      padding-right: 12px;
+    }
+  
+    .col-xs-12.col-md-12.col-lg-6:first-child {
+      .dish__info-container {
+        background-color: rgba(117, 117, 117, 0.04);
+      }
+      .dish__name-text {
+        height: 27px;
+      }
+      .dish__price {
+        margin-top: 68px;
+      }
+      .dish__products-text {
+        font-size: 0.8125rem;
+      }
+    }
+  
+    .container {
+      margin-bottom: 16px;
+    }
+  
+    .dish {
+      &__info-container {
+        border: 1px solid rgba(117, 117, 117, 0.2);
+        width: 552px;
+        height: 163px;
+        padding-top: 20px;
+        padding-left: 23px;
+        margin-bottom: 29px;
+      }
+  
+      &__name-text {
+        font-size: 1rem;
+      }
+  
+      &__price-text {
+        font-size: 0.9375rem;
+        margin-right: 3px;
+      }
+  
+      &__photo {
+        width: 201px;
+        height: 163px;
+      }
+  
+      &__price {
+        margin-top: 73px;
+      }
+    }
+  
+    .slider {
+      display: none;
+    }
+  
+    .restaurant {
+      height: 364px;
+  
+      &__container {
+        width: 432px;
+        height: 204px;
+        bottom: 80px;
+      }
+  
+      &__name {
+        margin-top: 39px;
+        height: 42px;
+      }
+  
+      &__name-text {
+        font-size: 2.25rem;
+        text-align: justify;
+        width: 340px;
+      }
+  
+      &__info {
+        flex-wrap: nowrap;
+        width: 330px;
+        margin-top: 52px;
+      }
+  
+      &__time {
+        margin: 0;
+      }
+    }
+  
+    .col-xs-12.col-md-12.col-lg-6 {
+      padding: 0;
+    }
+  
+    .col-xs-12.col-md-12.col-lg-12 {
+      padding: 0;
+    }
+  
+    .menu {
+      &__name-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 760px;
+      }
+    }
+  
+    .footer {
+      &__shops {
+        max-width: 295px;
+        margin-left: 32%;
+      }
+  
+      &__shop-appstore {
+        width: 120px;
+      }
+  
+      &__shop-googleplay {
+        width: 135px;
+      }
+  
+      &__item {
+        margin-bottom: 21px;
+      }
+  
+      &__row {
+        align-items: baseline;
+        margin-top: 65px;
+        margin-bottom: 52px;
+      }
+  
+      &__container {
+        &:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+  
+      &__shop-container {
+        &:before {
+          top: -17px;
+          width: 100%;
+        }
+  
+        &:after {
+          width: 100%;
+          bottom: -20px;
+        }
+      }
+  
+      &__list-item {
+        margin-top: 15px;
+      }
+  
+      &__buttonup {
+        width: 80px;
+        height: 80px;
+        right: -62px;
+      }
+    }
+  }
+  
+  //  Ширина экрана более 992px
+  @media screen and (min-width: 992px) {
+    .menu {
+      &__name-text {
+        width: 980px;
+      }
+    }
+  
+    .dish {
+      &__info-container {
+        margin-bottom: 46px;
+        width: 63%;
+      }
+  
+      &__name-text {
+        margin-left: -10px;
+      }
+  
+      &__price {
+        margin-left: -10px;
+      }
+  
+      &__photo {
+        width: 38%;
+      }
+  
+      &__photo-png {
+        width: 97%;
+      }
+    }
+  }
+  
+  //  Ширина экрана более 1124px
+  @media screen and (min-width: 1124px) {
+    .header {
+      &__container {
+        // max-width: 1150px;
+        max-width: 86%;
+        padding-right: 18px;
+      }
+  
+      &__logo {
+        width: 120px;
+      }
+    }
+  
+    .restaurant {
+      &__container {
+        width: 389px;
+        left: 7.2%;
+      }
+  
+      &__name-text {
+        width: 313px;
+      }
+  
+      &__info {
+        margin-left: 10%;
+        width: 319px;
+      }
+    }
+  
+    .menu {
+      &__list {
+        height: 40px;
+        margin-left: 6.5%;
+  
+        &:after {
+          content: "";
+          width: 107%;
+          top: 57px;
+          left: -7%;
+        }
+      }
+  
+      &__name-text {
+        margin-left: 6.5%;
+      }
+    }
+  
+    .container {
+      margin-bottom: 33px;
+    }
+  
+    .col-xs-12.col-md-12.col-lg-6 {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
+    .col-xs-12.col-md-12.col-lg-12 {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
+    .footer {
+      &__row {
+        max-width: 715px;
+      }
+  
+      &__shops {
+        margin-left: 35.2%;
+      }
+  
+      &__list {
+        width: 800px;
+      }
+  
+      &__buttonup {
+        right: -345px;
+      }
+    }
+  
+    .language {
+      width: 227px;
+    }
+  
+    .social {
+      margin-top: 37px;
+    }
+  }
+  
+  //  Ширина экрана более 1200px
+  @media screen and (min-width: 1200px) {
+    .header {
+      &__container {
+        max-width: 1150px;
+      }
+    }
+  
+    .menu {
+      &__name-text {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  
+    .menu {
+      &__list {
+        margin-left: 0;
+  
+        &:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }

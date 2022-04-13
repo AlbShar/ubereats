@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushkin</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="blocks/blocks.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/Pushkin_apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/Pushkin_favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/Pushkin_favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/Pushkin_site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicons/Pushkin_safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00a300" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+          <div class="row">
+              <div  class="col-xs-12 col-md-12 col-lg-12">
+                  <div class="header__container">
+                      <div class="logo">
+                          <a class="logo__link" href="#">
+                              <img class="logo__svg" src="../blocks/common.blocks/logo/logo.svg" alt="Logo">
+                          </a>
+                      </div>
+                      <div class="actions">
+                          <button class="actions__sign-in" name="top">
+                              <span class="actions__sign-in-text">
+                                  Войти
+                              </span> 
+                          </button>
+                          <div class="actions__basket">
+                              <img class="actions__basket-svg" src="../blocks/common.blocks/actions/cart.svg" alt="Basket">
+                          </div>
+                      </div>
+                  </div>
+          
+              </div>
+          </div>
+      </div>
+  </header>
+    <main>
+      <section class="restaurant restaurant__pos">
+        <div class="restaurant__container">
+          <div class="restaurant__name">
+            <h1 class="restaurant__name-text">Трактир «Пушкин»</h1>
+          </div>
+          <div class="restaurant__info">
+            <div class="restaurant__currency">
+              <img
+                class="restutant__currency-svg"
+                src="../blocks/project.blocks/info/Rouble_official_sign.svg"
+                alt="Ruble"
+              />
+              <img
+                class="restutant__currency-svg"
+                src="../blocks/project.blocks/info/Rouble_official_sign.svg"
+                alt="Ruble"
+              />
+              <img
+                class="restutant__currency-svg"
+                src="../blocks/project.blocks/info/Rouble_official_sign.svg"
+                alt="Ruble"
+              />
+              <h2 class="restaurant__cuisine-text">• Европейская</h2>
+            </div>
+            <div class="restaurant__time">
+              <h3 class="restaurant__time-text">40 - 50 мин</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__container">
+          <button class="slider__button">&laquo;</button>
+          <div class="slider__dish">
+            <h2 class="slider__dish-text">Закуски</h2>
+          </div>
+          <button class="slider__button">&raquo;</button>
+        </div>
+      </section>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item menu__list-item--active">
+            <a class="menu__item-link" href="javascript:void(0)"> Закуски </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__item-link" href="javascript:void(0)"> Салаты </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__item-link" href="javascript:void(0)"> Супы </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__item-link" href="javascript:void(0)">
+              Горячие блюда
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__item-link" href="javascript:void(0)"> Гарниры </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__item-link" href="javascript:void(0)"> Десерты </a>
+          </li>
+        </ul>
+        <div class="menu__name">
+          <h2 class="menu__name-text">Закуски</h2>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Сельдь на бородинском хлебе</h2>
+                </div>
+                <div class="dish__products">
+                  <h3 class="dish__products-text">С яйцом и огурцом</h3>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">240</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish1.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Соленья ассорти</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">320</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish2.png"
+                  alt="Соленья ассорти"
+                />
+              </article>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Грибы маринованные</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">300</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish3.png"
+                  alt="Грибы маринованные"
+                />
+              </article>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Сало домашнее с горчицей</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">320</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish4.png"
+                  alt="Сало домашнее"
+                />
+              </article>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Малосольная семга</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">390</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish5.png"
+                  alt="Семга"
+                />
+              </article>
+            </article>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Язык говяжий с хреном</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">350</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="blocks/desktop.blocks/dish/img/dish6.png"
+                  alt="Язык говяжий"
+                />
+              </article>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-md-12 col-lg-12">
+                  <div class="footer__container"> 
+
+                      <div class="footer__logo">
+                          <a class="footer__logo-link" href="#" >
+                              <img class="footer__logo-svg" src="../blocks/common.blocks/footer/footer.svg" alt="Logo">
+                          </a>
+                      </div>
+                      <div class="footer__row">
+                          <div class="footer__column">
+                              <div class="language">
+                                  <select class="language__select" id="lang">
+                                      <option>Выбрать язык</option>
+                                      <option value="/en/">English</option>
+                                      <option value="/ru/">Русский</option>
+                                  </select>
+                                  <div class="language__world">
+                                      <img class="language__world-svg" src="../blocks/common.blocks/language/svg/World.svg" alt="World">
+                                  </div>
+                                  <div class="language__arrowDown">
+                                      <img class="language__arrowDown-svg" src="../blocks/common.blocks/language/svg/ArrowDown.svg" alt="Down">
+                                  </div>
+                              </div>
+                              <div class="social">
+                                  <div class="social__title">
+                                      UberEats
+                                  </div>  
+                                  <div class="social__icons">
+                                      <div class="social__facebook">
+                                          <a class="social__facebook-link" href="https://www.facebook.com/UberEats/" target="_blank">
+                                              <img class="social__facebook-svg" src="../blocks/common.blocks/social/svg/Facebook.svg" alt="Facebook">
+                                          </a>
+                                      </div>
+                                      <div class="social__twitter">
+                                          <a class="social__twitter-link" href="https://twitter.com/UberEats?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                                              <img class="social__twitter-svg" src="../blocks/common.blocks/social/svg/Twitter.svg" alt="Twitter">
+                                          </a>
+                                      </div>
+                                      <div class="social__instagram">
+                                          <a class="social__instagram-link" href="https://www.instagram.com/ubereats/" target="_blank"> 
+                                              <img class="social__instagram-svg" src="../blocks/common.blocks/social/svg/Instagram.svg" alt="Instagram">
+                                          </a>
+                                      </div>
+                                  </div>  
+                              </div>
+                          </div>
+                          <div class="footer__lists">
+                              <ul class="footer__list-ul">
+                                  <li class="footer__item">Об UberEats</li>
+                                  <li class="footer__item">Станьте партнёром по доставке</li>
+                                  <li class="footer__item">Станьте парнёром-рестораном</li>
+                              </ul>
+                          </div>
+                          <div class="footer__lists">
+                              <ul class="footer__list-ul">
+                                  <li class="footer__item">Все города</li>
+                                  <li class="footer__item">Цены</li>
+                                  <li class="footer__item">Помощь</li>
+                                  <li class="footer__item">FAQs</li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="shop">
+                          <div class="shop__wrapper">
+                              <div class="shop__appstore">
+                                  <a class="shop__link" href="https://apps.apple.com/ru/app/uber-eats-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B5%D0%B4%D1%8B/id1058959277/" target="_blank"> 
+                                      <img class="shop__png" src="../blocks/common.blocks/shop/img/shop11.png" alt="AppStore">
+                                  </a>
+                              </div>
+                              <div class="shop__googleplay">
+                                  <a class="shop__link" href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=ru&gl=US" target="_blank">
+                                      <img class="shop__png" src="../blocks/common.blocks/shop/img/shop12.png" alt="Google Play">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="infosite infosite__pos">
+                          <ul class="list">
+                              <li class="list__item" >© 2017 Uber Technologies Inc.</li>
+                              <li class="list__item" >Обработка персональных данных</li>
+                              <li class="list__item" >Пользовательское соглашение</li>
+                          </ul>
+                          <div class="infosite__buttonup buttonup">
+                          <a class="buttonup__uplink" href="#top"> 
+                              <img class="buttonup__svg" src="../blocks/common.blocks/buttonup/ArrowUp.svg" alt="Up"> 
+                              </a>
+                          </div>
+                      </div>  
+                  </div>          
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
