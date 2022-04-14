@@ -31,7 +31,7 @@ html {
 }
 
 .form__imgcontainer {
-  border: 2px solid black;
+  border: 1px solid black;
   width: 150px;
   height: 150px;
   border-radius: 80%;
@@ -767,4 +767,4 @@ html {
   }
 }
 
-/*# sourceMappingURL=blocks.css.map */
+/*# sourceMappingURL=style.css.map */
