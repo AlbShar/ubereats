@@ -53,7 +53,8 @@
                           </a>
                       </div>
                       <div class="actions">
-                          <button class="actions__sign-in" name="top">
+                          <button onclick="document.getElementById('modal').style.display='block'"
+                          class="actions__sign-in" name="top">
                               <span class="actions__sign-in-text">
                                   Войти
                               </span> 
@@ -68,6 +69,74 @@
           </div>
       </div>
   </header>
+  <div class="modal" id="modal">
+    <form class="form" action="#">
+      <span
+        class="form__close"
+        onclick="document.getElementById('modal').style.display='none'"
+        title="Close Modal"
+        >&times;</span
+      >
+      <div class="form__imgcontainer">
+        <img
+          src="https://raw.githubusercontent.com/AlbShar/ubereats/535da1b8b25653a5bbe7fd59d7d7600bb9e18be9/blocks/common.blocks/form/__img/form__img.svg"
+          alt="Avatar"
+          class="form__img"
+        />
+      </div>
+      <div class="form__container">
+        <ul class="form__list">
+          <li class="form__list-item">
+            <label class="form__label" for="uname">Имя:</label>
+            <input
+              class="form__input"
+              id="uname"
+              type="text"
+              placeholder="Введите имя"
+              required
+            />
+          </li>
+          <li class="form__list-item">
+            <label class="form__label" for="pwd">Пароль:</label>
+            <input
+              class="form__input"
+              id="pwd"
+              type="password"
+              placeholder="Введите пароль"
+              required
+            />
+          </li>
+          <li class="form__list-item">
+              <div>
+                  <input class="form__checkbox" type="checkbox" id="remember" />
+                  <label class="form__text" for="remember">Запомнить меня</label>    
+              </div>
+              <div class="form__text"> <a href="#">Забыли пароль?</a> </div>
+            </li>
+          <li class="form__list-item">
+            <button class="form__submit" type="submit">Войти</button>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="form__socialmedia">
+        <a href="#" class="form__social-item">Вконтакте</a>
+        <a href="#" class="form__social-item">Twitter</a>
+        <a href="#" class="form__social-item">Google</a>
+      </div>
+      <div class="form__footer">
+          <div class="form__quest">Нет аккаунта?</div>
+
+        <button
+          class="form__registr"
+          onclick="document.getElementById('modal').style.display='none'"
+          type="button"
+        >
+          Зарегистрироваться 
+        </button>
+      </div>
+    </form>
+  </div>
     <main>
       <section class="restaurant restaurant__pos">
         <div class="restaurant__container">

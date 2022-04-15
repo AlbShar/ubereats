@@ -4,4 +4,7 @@
         text-decoration: none;
         color: blue;
     }
+    &__text {
+        @include font($font-family, 400, 0.9rem, $color_black);
+    }
 }
