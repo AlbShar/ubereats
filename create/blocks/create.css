@@ -1,0 +1,277 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-bottom: 39px;
+}
+
+.row {
+  position: relative;
+}
+
+.header {
+  height: 73px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 25px #e0e0e0;
+}
+
+.header__container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding-right: 11px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 107px;
+}
+.logo__svg {
+  width: 100%;
+  height: 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 128px;
+}
+
+.actions__sign-in {
+  box-sizing: border-box;
+  width: 78px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions__sign-in-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #1d1d1d;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions__sign-in:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes background-color {
+  100% {
+    background-color: #1d1d1d;
+  }
+}
+.actions__sign-in-text:hover {
+  animation-name: color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes color {
+  100% {
+    color: white;
+  }
+}
+
+.footer {
+  background-color: #262626;
+}
+
+.footer__container {
+  box-sizing: border-box;
+  padding-top: 55px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.footer__container:after {
+  content: "";
+  position: absolute;
+  background-color: #979797;
+  width: 96%;
+  left: 2%;
+  top: 116px;
+  height: 1px;
+}
+
+.footer__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  margin-bottom: 24px;
+  list-style-type: none;
+  line-height: 15px;
+}
+
+.footer__list-ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 580px;
+  position: relative;
+}
+
+.social__icons {
+  margin-top: 16px;
+  display: flex;
+  max-width: 96px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__title {
+  margin-top: 31px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.social__title:before {
+  content: "#";
+  color: #49a144;
+}
+
+.language {
+  position: relative;
+  width: 173px;
+  height: 40px;
+}
+
+.language__arrowDown {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+}
+
+.language__select {
+  text-indent: 43px;
+  padding-top: 2px;
+  width: 100%;
+  height: 100%;
+  background-color: #3b3b3b;
+  border: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #ffffff;
+}
+
+.language__world {
+  position: absolute;
+  top: 13px;
+  left: 7%;
+}
+
+.shop {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-top: 7px;
+  position: relative;
+  height: 84px;
+}
+.shop:before {
+  content: "";
+  position: absolute;
+  background-color: #979797;
+  width: 100%;
+  left: 0%;
+  top: -1px;
+  height: 1px;
+}
+.shop:after {
+  content: "";
+  position: absolute;
+  background-color: #979797;
+  width: 100%;
+  bottom: -1px;
+  height: 1px;
+}
+
+.shop__appstore {
+  width: 108px;
+  height: 36px;
+}
+
+.shop__googleplay {
+  margin-left: 25px;
+  width: 124px;
+  height: 36px;
+}
+
+.shop__png {
+  width: 100%;
+}
+
+.shop__wrapper {
+  height: 69px;
+  display: flex;
+  max-width: 270px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.infosite {
+  position: relative;
+  max-width: 100%;
+}
+
+.infosite__buttonup {
+  width: 80px;
+  height: 80px;
+}
+
+.infosite__pos {
+  margin-left: 8px;
+  margin-top: 35px;
+}
+
+.infosite__buttonup {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.buttonup {
+  background-color: #59bd5a;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=create.css.map */
