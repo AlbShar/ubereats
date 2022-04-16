@@ -1,0 +1,5 @@
+.form {
+    &__quest{
+        @include font($font-family, 500, 0.9rem, $color_black);
+    }
+}
