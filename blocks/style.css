@@ -241,6 +241,11 @@ html {
   color: #1d1d1d;
 }
 
+.form__tosignup {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .container {
   margin-bottom: 39px;
 }
