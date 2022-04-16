@@ -1,0 +1,14 @@
+.form {
+    &__registr{
+        @include font($font-family, 500, 0.9rem, $color_white);
+        box-sizing: border-box;
+        background-color: #f44336;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        &:hover{
+            background-color: #59bd5a;
+            cursor: pointer;
+        }
+    }
+}
