@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   width: 100%;
   height: 100%;
@@ -149,9 +150,10 @@ html, body {
 }
 
 .signup__input {
+  box-sizing: border-box;
   padding: 0 0 0 10px;
   height: 40px;
-  width: 70%;
+  width: 100%;
   max-width: 700px;
   outline: none;
   display: block;
@@ -172,9 +174,13 @@ html, body {
 }
 
 .signup__select {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 0 0 10px;
   height: 40px;
-  width: 70%;
+  width: 100%;
   max-width: 700px;
   outline: none;
   font-family: "Roboto", sans-serif;
@@ -190,6 +196,7 @@ html, body {
 
 .signup__submit {
   background-color: #59bd5a;
+  height: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -198,6 +205,7 @@ html, body {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
+  margin-bottom: 40px;
 }
 .signup__submit:hover {
   cursor: pointer;
@@ -205,15 +213,89 @@ html, body {
 }
 
 .signup__agree {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: relative;
-  height: 70px;
+  height: 100%;
   width: 70%;
   max-width: 700px;
-  margin: 30px 0 0 0;
+  margin: 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 0.8125rem;
   color: #1d1d1d;
+}
+
+.socialmedia {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.socialmedia:before {
+  position: absolute;
+  content: "ИЛИ";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: gray;
+  top: -30px;
+  background-color: white;
+  width: 50px;
+  text-align: center;
+}
+
+.socialmedia__item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  flex-basis: 30%;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.socialmedia__item:first-child {
+  background-color: #3b5998;
+}
+.socialmedia__item:nth-child(2) {
+  background-color: #55acee;
+}
+.socialmedia__item:last-child {
+  background-color: #dd4b39;
+}
+.socialmedia__item:hover {
+  opacity: 0.8;
+}
+
+.socialmedia {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  max-width: 700px;
+}
+.socialmedia:before {
+  content: "Или через социальную сеть";
+  left: 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.socialmedia__item:last-child {
+  margin: 0;
 }
 
 .footer {

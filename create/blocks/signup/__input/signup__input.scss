@@ -1,8 +1,9 @@
 .signup {
     &__input {
+        box-sizing: border-box;
         padding: 0 0 0 10px;
         height: 40px;
-        width: 70%;
+        width: 100%;
         max-width: 700px;
         outline: none;
         display: block;

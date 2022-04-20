@@ -1,15 +1,16 @@
 .signup {
     &__submit{
         background-color: #59bd5a;
+        height: 50px;
         @include font($font-family, 700, 1rem, $color_white);
         padding: 10px 20px;
         text-transform: uppercase;
         border: none;
         border-radius: 5px;
+        margin-bottom: 40px;
         &:hover {
             cursor: pointer;
             background-color: blue;
-        }
-        
+        }        
     }
 }
