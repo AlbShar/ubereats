@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AAAD,UAAM,CAAA;EACF,KAAK,EAAE,gBAAgB;EACvB,MAAM,EAAE,gBAAgB;CAC3B",
-    "sources": [
-        "form__img.scss"
-    ],
-    "names": [],
-    "file": "form__img.css"
-}

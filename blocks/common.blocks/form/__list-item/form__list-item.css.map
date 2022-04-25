@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AACG,gBADQ,AACP,UAAW,CAAA,CAAC,EAAE;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,IAAI;CACtB",
-    "sources": [
-        "form__list-item.scss"
-    ],
-    "names": [],
-    "file": "form__list-item.css"
-}

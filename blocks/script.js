@@ -1,1 +1,1 @@
-import "./project.blocks/modal/modal.js";
+import "./common.blocks/modal/modal.js";

@@ -1,2 +1,1 @@
-import "../pushkin.html";
-import "./blocks.scss";
+import "../../blocks/common.blocks/modal/modal.js";

@@ -1,7 +1,7 @@
-let mod = document.getElementById('modal');
+let modal = document.querySelector('#modal');
 
 window.onclick = function(event) {
-  if (event.target === mod) {
-    mod.style.display = 'none';
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
-};
+}
