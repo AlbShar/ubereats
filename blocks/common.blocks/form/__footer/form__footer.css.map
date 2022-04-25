@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,aAAS,CAAA;EACL,UAAU,EAAE,UAAU;EACtB,gBAAgB,EAAE,wBAAwB;EAC1C,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,SAAS;CACrB",
+    "sources": [
+        "form__footer.scss"
+    ],
+    "names": [],
+    "file": "form__footer.css"
+}

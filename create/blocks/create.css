@@ -119,6 +119,7 @@ html, body {
 }
 
 .signup__list {
+  position: relative;
   list-style-type: none;
   margin: 0 0 1rem 0;
   padding: 0;
@@ -154,7 +155,7 @@ html, body {
   padding: 0 0 0 10px;
   height: 40px;
   width: 100%;
-  max-width: 700px;
+  max-width: 375px;
   outline: none;
   display: block;
   font-family: "Roboto", sans-serif;
@@ -181,7 +182,7 @@ html, body {
   padding: 0 0 0 10px;
   height: 40px;
   width: 100%;
-  max-width: 700px;
+  max-width: 375px;
   outline: none;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -285,7 +286,7 @@ html, body {
   box-sizing: border-box;
   padding: 0;
   width: 100%;
-  max-width: 700px;
+  max-width: 375px;
 }
 .socialmedia:before {
   content: "Или через социальную сеть";

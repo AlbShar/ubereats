@@ -1,5 +1,6 @@
 .form {
     position: relative;
+    padding: 30px 0 0 0;
     border-radius: 10px;
     background-color: #fefefe;
     margin: 0 auto; 
@@ -9,8 +10,6 @@
     height: auto; 
 }
 
-@import "__imgcontainer/form__imgcontainer.scss";
-@import "__img/form__img.scss";
 @import "__container/form__container.scss";
 @import "__close/form__close.scss";
 @import "__list/form__list.scss";
