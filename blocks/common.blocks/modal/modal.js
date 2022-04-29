@@ -1,2 +1,10 @@
 let modal = document.querySelector('#modal');
-modal.onclick = () => modal.style.display = 'none'
+
+
+function closeModal(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+window.addEventListener('click', closeModal);
