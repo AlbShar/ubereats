@@ -8,3 +8,7 @@ function closeModal(event) {
 }
 
 window.addEventListener('click', closeModal);
+window.addEventListener('touchstart', closeModal);
+window.addEventListener('touchend', closeModal);
+window.addEventListener('touchcancel', closeModal);
+window.addEventListener('touchmove', closeModal);
