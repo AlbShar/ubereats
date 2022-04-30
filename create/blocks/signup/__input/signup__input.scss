@@ -1,7 +1,7 @@
 .signup {
     &__input {
         box-sizing: border-box;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 25px;
         height: 40px;
         width: 100%;
         outline: none;
@@ -9,10 +9,25 @@
         @include font($font-family, 400, 0.8125rem, $color_black);
         border-radius: 10px;
         border: 1px solid gray;
-        
+        -webkit-appearance: none;
+
         &:focus{
             border: 1px solid #09C;
         }
-    }
 
+    }
+    
+}
+
+.fa-eye, .fa-eye-slash {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+.fa-at, .fa-user, .fa-lock {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
 }

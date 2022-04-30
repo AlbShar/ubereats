@@ -12,6 +12,8 @@
         @include font($font-family, 400, 0.8125rem, $color_black);
         border-radius: 10px;
         border: 1px solid gray;
+        -webkit-appearance: none;
+
         &:focus{
             border: 1px solid #09C;
         }
