@@ -132,19 +132,8 @@ html, body {
   font-size: 0.8125rem;
   color: #1d1d1d;
   text-transform: uppercase;
-  /*
-
-  &:nth-child(3) {
-      margin-left: 80px;
-  }
-
-  &:nth-child(4) {
-      margin-left: 22px;
-  }
-
-  &:nth-child(5) {
-      margin-left: 105px;
-  }*/
+  width: 100%;
+  max-width: 375px;
 }
 .signup__list-item:last-child {
   margin-bottom: 0;
@@ -155,7 +144,6 @@ html, body {
   padding: 0 0 0 10px;
   height: 40px;
   width: 100%;
-  max-width: 375px;
   outline: none;
   display: block;
   font-family: "Roboto", sans-serif;
@@ -289,7 +277,7 @@ html, body {
   max-width: 375px;
 }
 .socialmedia:before {
-  content: "Или через социальную сеть";
+  content: "Через социальную сеть";
   left: 0px;
   width: 100%;
   text-align: left;
@@ -633,6 +621,28 @@ html, body {
 
   .social {
     margin-top: 37px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .socialmedia {
+    position: absolute;
+    top: 185px;
+    right: 0px;
+    max-width: 350px;
+  }
+
+  .signup__submit {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .socialmedia {
+    right: 170px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .socialmedia {
+    right: 380px;
   }
 }
 
