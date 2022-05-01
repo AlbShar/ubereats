@@ -1,1 +1,1 @@
-import "./signup/__input/signup__input";
+import "./signup/__input/signup__input.js";
