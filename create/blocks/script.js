@@ -1,1 +1,1 @@
-import "create/blocks/signup/__input/signup__input.js";
+import "signup/__input/signup__input.js";
