@@ -1,4 +1,4 @@
-import "./signup/__input/signup__input.js";
+
 let eye1 = document.querySelectorAll('i#eye')[0];
 let eye2 = document.querySelectorAll('i#eye')[1];
 let pwdInp1 = document.querySelector('#pwd');
