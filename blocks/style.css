@@ -16,12 +16,19 @@ html, body {
   height: 100vh;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 30px;
+  padding-top: 15px;
+  /*&_visible {
+      display: block;
+  }
+
+  &_invisible {
+      display: none;
+  }*/
 }
 
 .form {
   position: relative;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
   border-radius: 10px;
   background-color: #fefefe;
   margin: 0 auto;

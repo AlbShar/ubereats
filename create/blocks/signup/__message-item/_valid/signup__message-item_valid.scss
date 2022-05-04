@@ -1,0 +1,7 @@
+.signup {
+    &__message-item {
+        &_valid {
+            color: green;
+        }
+    }
+}

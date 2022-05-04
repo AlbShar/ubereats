@@ -1,0 +1,17 @@
+.signup {
+    &__message {
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid green;
+        max-width: 245px;
+        list-style-type: none;
+        line-height: 1.5;
+        padding-left: 25px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+@import "./_invisible/signup__message_invisible.scss";
+@import "./_visible/signup__message_visible.scss"

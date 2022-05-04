@@ -8,7 +8,6 @@ function closeModal(event) {
             links[i].target = '';
         }
         modal.style.display = 'none';
-
     }
 }
 

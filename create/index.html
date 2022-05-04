@@ -127,6 +127,7 @@
                   <label class="signup__label" for="pwd">Пароль:</label>
                   <i class="fa fa-lock"></i>
                   <input
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     class="signup__input"
                     id="pwd"
                     type="password"
@@ -135,6 +136,12 @@
                   />
                   <i id="eye" class="fa fa-eye"></i>
                 </li>
+                <ul class="signup__message signup__message_invisible" id="message">
+                  <li id="lowLetter" class="signup__message-item signup__message-item_invalid">Одна <strong>строчная</strong> буква</li>
+                  <li id="capLetter" class="signup__message-item signup__message-item_invalid">Одна <strong>заглавная</strong> буква</li>
+                  <li id="number" class="signup__message-item signup__message-item_invalid">Одна <strong>цифра</strong> </li>
+                  <li id="length" class="signup__message-item signup__message-item_invalid">Минимум <strong>8 символов</strong> </li>
+                </ul>
                 <li class="signup__list-item">
                   <label class="signup__label" for="pwd2"
                     >Повторите пароль:</label

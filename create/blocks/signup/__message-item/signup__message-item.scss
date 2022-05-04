@@ -1,0 +1,18 @@
+.signup {
+    &__message-item {
+        position: relative;
+
+        &:before {
+            content: "X";
+            position: absolute;
+            left: -15px;
+            top: 4px;
+            font-family: 'Arial',  sans-serif;
+            font-size: 0.7rem;
+        }
+
+    }
+}
+
+@import "./_invalid/signup__message-item_invalid.scss";
+@import "./_valid/signup__message-item_valid.scss";

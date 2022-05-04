@@ -125,6 +125,12 @@ html, body {
   margin: 0 0 1rem 0;
   padding: 0;
 }
+.signup__list .signup__list-item:nth-child(3) .signup__input:valid {
+  border: 1px solid green;
+}
+.signup__list .signup__list-item:nth-child(3) .signup__input:invalid {
+  border: 1px solid red;
+}
 
 .signup__list-item {
   position: relative;
@@ -139,6 +145,47 @@ html, body {
 }
 .signup__list-item:last-child {
   margin-bottom: 0;
+}
+
+.signup__message {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+  max-width: 245px;
+  list-style-type: none;
+  line-height: 1.5;
+  padding-left: 25px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.signup__message_invisible {
+  display: none;
+}
+
+.signup__message_visible {
+  display: block;
+}
+
+.signup__message-item {
+  position: relative;
+}
+.signup__message-item:before {
+  content: "X";
+  position: absolute;
+  left: -15px;
+  top: 4px;
+  font-family: "Arial", sans-serif;
+  font-size: 0.7rem;
+}
+
+.signup__message-item_invalid {
+  color: red;
+}
+
+.signup__message-item_valid {
+  color: green;
 }
 
 .signup__input {
