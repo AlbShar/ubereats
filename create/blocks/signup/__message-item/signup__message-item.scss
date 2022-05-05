@@ -1,17 +1,16 @@
 .signup {
     &__message-item {
-        position: relative;
+        font-family: 'Arial', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-bottom: 10px;
 
-        &:before {
-            content: "X";
-            position: absolute;
-            left: -15px;
-            top: 4px;
-            font-family: 'Arial',  sans-serif;
-            font-size: 0.7rem;
+        &:last-child {
+            margin-bottom: 0px;
         }
-
     }
+
 }
 
 @import "./_invalid/signup__message-item_invalid.scss";

@@ -4,14 +4,15 @@
         list-style-type: none;
         margin: 0 0 1rem 0;
         padding: 0;
+            
+        & .signup__list-item:nth-child(3) .signup__input:focus:valid {
+                border: 1px solid green;
+            }
 
-        & .signup__list-item:nth-child(3) .signup__input:valid {
-            border: 1px solid green;
-        }
-
-        & .signup__list-item:nth-child(3) .signup__input:invalid {
-            border: 1px solid red;
-        }
+        & .signup__list-item:nth-child(3) .signup__input:focus:invalid {
+                border: 1px solid red;
+            }
+        
     }
     
 }

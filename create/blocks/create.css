@@ -125,10 +125,10 @@ html, body {
   margin: 0 0 1rem 0;
   padding: 0;
 }
-.signup__list .signup__list-item:nth-child(3) .signup__input:valid {
+.signup__list .signup__list-item:nth-child(3) .signup__input:focus:valid {
   border: 1px solid green;
 }
-.signup__list .signup__list-item:nth-child(3) .signup__input:invalid {
+.signup__list .signup__list-item:nth-child(3) .signup__input:focus:invalid {
   border: 1px solid red;
 }
 
@@ -148,16 +148,16 @@ html, body {
 }
 
 .signup__message {
+  box-sizing: border-box;
   display: none;
   margin: 0;
-  padding: 0;
-  border: 1px solid green;
-  max-width: 245px;
-  list-style-type: none;
-  line-height: 1.5;
-  padding-left: 25px;
-  font-size: 1rem;
+  padding: 15px;
+  width: 100%;
+  max-width: 375px;
+  line-height: 1.2;
   margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .signup__message_invisible {
@@ -168,16 +168,26 @@ html, body {
   display: block;
 }
 
-.signup__message-item {
-  position: relative;
+.signup__message-title {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1d1d1d;
 }
-.signup__message-item:before {
-  content: "X";
-  position: absolute;
-  left: -15px;
-  top: 4px;
+
+.signup__message-item {
   font-family: "Arial", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.signup__message-item:last-child {
+  margin-bottom: 0px;
 }
 
 .signup__message-item_invalid {
