@@ -1,0 +1,10 @@
+.signup {
+    &__submit{
+        &_enable {
+            background-color: #59bd5a;
+            &:hover {
+                background-color: blue;
+            }
+        }
+    }
+}

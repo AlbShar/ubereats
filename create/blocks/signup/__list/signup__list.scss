@@ -12,6 +12,11 @@
         & .signup__list-item:nth-child(3) .signup__input:focus:invalid {
                 border: 1px solid red;
             }
+
+        & .signup__list-item:nth-child(5) .signup__input {
+            display: flex;
+            align-items: center;
+        }
         
     }
     

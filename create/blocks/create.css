@@ -119,6 +119,16 @@ html, body {
   text-align: center;
 }
 
+.signup__name-field {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
 .signup__list {
   position: relative;
   list-style-type: none;
@@ -131,6 +141,10 @@ html, body {
 .signup__list .signup__list-item:nth-child(3) .signup__input:focus:invalid {
   border: 1px solid red;
 }
+.signup__list .signup__list-item:nth-child(5) .signup__input {
+  display: flex;
+  align-items: center;
+}
 
 .signup__list-item {
   position: relative;
@@ -141,7 +155,7 @@ html, body {
   color: #1d1d1d;
   text-transform: uppercase;
   width: 100%;
-  max-width: 375px;
+  max-width: 300px;
 }
 .signup__list-item:last-child {
   margin-bottom: 0;
@@ -153,7 +167,7 @@ html, body {
   margin: 0;
   padding: 15px;
   width: 100%;
-  max-width: 375px;
+  max-width: 300px;
   line-height: 1.2;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -217,7 +231,7 @@ html, body {
   border: 1px solid #09C;
 }
 
-.fa-eye, .fa-eye-slash {
+.fa-eye, .fa-eye-slash, .fa-sort-desc {
   cursor: pointer;
   position: absolute;
   right: 10px;
@@ -278,7 +292,30 @@ html, body {
 }
 .signup__submit:hover {
   cursor: pointer;
+}
+
+.signup__submit_disabled {
+  background-color: #94ba95;
+}
+.signup__submit_disabled:hover {
+  cursor: pointer;
+  background-color: #94ba95;
+}
+
+.signup__submit_enable {
+  background-color: #59bd5a;
+}
+.signup__submit_enable:hover {
   background-color: blue;
+}
+
+.signup__explanation {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #1d1d1d;
+  width: 70%;
+  max-width: 300px;
 }
 
 .signup__agree {
@@ -289,7 +326,7 @@ html, body {
   position: relative;
   height: 100%;
   width: 70%;
-  max-width: 700px;
+  max-width: 300px;
   margin: 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -712,22 +749,39 @@ html, body {
   .socialmedia {
     position: absolute;
     top: 185px;
-    right: 0px;
+    right: 30px;
     max-width: 350px;
   }
 
   .signup__submit {
     margin-bottom: 0px;
   }
+
+  .signup__message {
+    box-sizing: border-box;
+    position: absolute;
+    right: 25px;
+    top: 190px;
+    width: 100%;
+    max-width: 350px;
+  }
 }
 @media screen and (min-width: 992px) {
   .socialmedia {
-    right: 170px;
+    right: 280px;
+  }
+
+  .signup__message {
+    right: 270px;
   }
 }
 @media screen and (min-width: 1200px) {
   .socialmedia {
-    right: 380px;
+    right: 490px;
+  }
+
+  .signup__message {
+    right: 480px;
   }
 }
 

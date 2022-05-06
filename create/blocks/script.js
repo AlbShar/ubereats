@@ -1,9 +1,7 @@
-
-let eye1 = document.querySelectorAll('i#eye')[0];
-let eye2 = document.querySelectorAll('i#eye')[1];
 let pwdInp1 = document.querySelector('#pwd');
 let pwdInp2 = document.querySelector('#pwd2');
 let btn = document.querySelector('#btn');
+let ul = document.querySelector('.signup__list')
 
 let letter = document.querySelector("#lowLetter");
 let capital = document.querySelector("#capLetter");
@@ -20,7 +18,7 @@ pwdInp1.onfocus = () => {
 pwdInp1.onblur = () => {
     message.classList.remove('signup__message_visible');
     message.classList.add('signup__message_invisible');    
-    
+
 };
 
 pwdInp1.onkeyup = () => {
@@ -28,7 +26,7 @@ pwdInp1.onkeyup = () => {
     let numbers = '0123456789';
     let val = pwdInp1.value;
 
-    if (val.length > 8) {
+    if (val.length >= 8) {
         length.classList.remove('signup__message-item_invalid');
         length.classList.add('signup__message-item_valid');
     } else {
@@ -71,33 +69,31 @@ pwdInp1.onkeyup = () => {
 };
 
 pwdInp2.onkeyup = () => {
-    if (pwdInp2.value !== pwdInp1.value) {
-        pwdInp2.style.border = '1px solid red';
-        btn.disabled = true;
-    } else {
+    if (pwdInp2.value == pwdInp1.value) {
         pwdInp2.style.border = '1px solid green';
         btn.disabled = false;
+        btn.classList.remove('signup__submit_disabled');
+        btn.classList.add('signup__submit_enable');
+    } else {
+        pwdInp2.style.border = '1px solid red';
+        btn.disabled = true;
+        btn.classList.remove('signup__submit_enable');
+        btn.classList.add('signup__submit_disabled');
     }
 }
 
 function showPwd(event) {
-    if (event.target === eye1) {
-        eye1.className = (eye1.className ==='fa fa-eye-slash') ? "fa fa-eye": 'fa fa-eye-slash';
-        pwdInp1.type = (pwdInp1.type === "password") ? "text" : "password";
-    } else {
-        eye2.className = (eye2.className ==='fa fa-eye-slash') ? "fa fa-eye": 'fa fa-eye-slash';
-        pwdInp2.type = (pwdInp2.type === "password") ? "text" : "password";    
-    }
+    let evTrgt = event.target;
+    if (evTrgt.id === 'eye') {
+        evTrgt.className = (evTrgt.className ==='fa fa-eye-slash') ? "fa fa-eye": 'fa fa-eye-slash';
+        if (!evTrgt.previousElementSibling) return;
+        evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
+    } 
 }
 
-eye1.addEventListener('click', showPwd);
-eye1.addEventListener('touchstart', showPwd);
-eye1.addEventListener('touchend', showPwd);
-eye1.addEventListener('touchcancel', showPwd);
-eye1.addEventListener('touchmove', showPwd);
 
-eye2.addEventListener('click', showPwd);
-eye2.addEventListener('touchstart', showPwd);
-eye2.addEventListener('touchend', showPwd);
-eye2.addEventListener('touchcancel', showPwd);
-eye2.addEventListener('touchmove', showPwd);
+ul.addEventListener('click', showPwd);
+ul.addEventListener('touchstart', showPwd);
+ul.addEventListener('touchend', showPwd);
+ul.addEventListener('touchcancel', showPwd);
+ul.addEventListener('touchmove', showPwd);

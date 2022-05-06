@@ -10,8 +10,10 @@
         margin-bottom: 40px;
         &:hover {
             cursor: pointer;
-            background-color: blue;
         }
             
     }
 }
+
+@import "./_disabled/signup__submit_disabled.scss";
+@import "./_enable/signup__submit_enable.scss";

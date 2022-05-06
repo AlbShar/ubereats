@@ -10,7 +10,7 @@
     .socialmedia {
         position: absolute;
         top: 185px;
-        right: 0px;
+        right: 30px;
         max-width: 350px;
     }
 
@@ -19,17 +19,32 @@
             margin-bottom: 0px;
         }
     }
+
+    .signup__message {
+        box-sizing: border-box;
+        position: absolute;
+        right: 25px;
+        top: 190px;
+        width: 100%;
+        max-width: 350px;
+    }
 }
 
 
 @media screen and (min-width:992px) {
     .socialmedia {
-        right: 170px;
+        right: 280px;
+    }
+    .signup__message {
+        right: 270px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .socialmedia {
-        right: 380px;
+        right: 490px;
+    }
+    .signup__message {
+        right: 480px;
     }
 }

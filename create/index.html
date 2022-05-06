@@ -51,8 +51,10 @@
       color="#00a300"
     />
     <link rel="manifest" href="../../favicons/site.webmanifest" />
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="blocks/create.css" />
   </head>
   <body>
@@ -100,8 +102,9 @@
               <ul class="signup__list">
                 <li class="signup__list-item">
                   <label class="signup__label" for="uname"
-                    >Имя пользователя:</label
-                  >
+                    > <h2 class="signup__name-field">Имя пользователя:</h2>
+                    <strong> <abbr title="required">*</abbr></strong>
+                  </label>
                   <i class="fa fa-user icon"></i>
                   <input
                     maxlength="20"
@@ -113,7 +116,10 @@
                   />
                 </li>
                 <li class="signup__list-item">
-                  <label class="signup__label" for="email">адрес email:</label>
+                  <label class="signup__label" for="email"
+                    > <h2 class="signup__name-field">адрес email:</h2>
+                    <strong> <abbr title="required">*</abbr></strong>
+                  </label>
                   <i class="fa fa-at"></i>
                   <input
                     class="signup__input"
@@ -124,7 +130,10 @@
                   />
                 </li>
                 <li class="signup__list-item">
-                  <label class="signup__label" for="pwd">Пароль:</label>
+                  <label class="signup__label" for="pwd"
+                    > <h2 class="signup__name-field">Пароль:</h2>
+                    <strong> <abbr title="required">*</abbr></strong>
+                  </label>
                   <i class="fa fa-lock"></i>
                   <input
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -136,18 +145,44 @@
                   />
                   <i id="eye" class="fa fa-eye"></i>
                 </li>
-                <ol class="signup__message signup__message_invisible" id="message">
-                  <h3 class="signup__message-title">Пароль должен содержать:</h3>
-                  <li id="lowLetter" class="signup__message-item signup__message-item_invalid">Одну <strong>строчную</strong> букву</li>
-                  <li id="capLetter" class="signup__message-item signup__message-item_invalid">Одна <strong>заглавную</strong> букву</li>
-                  <li id="number" class="signup__message-item signup__message-item_invalid">Одну <strong>цифру</strong> </li>
-                  <li id="length" class="signup__message-item signup__message-item_invalid">Минимум <strong>8 символов</strong> </li>
+                <ol
+                  class="signup__message signup__message_invisible"
+                  id="message"
+                >
+                  <h3 class="signup__message-title">
+                    <strong>Пароль должен содержать:</strong> 
+                  </h3>
+                  <li
+                    id="lowLetter"
+                    class="signup__message-item signup__message-item_invalid"
+                  >
+                    Одну <strong>строчную</strong> букву
+                  </li>
+                  <li
+                    id="capLetter"
+                    class="signup__message-item signup__message-item_invalid"
+                  >
+                    Одна <strong>заглавную</strong> букву
+                  </li>
+                  <li
+                    id="number"
+                    class="signup__message-item signup__message-item_invalid"
+                  >
+                    Одну <strong>цифру</strong>
+                  </li>
+                  <li
+                    id="length"
+                    class="signup__message-item signup__message-item_invalid"
+                  >
+                    Минимум <strong>8 символов</strong>
+                  </li>
                 </ol>
                 <li class="signup__list-item">
                   <label class="signup__label" for="pwd2"
-                    >Повторите пароль:</label
-                  >
-                  <i  class="fa fa-lock"></i>
+                    > <h2 class="signup__name-field">Повторите пароль:</h2>
+                    <strong> <abbr title="required">*</abbr></strong>
+                  </label>
+                  <i class="fa fa-lock"></i>
                   <input
                     class="signup__input"
                     id="pwd2"
@@ -156,32 +191,35 @@
                     required
                   />
                   <i id="eye" class="fa fa-eye"></i>
-
                 </li>
                 <li class="signup__list-item">
-                  <label class="signup__label" for="date">Дата рождения:</label>
+                  <label class="signup__label" for="date"> <h2 class="signup__name-field">Дата рождения:</h2> </label>
                   <input
                     class="signup__input"
                     id="date"
                     type="date"
                     placeholder="Введите пароль"
-                    required
                   />
                 </li>
                 <li class="signup__list-item">
-                  <label class="signup__label" for="sex">Пол:</label>
+                  <label class="signup__label" for="sex"> <h2 class="signup__name-field">Пол:</h2> </label>
                   <select class="signup__select" id="sex">
                     <option>(не определен)</option>
                     <option value="/male/">Мужской</option>
                     <option value="/female/">Женский</option>
                   </select>
+                  <i class="fa fa-sort-desc"></i>
                 </li>
               </ul>
+              <div class="signup__explanation">              
+                Необходимые поля для заполнения обозначены знаком
+                <strong><abbr title="required">*</abbr> </strong>
+              </div>
               <div class="signup__agree">
                 Создавая аккаунт в UberEats, вы соглашаетесь с нашим
                 <a href="#">Пользовательским соглашением.</a>
               </div>
-              <button id ="btn" class="signup__submit" type="submit" >
+              <button id="btn" class="signup__submit signup__submit_disabled" type="submit">
                 создать аккаунт
               </button>
               <div class="socialmedia">
