@@ -1,3 +1,4 @@
+"user sctrict";
 let pwdInp1 = document.querySelector('#pwd');
 let pwdInp2 = document.querySelector('#pwd2');
 let btn = document.querySelector('#btn');
@@ -17,8 +18,7 @@ pwdInp1.onfocus = () => {
 
 pwdInp1.onblur = () => {
     message.classList.remove('signup__message_visible');
-    message.classList.add('signup__message_invisible');    
-
+    message.classList.add('signup__message_invisible');
 };
 
 pwdInp1.onkeyup = () => {
@@ -85,6 +85,11 @@ pwdInp2.onkeyup = () => {
 function showPwd(event) {
     let evTrgt = event.target;
     if (evTrgt.id === 'eye') {
+        if (message.classList[1] === 'signup__message_invisible') {
+            message.classList.remove('signup__message_invisible');
+            message.classList.add('signup__message_visible');
+        }
+
         evTrgt.className = (evTrgt.className ==='fa fa-eye-slash') ? "fa fa-eye": 'fa fa-eye-slash';
         if (!evTrgt.previousElementSibling) return;
         evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
