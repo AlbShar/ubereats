@@ -283,6 +283,30 @@ html, body {
   justify-content: space-between;
   align-items: center;
   width: 128px;
+  gap: 10px;
+}
+
+.actions__signup {
+  width: 100px;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions__signup-link {
+  list-style-type: none;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #1d1d1d;
 }
 
 .actions__sign-in {
@@ -313,7 +337,7 @@ html, body {
   justify-content: center;
 }
 
-.actions__sign-in:hover {
+.actions__sign-in:hover, .actions__signup:hover {
   animation-name: background-color;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -323,7 +347,7 @@ html, body {
     background-color: #1d1d1d;
   }
 }
-.actions__sign-in-text:hover {
+.actions__sign-in-text:hover, .actions__signup-link:hover {
   animation-name: color;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -666,7 +690,7 @@ html, body {
 }
 @media screen and (max-width: 767px) {
   .actions {
-    width: 76px;
+    width: 176px;
   }
   .actions__basket {
     display: none;
@@ -692,7 +716,7 @@ html, body {
   }
 
   .actions {
-    width: 120px;
+    width: 200px;
   }
 
   .logo__svg {
@@ -745,7 +769,7 @@ html, body {
 }
 @media screen and (min-width: 1124px) {
   .actions {
-    width: 138px;
+    width: 208px;
     box-sizing: border-box;
   }
   .actions__basket {
