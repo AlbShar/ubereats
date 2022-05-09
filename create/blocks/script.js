@@ -26,6 +26,19 @@ pwdInp1.onkeyup = () => {
     let numbers = '0123456789';
     let val = pwdInp1.value;
 
+    if ((pwdInp2.value == pwdInp1.value) && pwdInp1.checkValidity()) {
+        pwdInp2.style.border = '1px solid green';
+        btn.disabled = false;
+        btn.classList.remove('signup__submit_disabled');
+        btn.classList.add('signup__submit_enable');
+    } else {
+        pwdInp2.style.border = '1px solid red';
+        btn.disabled = true;
+        btn.classList.remove('signup__submit_enable');
+        btn.classList.add('signup__submit_disabled');
+    }
+
+
     if (val.length >= 8) {
         length.classList.remove('signup__message-item_invalid');
         length.classList.add('signup__message-item_valid');
@@ -68,8 +81,9 @@ pwdInp1.onkeyup = () => {
     }
 };
 
+
 pwdInp2.onkeyup = () => {
-    if (pwdInp2.value == pwdInp1.value) {
+    if ((pwdInp2.value == pwdInp1.value) && pwdInp1.checkValidity()) {
         pwdInp2.style.border = '1px solid green';
         btn.disabled = false;
         btn.classList.remove('signup__submit_disabled');
@@ -82,16 +96,22 @@ pwdInp2.onkeyup = () => {
     }
 }
 
+
 function showPwd(event) {
     let evTrgt = event.target;
-    if (evTrgt.id === 'eye') {
-        if (message.classList[1] === 'signup__message_invisible') {
+    if (evTrgt.classList.contains('signup__icon-eye')) {
+        if (evTrgt.id =='eye1' && (message.classList.contains('signup__message_invisible'))) {
             message.classList.remove('signup__message_invisible');
             message.classList.add('signup__message_visible');
         }
 
-        evTrgt.className = (evTrgt.className ==='fa fa-eye-slash') ? "fa fa-eye": 'fa fa-eye-slash';
-        if (!evTrgt.previousElementSibling) return;
+        if (evTrgt.classList.contains('fa-eye-slash')) {
+            evTrgt.classList.remove('fa-eye-slash');
+            evTrgt.classList.add('fa-eye');
+        } else {
+            evTrgt.classList.remove('fa-eye');
+            evTrgt.classList.add('fa-eye-slash');
+        }
         evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
     } 
 }
