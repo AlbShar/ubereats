@@ -2,7 +2,7 @@
 let pwdInp1 = document.querySelector('#pwd');
 let pwdInp2 = document.querySelector('#pwd2');
 let btn = document.querySelector('#btn');
-let ul = document.querySelector('.signup__list')
+let ul = document.querySelector('.signup__list');
 
 let letter = document.querySelector("#lowLetter");
 let capital = document.querySelector("#capLetter");
@@ -25,19 +25,6 @@ pwdInp1.onkeyup = () => {
     let letters = 'abcdefghijklmnopqrstuvwxyz';
     let numbers = '0123456789';
     let val = pwdInp1.value;
-
-    if ((pwdInp2.value == pwdInp1.value) && pwdInp1.checkValidity()) {
-        pwdInp2.style.border = '1px solid green';
-        btn.disabled = false;
-        btn.classList.remove('signup__submit_disabled');
-        btn.classList.add('signup__submit_enable');
-    } else {
-        pwdInp2.style.border = '1px solid red';
-        btn.disabled = true;
-        btn.classList.remove('signup__submit_enable');
-        btn.classList.add('signup__submit_disabled');
-    }
-
 
     if (val.length >= 8) {
         length.classList.remove('signup__message-item_invalid');
@@ -81,22 +68,6 @@ pwdInp1.onkeyup = () => {
     }
 };
 
-
-pwdInp2.onkeyup = () => {
-    if ((pwdInp2.value == pwdInp1.value) && pwdInp1.checkValidity()) {
-        pwdInp2.style.border = '1px solid green';
-        btn.disabled = false;
-        btn.classList.remove('signup__submit_disabled');
-        btn.classList.add('signup__submit_enable');
-    } else {
-        pwdInp2.style.border = '1px solid red';
-        btn.disabled = true;
-        btn.classList.remove('signup__submit_enable');
-        btn.classList.add('signup__submit_disabled');
-    }
-}
-
-
 function showPwd(event) {
     let evTrgt = event.target;
     if (evTrgt.classList.contains('signup__icon-eye')) {
@@ -114,6 +85,29 @@ function showPwd(event) {
         }
         evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
     } 
+}
+
+btn.onclick = (event) => {
+    if ((pwdInp2.value !== pwdInp1.value)) {
+        event.preventDefault();
+        pwdInp2.style.border = '1px solid red';
+        btn.disabled = true;
+        btn.classList.add('signup__submit_disabled');
+        
+        pwdInp2.onkeyup = () => {
+            if (pwdInp2.value == pwdInp1.value) {
+                pwdInp2.style.border = '1px solid green';
+                btn.disabled = false;
+                btn.classList.remove('signup__submit_disabled');
+                btn.classList.add('signup__submit_enable');
+            } else {
+                pwdInp2.style.border = '1px solid red';
+                btn.disabled = true;
+                btn.classList.remove('signup__submit_enable');
+                btn.classList.add('signup__submit_disabled');
+            }
+        }
+    }
 }
 
 

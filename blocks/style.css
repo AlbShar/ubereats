@@ -283,11 +283,11 @@ html, body {
   justify-content: space-between;
   align-items: center;
   width: 128px;
-  gap: 10px;
 }
 
 .actions__signup {
   width: 100px;
+  margin-right: 10px;
   box-sizing: border-box;
   height: 40px;
   background-color: #ffffff;
@@ -320,6 +320,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .actions__sign-in-text {

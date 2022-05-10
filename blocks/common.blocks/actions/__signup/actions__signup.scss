@@ -1,15 +1,15 @@
 .actions {
     &__signup {
         width: 100px;
-
+        margin-right: 10px;
         box-sizing: border-box;
-    height: 40px;
-    background-color: $color_white;
-    border: 1px solid #e0e0e0;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        height: 40px;
+        background-color: $color_white;
+        border: 1px solid #e0e0e0;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
