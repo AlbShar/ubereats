@@ -1,3 +1,14 @@
+"use strict";
+let pwdInp1 = document.querySelector('#pwd');
+let pwdInp2 = document.querySelector('#pwd2');
+let ul = document.querySelector('.signup__list');
+
+let letter = document.querySelector("#lowLetter");
+let capital = document.querySelector("#capLetter");
+let number = document.querySelector("#number");
+let length = document.querySelector("#length");
+let message = document.querySelector("#message");
+
 pwdInp1.onfocus = () => {
     message.classList.remove('signup__message_invisible');
     message.classList.add('signup__message_visible');

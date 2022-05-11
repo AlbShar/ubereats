@@ -1,0 +1,10 @@
+.signup {
+    &__icon {
+        &_left {
+            position: absolute;
+            z-index: 1;
+            left: 10px;
+            bottom: 13px;
+        }
+    }
+}

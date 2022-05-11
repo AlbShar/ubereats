@@ -50,6 +50,30 @@ html, body {
   width: 128px;
 }
 
+.actions__signup {
+  width: 100px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions__signup-link {
+  list-style-type: none;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #1d1d1d;
+}
+
 .actions__sign-in {
   box-sizing: border-box;
   width: 78px;
@@ -61,6 +85,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .actions__sign-in-text {
@@ -78,7 +103,7 @@ html, body {
   justify-content: center;
 }
 
-.actions__sign-in:hover {
+.actions__sign-in:hover, .actions__signup:hover {
   animation-name: background-color;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -88,7 +113,7 @@ html, body {
     background-color: #1d1d1d;
   }
 }
-.actions__sign-in-text:hover {
+.actions__sign-in-text:hover, .actions__signup-link:hover {
   animation-name: color;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
@@ -117,6 +142,26 @@ html, body {
   justify-content: center;
   border-radius: 10px;
   text-align: center;
+}
+
+.signup__icon_left {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  bottom: 13px;
+}
+
+.signup__icon_right {
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.4);
 }
 
 .signup__name-field {
@@ -214,6 +259,7 @@ html, body {
 }
 
 .signup__input {
+  position: relative;
   box-sizing: border-box;
   padding: 0 0 0 25px;
   height: 40px;
@@ -232,25 +278,20 @@ html, body {
   border: 1px solid #09C;
 }
 
-.fa-eye, .fa-eye-slash, .fa-sort-desc {
-  cursor: pointer;
-  position: absolute;
-  right: 8px;
-  bottom: 6px;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1.4);
+/*
+.fa-eye, .fa-eye-slash,.fa-sort-desc {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.4);
 }
-
-.fa-at, .fa-user, .fa-lock {
-  position: absolute;
-  left: 10px;
-  bottom: 13px;
-}
-
+*/
 .signup__label {
   display: block;
   margin: 0 0 5px 0;
@@ -333,6 +374,11 @@ html, body {
   font-weight: 500;
   font-size: 0.8125rem;
   color: #1d1d1d;
+}
+
+.signup__error {
+  color: red;
+  margin: -10px 0 15px 2px;
 }
 
 .socialmedia {
@@ -623,7 +669,7 @@ html, body {
 }
 @media screen and (max-width: 767px) {
   .actions {
-    width: 76px;
+    width: 176px;
   }
   .actions__basket {
     display: none;
@@ -649,7 +695,7 @@ html, body {
   }
 
   .actions {
-    width: 120px;
+    width: 200px;
   }
 
   .logo__svg {
@@ -702,7 +748,7 @@ html, body {
 }
 @media screen and (min-width: 1124px) {
   .actions {
-    width: 138px;
+    width: 208px;
     box-sizing: border-box;
   }
   .actions__basket {
@@ -786,4 +832,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=create.css.map */
+/*# sourceMappingURL=style.css.map */
