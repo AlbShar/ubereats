@@ -31,7 +31,7 @@ ul.addEventListener('touchcancel', changeIcon);
 ul.addEventListener('touchmove', changeIcon);
 
 window.addEventListener('click', closeModal);
-window.addEventListener('touchstart', changeIcon);
+window.addEventListener('touchstart', closeModal);
 window.addEventListener('touchend', closeModal);
 window.addEventListener('touchcancel', closeModal);
 window.addEventListener('touchmove', closeModal);
