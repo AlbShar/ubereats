@@ -1,0 +1,8 @@
+.signup {
+    &__name-field {
+        @include font($font-family, 700, 0.9rem, $color_black);
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+}

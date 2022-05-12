@@ -10,7 +10,7 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="blocks/blocks.css" />
+    <link rel="stylesheet" href="blocks/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css"
@@ -44,99 +44,104 @@
   <body>
     <header class="header">
       <div class="container">
-          <div class="row">
-              <div  class="col-xs-12 col-md-12 col-lg-12">
-                  <div class="header__container">
-                      <div class="logo">
-                          <a class="logo__link" href="#">
-                              <img class="logo__svg" src="../blocks/common.blocks/logo/logo.svg" alt="Logo">
-                          </a>
-                      </div>
-                      <div class="actions">
-                          <button onclick="document.getElementById('modal').style.display='block'"
-                          class="actions__sign-in" name="top">
-                              <span class="actions__sign-in-text">
-                                  Войти
-                              </span> 
-                          </button>
-                          <div class="actions__basket">
-                              <img class="actions__basket-svg" src="../blocks/common.blocks/actions/cart.svg" alt="Basket">
-                          </div>
-                      </div>
-                  </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="header__container">
+              <div class="logo">
+                <a class="logo__link" href="#">
+                  <img
+                    class="logo__svg"
+                    src="../blocks/common.blocks/logo/logo.svg"
+                    alt="Logo"
+                  />
+                </a>
               </div>
+              <div class="actions">
+                <button
+                  onclick="document.getElementById('modal').style.display='block'"
+                  class="actions__sign-in"
+                  name="top"
+                >
+                  <span class="actions__sign-in-text"> Войти </span>
+                </button>
+                <div class="actions__basket">
+                  <img
+                    class="actions__basket-svg"
+                    src="../blocks/common.blocks/actions/cart.svg"
+                    alt="Basket"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </header>
-  <main>
-  <div class="modal" id="modal">
-    <form class="form" action="#">
-      <span
-        class="form__close"
-        onclick="document.getElementById('modal').style.display='none'"
-        title="Close Modal"
-        >&times;</span
-      >
-      <div class="form__imgcontainer">
-        <img
-          src="https://raw.githubusercontent.com/AlbShar/ubereats/535da1b8b25653a5bbe7fd59d7d7600bb9e18be9/blocks/common.blocks/form/__img/form__img.svg"
-          alt="Avatar"
-          class="form__img"
-        />
-      </div>
-      <div class="form__container">
-        <ul class="form__list">
-          <li class="form__list-item">
-            <label class="form__label" for="uname">Имя:</label>
-            <input
-              class="form__input"
-              id="uname"
-              type="text"
-              placeholder="Введите имя"
-              required
-            />
-          </li>
-          <li class="form__list-item">
-            <label class="form__label" for="pwd">Пароль:</label>
-            <input
-              class="form__input"
-              id="pwd"
-              type="password"
-              placeholder="Введите пароль"
-              required
-            />
-          </li>
-          <li class="form__list-item">
-              <div>
+    </header>
+    <main>
+      <div class="modal" id="modal">
+        <form class="form" action="#">
+          <span
+            class="form__close"
+            onclick="document.getElementById('modal').style.display='none'"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="form__container">
+            <ul class="form__list">
+              <li class="form__list-item">
+                <label class="form__label" for="uname">Имя:</label>
+                <input
+                  class="form__input"
+                  id="uname"
+                  type="text"
+                  placeholder="Введите имя"
+                  required
+                />
+              </li>
+              <li class="form__list-item">
+                <label class="form__label" for="pwd">Пароль:</label>
+                <input
+                  class="form__input"
+                  id="pwd"
+                  type="password"
+                  placeholder="Введите пароль"
+                  required
+                />
+              </li>
+              <li class="form__list-item">
+                <div>
                   <input class="form__checkbox" type="checkbox" id="remember" />
-                  <label class="form__text" for="remember">Запомнить меня</label>    
-              </div>
-              <div class="form__text"> <a href="#">Забыли пароль?</a> </div>
-            </li>
-          <li class="form__list-item">
-            <button class="form__submit" type="submit">Войти</button>
-          </li>
-          
-        </ul>
-      </div>
-      <div class="form__socialmedia">
-        <a href="#" class="form__social-item">Вконтакте</a>
-        <a href="#" class="form__social-item">Twitter</a>
-        <a href="#" class="form__social-item">Google</a>
-      </div>
-      <div class="form__footer">
-          <div class="form__quest">Нет аккаунта?</div>
+                  <label class="form__text" for="remember"
+                    >Запомнить меня</label
+                  >
+                </div>
+                <div class="form__text"><a href="#">Забыли пароль?</a></div>
+              </li>
+              <li class="form__list-item">
+                <button class="form__submit" type="submit">Войти</button>
+              </li>
+            </ul>
+          </div>
+          <div class="socialmedia">
+            <a href="#" class="socialmedia__item">Вконтакте</a>
+            <a href="#" class="socialmedia__item">Twitter</a>
+            <a href="#" class="socialmedia__item">Google</a>
+          </div>
+          <div class="form__footer">
+            <div class="form__quest">Нет аккаунта?</div>
 
-        <button
-          class="form__registr"
-          onclick="document.getElementById('modal').style.display='none'"
-          type="button"
-        >
-          Зарегистрироваться 
-        </button>
+            <button
+              class="form__registr"
+              onclick="document.getElementById('modal').style.display='none'"
+              type="button"
+            >
+              <a href="../create/index.html" class="form__tosignup"
+                >Зарегистрироваться</a
+              >
+            </button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
       <section class="restaurant restaurant__pos">
         <div class="restaurant__container">
           <div class="restaurant__name">
@@ -357,99 +362,153 @@
     </main>
     <footer class="footer">
       <div class="container">
-          <div class="row">
-              <div class="col-xs-12 col-md-12 col-lg-12">
-                  <div class="footer__container"> 
-
-                      <div class="footer__logo">
-                          <a class="footer__logo-link" href="#" >
-                              <img class="footer__logo-svg" src="../blocks/common.blocks/footer/footer.svg" alt="Logo">
-                          </a>
-                      </div>
-                      <div class="footer__row">
-                          <div class="footer__column">
-                              <div class="language">
-                                  <select class="language__select" id="lang">
-                                      <option>Выбрать язык</option>
-                                      <option value="/en/">English</option>
-                                      <option value="/ru/">Русский</option>
-                                  </select>
-                                  <div class="language__world">
-                                      <img class="language__world-svg" src="../blocks/common.blocks/language/svg/World.svg" alt="World">
-                                  </div>
-                                  <div class="language__arrowDown">
-                                      <img class="language__arrowDown-svg" src="../blocks/common.blocks/language/svg/ArrowDown.svg" alt="Down">
-                                  </div>
-                              </div>
-                              <div class="social">
-                                  <div class="social__title">
-                                      UberEats
-                                  </div>  
-                                  <div class="social__icons">
-                                      <div class="social__facebook">
-                                          <a class="social__facebook-link" href="https://www.facebook.com/UberEats/" target="_blank">
-                                              <img class="social__facebook-svg" src="../blocks/common.blocks/social/svg/Facebook.svg" alt="Facebook">
-                                          </a>
-                                      </div>
-                                      <div class="social__twitter">
-                                          <a class="social__twitter-link" href="https://twitter.com/UberEats?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                                              <img class="social__twitter-svg" src="../blocks/common.blocks/social/svg/Twitter.svg" alt="Twitter">
-                                          </a>
-                                      </div>
-                                      <div class="social__instagram">
-                                          <a class="social__instagram-link" href="https://www.instagram.com/ubereats/" target="_blank"> 
-                                              <img class="social__instagram-svg" src="../blocks/common.blocks/social/svg/Instagram.svg" alt="Instagram">
-                                          </a>
-                                      </div>
-                                  </div>  
-                              </div>
-                          </div>
-                          <div class="footer__lists">
-                              <ul class="footer__list-ul">
-                                  <li class="footer__item">Об UberEats</li>
-                                  <li class="footer__item">Станьте партнёром по доставке</li>
-                                  <li class="footer__item">Станьте парнёром-рестораном</li>
-                              </ul>
-                          </div>
-                          <div class="footer__lists">
-                              <ul class="footer__list-ul">
-                                  <li class="footer__item">Все города</li>
-                                  <li class="footer__item">Цены</li>
-                                  <li class="footer__item">Помощь</li>
-                                  <li class="footer__item">FAQs</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="shop">
-                          <div class="shop__wrapper">
-                              <div class="shop__appstore">
-                                  <a class="shop__link" href="https://apps.apple.com/ru/app/uber-eats-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B5%D0%B4%D1%8B/id1058959277/" target="_blank"> 
-                                      <img class="shop__png" src="../blocks/common.blocks/shop/img/shop11.png" alt="AppStore">
-                                  </a>
-                              </div>
-                              <div class="shop__googleplay">
-                                  <a class="shop__link" href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=ru&gl=US" target="_blank">
-                                      <img class="shop__png" src="../blocks/common.blocks/shop/img/shop12.png" alt="Google Play">
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="infosite infosite__pos">
-                          <ul class="list">
-                              <li class="list__item" >© 2017 Uber Technologies Inc.</li>
-                              <li class="list__item" >Обработка персональных данных</li>
-                              <li class="list__item" >Пользовательское соглашение</li>
-                          </ul>
-                          <div class="infosite__buttonup buttonup">
-                          <a class="buttonup__uplink" href="#top"> 
-                              <img class="buttonup__svg" src="../blocks/common.blocks/buttonup/ArrowUp.svg" alt="Up"> 
-                              </a>
-                          </div>
-                      </div>  
-                  </div>          
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12">
+            <div class="footer__container">
+              <div class="footer__logo">
+                <a class="footer__logo-link" href="#">
+                  <img
+                    class="footer__logo-svg"
+                    src="../blocks/common.blocks/footer/footer.svg"
+                    alt="Logo"
+                  />
+                </a>
               </div>
+              <div class="footer__row">
+                <div class="footer__column">
+                  <div class="language">
+                    <select class="language__select" id="lang">
+                      <option>Выбрать язык</option>
+                      <option value="/en/">English</option>
+                      <option value="/ru/">Русский</option>
+                    </select>
+                    <div class="language__world">
+                      <img
+                        class="language__world-svg"
+                        src="../blocks/common.blocks/language/svg/World.svg"
+                        alt="World"
+                      />
+                    </div>
+                    <div class="language__arrowDown">
+                      <img
+                        class="language__arrowDown-svg"
+                        src="../blocks/common.blocks/language/svg/ArrowDown.svg"
+                        alt="Down"
+                      />
+                    </div>
+                  </div>
+                  <div class="social">
+                    <div class="social__title">UberEats</div>
+                    <div class="social__icons">
+                      <div class="social__facebook">
+                        <a
+                          class="social__facebook-link"
+                          href="https://www.facebook.com/UberEats/"
+                          target="_blank"
+                        >
+                          <img
+                            class="social__facebook-svg"
+                            src="../blocks/common.blocks/social/svg/Facebook.svg"
+                            alt="Facebook"
+                          />
+                        </a>
+                      </div>
+                      <div class="social__twitter">
+                        <a
+                          class="social__twitter-link"
+                          href="https://twitter.com/UberEats?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                          target="_blank"
+                        >
+                          <img
+                            class="social__twitter-svg"
+                            src="../blocks/common.blocks/social/svg/Twitter.svg"
+                            alt="Twitter"
+                          />
+                        </a>
+                      </div>
+                      <div class="social__instagram">
+                        <a
+                          class="social__instagram-link"
+                          href="https://www.instagram.com/ubereats/"
+                          target="_blank"
+                        >
+                          <img
+                            class="social__instagram-svg"
+                            src="../blocks/common.blocks/social/svg/Instagram.svg"
+                            alt="Instagram"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__lists">
+                  <ul class="footer__list-ul">
+                    <li class="footer__item">Об UberEats</li>
+                    <li class="footer__item">Станьте партнёром по доставке</li>
+                    <li class="footer__item">Станьте парнёром-рестораном</li>
+                  </ul>
+                </div>
+                <div class="footer__lists">
+                  <ul class="footer__list-ul">
+                    <li class="footer__item">Все города</li>
+                    <li class="footer__item">Цены</li>
+                    <li class="footer__item">Помощь</li>
+                    <li class="footer__item">FAQs</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="shop">
+                <div class="shop__wrapper">
+                  <div class="shop__appstore">
+                    <a
+                      class="shop__link"
+                      href="https://apps.apple.com/ru/app/uber-eats-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B5%D0%B4%D1%8B/id1058959277/"
+                      target="_blank"
+                    >
+                      <img
+                        class="shop__png"
+                        src="../blocks/common.blocks/shop/img/shop11.png"
+                        alt="AppStore"
+                      />
+                    </a>
+                  </div>
+                  <div class="shop__googleplay">
+                    <a
+                      class="shop__link"
+                      href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=ru&gl=US"
+                      target="_blank"
+                    >
+                      <img
+                        class="shop__png"
+                        src="../blocks/common.blocks/shop/img/shop12.png"
+                        alt="Google Play"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="infosite infosite__pos">
+                <ul class="list">
+                  <li class="list__item">© 2017 Uber Technologies Inc.</li>
+                  <li class="list__item">Обработка персональных данных</li>
+                  <li class="list__item">Пользовательское соглашение</li>
+                </ul>
+                <div class="infosite__buttonup buttonup">
+                  <a class="buttonup__uplink" href="#top">
+                    <img
+                      class="buttonup__svg"
+                      src="../blocks/common.blocks/buttonup/ArrowUp.svg"
+                      alt="Up"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </footer>
+    </footer>
+    <script type="module" src="../blocks/common.blocks/modal/modal.js"></script>
   </body>
 </html>

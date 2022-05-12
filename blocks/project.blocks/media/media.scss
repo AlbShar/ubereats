@@ -13,7 +13,8 @@
 }
 @media screen and (max-width: 767px) {
   .actions {
-    width: 76px;
+    width: 176px;
+    
 
     &__basket {
       display: none;
@@ -47,7 +48,7 @@
   }
 
   .actions {
-    width: 120px;
+    width: 200px;
   }
 
   .logo {
@@ -114,7 +115,7 @@
 
 @media screen and (min-width: 1124px) {
   .actions {
-    width: 138px;
+    width: 208px;
     box-sizing: border-box;
 
     &__basket {

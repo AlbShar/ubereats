@@ -10,6 +10,7 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="blocks/style.css" />
     <link
       rel="stylesheet"
@@ -58,8 +59,6 @@
     />
     <link rel="manifest" href="favicons/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
-    <script src="blocks/script.js">    
-    </script>
   </head>
   <body>
     <header class="header">
@@ -84,6 +83,11 @@
                 >
                   <span class="actions__sign-in-text"> Войти </span>
                 </button>
+                <button
+                  class="actions__signup"
+                >
+                  <span class="actions__signup-text"> <a href="./create/index.html" class="actions__signup-link">Регистрация</a>  </span>
+                </button>
                 <div class="actions__basket">
                   <img
                     class="actions__basket-svg"
@@ -98,74 +102,75 @@
       </div>
     </header>
     <main>
-    <div class="modal" id="modal">
-      <form class="form" action="#">
-        <button
-          class="form__close"
-          onclick="document.getElementById('modal').style.display='none'"
-          title="Close Modal"
-          >&times;</button
-        >
-        <div class="form__imgcontainer">
-          <img
-            src="https://raw.githubusercontent.com/AlbShar/ubereats/535da1b8b25653a5bbe7fd59d7d7600bb9e18be9/blocks/common.blocks/form/__img/form__img.svg"
-            alt="Avatar"
-            class="form__img"
-          />
-        </div>
-        <div class="form__container">
-          <ul class="form__list">
-            <li class="form__list-item">
-              <label class="form__label" for="uname">Имя:</label>
-              <input
-                class="form__input"
-                id="uname"
-                type="text"
-                placeholder="Введите имя"
-                required
-              />
-            </li>
-            <li class="form__list-item">
-              <label class="form__label" for="pwd">Пароль:</label>
-              <input
-                class="form__input"
-                id="pwd"
-                type="password"
-                placeholder="Введите пароль"
-                required
-              />
-            </li>
-            <li class="form__list-item">
-                <div>
-                    <input class="form__checkbox" type="checkbox" id="remember" />
-                    <label class="form__text" for="remember">Запомнить меня</label>    
-                </div>
-                <div class="form__text"> <a href="#">Забыли пароль?</a> </div>
+      <div class="modal" id="modal">
+        <form class="form" action="#">
+          <span
+            class="form__close"
+            onclick="document.getElementById('modal').style.display='none'"
+            title="Close Modal"
+            >&times;</span
+          >
+
+          <div class="form__container">
+            <ul id="list" class="form__list">
+              <li class="form__list-item">
+                <label class="form__label" for="uname">Имя:</label>
+                <input
+                  class="form__input"
+                  id="uname"
+                  type="text"
+                  placeholder="Введите имя"
+                  required
+                />
               </li>
-            <li class="form__list-item">
-              <button class="form__submit" type="submit">Войти</button>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="form__socialmedia">
-          <a href="#" class="form__social-item">Вконтакте</a>
-          <a href="#" class="form__social-item">Twitter</a>
-          <a href="#" class="form__social-item">Google</a>
-        </div>
-        <div class="form__footer">
+              <li class="form__list-item">
+                <label class="form__label" for="pwd">Пароль:</label>
+                <input
+                  class="form__input"
+                  id="pwd"
+                  type="password"
+                  placeholder="Введите пароль"
+                  required
+                />
+                <i id="eye" class="signup__icon-eye form__icon_right fa fa-eye"></i>
+              </li>
+              <li class="form__list-item">
+                <div>
+                  <input class="form__checkbox" type="checkbox" id="remember" />
+                  <label class="form__text" for="remember"
+                    >Запомнить меня</label
+                  >
+                </div>
+                <div class="form__text"><a href="#">Забыли пароль?</a></div>
+              </li>
+              <li class="form__list-item">
+                <button class="form__submit" type="submit">Войти</button>
+              </li>
+            </ul>
+          </div>
+          <div class="socialmedia">
+            <a href="#" class="socialmedia__item">Вконтакте</a>
+            <a href="#" class="socialmedia__item">Twitter</a>
+            <a href="#" class="socialmedia__item">Google</a>
+          </div>
+          <div class="form__footer">
             <div class="form__quest">Нет аккаунта?</div>
 
-          <button
-            class="form__registr"
-            onclick="document.getElementById('modal').style.display='none'"
-            type="button"
-          >
-            Зарегистрироваться 
-          </button>
-        </div>
-      </form>
-    </div>
+            <button
+              class="form__registr"
+              onclick="document.getElementById('modal').style.display='none'"
+              type="button"
+            >
+              <a
+                href="create/index.html"
+                class="form__tosignup"
+                target="_blank"
+                >Зарегистрироваться</a
+              >
+            </button>
+          </div>
+        </form>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12 col-lg-12">
@@ -753,5 +758,6 @@
         </div>
       </div>
     </footer>
+    <script src="./blocks/script.js"></script>
   </body>
 </html>

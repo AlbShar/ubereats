@@ -1,0 +1,17 @@
+.form {
+    &__icon {
+        &_right {
+            cursor: pointer;
+            z-index: 1;
+            position: absolute;
+            right: 8px;
+            bottom: 23px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(1.2);
+        }
+    }
+}

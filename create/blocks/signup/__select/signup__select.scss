@@ -1,0 +1,22 @@
+.signup {
+    &__select{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 10px;
+        height: 40px;
+        width: 100%;
+        max-width: 375px;
+        outline: none;
+        @include font($font-family, 400, 0.8125rem, $color_black);
+        border-radius: 10px;
+        border: 1px solid gray;
+        -webkit-appearance: none;
+
+        &:focus{
+            border: 1px solid #09C;
+        }
+   
+    }
+}

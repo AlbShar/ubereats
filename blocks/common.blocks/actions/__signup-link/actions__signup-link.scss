@@ -1,0 +1,8 @@
+.actions {
+    &__signup-link {
+        list-style-type: none;
+        padding: 5px;
+        text-decoration: none;
+        @include font($font-family, 500, 0.8125rem, $color_black);
+    }
+}
