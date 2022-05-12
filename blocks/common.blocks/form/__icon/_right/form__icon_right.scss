@@ -1,16 +1,17 @@
-.signup {
+.form {
     &__icon {
         &_right {
             cursor: pointer;
+            z-index: 5;
             position: absolute;
             right: 8px;
-            bottom: 6px;
+            bottom: 23px;
             width: 25px;
             height: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: scale(1.4);
+            transform: scale(1.2);
         }
     }
 }

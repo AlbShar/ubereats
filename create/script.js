@@ -1,5 +1,4 @@
 "use strict";
-"use strict";
 let pwdInp1 = document.querySelector('#pwd');
 let pwdInp2 = document.querySelector('#pwd2');
 let ul = document.querySelector('.signup__list');

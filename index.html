@@ -10,6 +10,7 @@
       type="text/css"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="blocks/style.css" />
     <link
       rel="stylesheet"
@@ -111,7 +112,7 @@
           >
 
           <div class="form__container">
-            <ul class="form__list">
+            <ul id="list" class="form__list">
               <li class="form__list-item">
                 <label class="form__label" for="uname">Имя:</label>
                 <input
@@ -131,6 +132,7 @@
                   placeholder="Введите пароль"
                   required
                 />
+                <i id="eye" class="fa fa-eye signup__icon-eye form__icon_right "></i>
               </li>
               <li class="form__list-item">
                 <div>
@@ -757,5 +759,6 @@
       </div>
     </footer>
     <script src="./blocks/common.blocks/modal/modal.js"></script>
+    <script src="./blocks/common.blocks/form/__icon/form__icon.js"></script>
   </body>
 </html>

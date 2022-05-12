@@ -18,7 +18,7 @@ html, body {
   height: 73px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 5px 25px #e0e0e0;
@@ -142,26 +142,6 @@ html, body {
   justify-content: center;
   border-radius: 10px;
   text-align: center;
-}
-
-.signup__icon_left {
-  position: absolute;
-  z-index: 1;
-  left: 10px;
-  bottom: 13px;
-}
-
-.signup__icon_right {
-  cursor: pointer;
-  position: absolute;
-  right: 8px;
-  bottom: 6px;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(1.4);
 }
 
 .signup__name-field {
@@ -379,6 +359,27 @@ html, body {
 .signup__error {
   color: red;
   margin: -10px 0 15px 2px;
+}
+
+.form__icon_left {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  bottom: 13px;
+}
+
+.form__icon_right {
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  right: 8px;
+  bottom: 23px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
 }
 
 .socialmedia {
