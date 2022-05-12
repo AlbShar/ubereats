@@ -47,7 +47,7 @@ html, body {
 
 .form__icon_right {
   cursor: pointer;
-  z-index: 5;
+  z-index: 1;
   position: absolute;
   right: 8px;
   bottom: 23px;
