@@ -8,8 +8,7 @@ ___
 <br>
 
 ### For creating the project were use:
-- HTML, SCSS, native JS;
+- HTML, SCSS, vanilla Javascript;
 - Linter JSHint;
 - Methodology BEM;
-- Font Awesome icons;
 - Grid system flexboxgrid2.
