@@ -6,7 +6,7 @@ let ul = document.querySelector('.signup__list');
 let letter = document.querySelector("#lowLetter");
 let capital = document.querySelector("#capLetter");
 let number = document.querySelector("#number");
-let length = document.querySelector("#length");
+let len = document.querySelector("#length");
 let message = document.querySelector("#message");
 let btn = document.querySelector('#btn');
 let dateBirth = document.querySelector("#dateBirth");
@@ -29,11 +29,11 @@ pwdInp1.onkeyup = () => {
     let val = pwdInp1.value;
 
     if (val.length >= 8) {
-        length.classList.remove('signup__message-item_invalid');
-        length.classList.add('signup__message-item_valid');
+        len.classList.remove('signup__message-item_invalid');
+        len.classList.add('signup__message-item_valid');
     } else {
-        length.classList.remove('signup__message-item_valid');
-        length.classList.add('signup__message-item_invalid');    
+        len.classList.remove('signup__message-item_valid');
+        len.classList.add('signup__message-item_invalid');
     }
 
     for (let item of letters) {
@@ -78,7 +78,7 @@ btn.onclick = (event) => {
         btn.classList.add('signup__submit_disabled');
 
         let div = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
-        dateBirth.insertAdjacentHTML('beforebegin', div);       
+        dateBirth.insertAdjacentHTML('beforebegin', div);
 
         pwdInp2.onkeyup = () => {
             let error = document.querySelector('#error');
@@ -96,14 +96,14 @@ btn.onclick = (event) => {
                 error.hidden = false;
 
             }
-        }
+        };
     }
-}
+};
 
 function showPwd(event) {
     let evTrgt = event.target;
     if (evTrgt.classList.contains('signup__icon-eye')) {
-        if (evTrgt.id =='eye1' && (message.classList.contains('signup__message_invisible'))) {
+        if (evTrgt.id == 'eye1' && (message.classList.contains('signup__message_invisible'))) {
             message.classList.remove('signup__message_invisible');
             message.classList.add('signup__message_visible');
         }
@@ -116,7 +116,7 @@ function showPwd(event) {
             evTrgt.classList.add('fa-eye-slash');
         }
         evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
-    } 
+    }
 }
 
 
