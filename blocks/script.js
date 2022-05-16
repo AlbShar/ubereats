@@ -2,9 +2,10 @@
 let ul = document.querySelector('#list');
 let modal = document.querySelector('#modal');
 let links = document.querySelectorAll('.card__photo > a');
+let cls = document.querySelector('#close');
 
 function closeModal(event) {
-    if (event.target == modal) {
+    if (event.target == modal || event.target == cls) {
         modal.style.display = 'none';
         event.preventDefault();
     }
@@ -13,6 +14,7 @@ function closeModal(event) {
 
 function changeIcon(event) {
     let evTrgt = event.target;
+    if (evTrgt.tagName !== 'I') {return;}
     if (evTrgt.classList.contains('fa-eye-slash')) {
         evTrgt.classList.remove('fa-eye-slash');
         evTrgt.classList.add('fa-eye');
