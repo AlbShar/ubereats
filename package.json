@@ -16,5 +16,21 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlbShar/ubereats/issues"
+  },
+  
+  "jshintConfig": {
+    "camelcase": true,
+    "indent": 2,
+    "undef": true,
+    "quotmark": false,
+    "maxlen": 120,
+    "trailing": true,
+    "curly": true,
+    "strict": false,
+    "browser": true,
+    "devel": true,
+    "jquery": true,
+    "esversion": 8,
+    "node": true
   }
 }

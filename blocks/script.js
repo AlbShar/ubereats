@@ -1,3 +1,4 @@
+"use sctrict";
 let ul = document.querySelector('#list');
 let modal = document.querySelector('#modal');
 let links = document.querySelectorAll('.card__photo > a');
