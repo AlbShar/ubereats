@@ -1,15 +1,14 @@
 "use strict";
-let pwdInp1 = document.querySelector('#pwd');
-let pwdInp2 = document.querySelector('#pwd2');
-let ul = document.querySelector('.signup__list');
-
-let letter = document.querySelector("#lowLetter");
-let capital = document.querySelector("#capLetter");
-let number = document.querySelector("#number");
-let len = document.querySelector("#length");
-let message = document.querySelector("#message");
-let btn = document.querySelector('#btn');
-let dateBirth = document.querySelector("#dateBirth");
+const pwdInp1 = document.querySelector('#pwd');
+const pwdInp2 = document.querySelector('#pwd2');
+const ul = document.querySelector('.signup__list');
+const letter = document.querySelector("#lowLetter");
+const capital = document.querySelector("#capLetter");
+const number = document.querySelector("#number");
+const len = document.querySelector("#length");
+const message = document.querySelector("#message");
+const btn = document.querySelector('#btn');
+const dateBirth = document.querySelector("#dateBirth");
 
 
 
@@ -77,11 +76,11 @@ btn.onclick = (event) => {
         btn.disabled = true;
         btn.classList.add('signup__submit_disabled');
 
-        let div = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
+        const div = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
         dateBirth.insertAdjacentHTML('beforebegin', div);
 
         pwdInp2.onkeyup = () => {
-            let error = document.querySelector('#error');
+            const error = document.querySelector('#error');
             if (pwdInp2.value == pwdInp1.value) {
                 pwdInp2.style.border = '1px solid green';
                 btn.disabled = false;

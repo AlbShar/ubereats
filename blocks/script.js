@@ -1,8 +1,8 @@
 "use sctrict";
-let ul = document.querySelector('#list');
-let modal = document.querySelector('#modal');
-let links = document.querySelectorAll('.card__photo > a');
-let cls = document.querySelector('#close');
+const ul = document.querySelector('#list');
+const modal = document.querySelector('#modal');
+const links = document.querySelectorAll('.card__photo > a');
+const cls = document.querySelector('#close');
 
 function closeModal(event) {
     if (event.target == modal || event.target == cls) {
@@ -13,7 +13,7 @@ function closeModal(event) {
 
 
 function changeIcon(event) {
-    let evTrgt = event.target;
+    const evTrgt = event.target;
     if (evTrgt.tagName !== 'I') {return;}
     if (evTrgt.classList.contains('fa-eye-slash')) {
         evTrgt.classList.remove('fa-eye-slash');
