@@ -1,18 +1,17 @@
 "use sctrict";
-const ul = document.querySelector('#list');
-const modal = document.querySelector('#modal');
-const links = document.querySelectorAll('.card__photo > a');
-const cls = document.querySelector('#close');
+const ListFields = document.querySelector('#list');
+const modalLoginForm = document.querySelector('#modal');
+const closeIcon = document.querySelector('#close');
 
-function closeModal(event) {
-    if (event.target == modal || event.target == cls) {
-        modal.style.display = 'none';
+function closeLoginForm(event) {
+    if (event.target == modalLoginForm || event.target == closeIcon) {
+        modalLoginForm.style.display = 'none';
         event.preventDefault();
     }
 }
 
 
-function changeIcon(event) {
+function addOrRemoveSlash(event) {
     const evTrgt = event.target;
     if (evTrgt.tagName !== 'I') {return;}
     if (evTrgt.classList.contains('fa-eye-slash')) {
@@ -27,14 +26,14 @@ function changeIcon(event) {
 
 
 
-ul.addEventListener('click', changeIcon);
-ul.addEventListener('touchstart', changeIcon);
-ul.addEventListener('touchend', changeIcon);
-ul.addEventListener('touchcancel', changeIcon);
-ul.addEventListener('touchmove', changeIcon);
+ListFields.addEventListener('click', addOrRemoveSlash);
+ListFields.addEventListener('touchstart', addOrRemoveSlash);
+ListFields.addEventListener('touchend', addOrRemoveSlash);
+ListFields.addEventListener('touchcancel', addOrRemoveSlash);
+ListFields.addEventListener('touchmove', addOrRemoveSlash);
 
-window.addEventListener('click', closeModal);
-window.addEventListener('touchstart', closeModal);
-window.addEventListener('touchend', closeModal);
-window.addEventListener('touchcancel', closeModal);
-window.addEventListener('touchmove', closeModal);
+window.addEventListener('click', closeLoginForm);
+window.addEventListener('touchstart', closeLoginForm);
+window.addEventListener('touchend', closeLoginForm);
+window.addEventListener('touchcancel', closeLoginForm);
+window.addEventListener('touchmove', closeLoginForm);

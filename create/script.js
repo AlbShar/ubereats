@@ -74,8 +74,8 @@ submitButton.onclick = (event) => {
         submitButton.disabled = true;
         submitButton.classList.add('signup__submit_disabled');
 
-        const div = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
-        dateBirthInput.insertAdjacentHTML('beforebegin', div);
+        const errorText = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
+        dateBirthInput.insertAdjacentHTML('beforebegin', errorText);
 
         secondPasswordInput.onkeyup = () => {
             const errorText = document.querySelector('#error');
@@ -97,28 +97,31 @@ submitButton.onclick = (event) => {
     }
 };
 
-function showPwd(event) {
-    let evTrgt = event.target;
-    if (evTrgt.classList.contains('signup__icon-eye')) {
-        if (evTrgt.id == 'eye1' && (listValidationPassword.classList.contains('signup__message_invisible'))) {
+function changeTypePasswordInput(event) {
+    if (event.target.classList.contains('signup__icon-eye')) {
+        if (event.target.id == 'eye1' && (listValidationPassword.classList.contains('signup__message_invisible'))) {
             listValidationPassword.classList.remove('signup__message_invisible');
             listValidationPassword.classList.add('signup__message_visible');
         }
+        event.target.previousElementSibling.type = 
+        (event.target.previousElementSibling.type === "password") ? "text" : "password";
+        addOrRemoveSlash(event);
+    }
+}
 
-        if (evTrgt.classList.contains('fa-eye-slash')) {
-            evTrgt.classList.remove('fa-eye-slash');
-            evTrgt.classList.add('fa-eye');
-        } else {
-            evTrgt.classList.remove('fa-eye');
-            evTrgt.classList.add('fa-eye-slash');
-        }
-        evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
+function addOrRemoveSlash(event) {
+    if (event.target.classList.contains('fa-eye-slash')) {
+        event.target.classList.remove('fa-eye-slash');
+        event.target.classList.add('fa-eye');
+    } else {
+        event.target.classList.remove('fa-eye');
+        event.target.classList.add('fa-eye-slash');
     }
 }
 
 
-ListInputFields.addEventListener('click', showPwd);
-ListInputFields.addEventListener('touchstart', showPwd);
-ListInputFields.addEventListener('touchend', showPwd);
-ListInputFields.addEventListener('touchcancel', showPwd);
-ListInputFields.addEventListener('touchmove', showPwd);
+ListInputFields.addEventListener('click', changeTypePasswordInput);
+ListInputFields.addEventListener('touchstart', changeTypePasswordInput);
+ListInputFields.addEventListener('touchend', changeTypePasswordInput);
+ListInputFields.addEventListener('touchcancel', changeTypePasswordInput);
+ListInputFields.addEventListener('touchmove', changeTypePasswordInput);
