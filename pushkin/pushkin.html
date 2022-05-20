@@ -183,8 +183,8 @@
       </section>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__list-item menu__list-item--active">
-            <a class="menu__item-link" href="javascript:void(0)"> Закуски </a>
+          <li class="menu__list-item">
+            <a class="menu__item-link menu__item-link_active" href="javascript:void(0)"> Закуски </a>
           </li>
           <li class="menu__list-item">
             <a class="menu__item-link" href="javascript:void(0)"> Салаты </a>
@@ -205,13 +205,18 @@
           </li>
         </ul>
         <div class="menu__name">
-          <h2 class="menu__name-text">Закуски</h2>
+          <h2 class="menu__name-text menu__name-text_active">Закуски</h2>
+          <h2 class="menu__name-text">Салаты</h2>
+          <h2 class="menu__name-text">Супы</h2>
+          <h2 class="menu__name-text">Горячие блюда</h2>
+          <h2 class="menu__name-text">Гарниры</h2>
+          <h2 class="menu__name-text">Десерты</h2> 
         </div>
       </nav>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-12 col-lg-6">
-            <article class="dish">
+          <section id="firstCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Сельдь на бородинском хлебе</h2>
@@ -236,9 +241,128 @@
                 />
               </article>
             </article>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-6">
             <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Мимоза</h2>
+                </div>
+                <div class="dish__products">
+                  <h3 class="dish__products-text">С яйцом и рыбой</h3>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">200</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish7.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Окрошка</h2>
+                </div>
+                <div class="dish__products">
+                  <h3 class="dish__products-text">С картофелем и колбасой</h3>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">300</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish13.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Плов</h2>
+                </div>
+                <div class="dish__products">
+                  <h3 class="dish__products-text">С бараниной</h3>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">380</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Овощи</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">180</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Наполеон</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">250</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
+          <section id="secondCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Соленья ассорти</h2>
@@ -260,9 +384,119 @@
                 />
               </article>
             </article>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-6">
             <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Оливье</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">260</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish8.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Борщ</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">350</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish14.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Мясо по-франзузски</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">380</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Спаггети</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">100</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Чизкейк</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">200</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
+          <section id="thirdCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Грибы маринованные</h2>
@@ -284,9 +518,119 @@
                 />
               </article>
             </article>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-6">
             <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Винегрет</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">220</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish9.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Щи</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">310</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish15.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Манты</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">450</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Макароны</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">100</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Крем-брюле</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">150</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
+          <section id="forthCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Сало домашнее с горчицей</h2>
@@ -308,9 +652,119 @@
                 />
               </article>
             </article>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-6">
             <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Крабовый салат</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">250</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish10.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Рассольник</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">290</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish16.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Курица с картофелем</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">380</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Рис</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">90</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Вишневый пирок</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">300</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
+          <section id="fifthCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Малосольная семга</h2>
@@ -332,9 +786,119 @@
                 />
               </article>
             </article>
-          </div>
-          <div class="col-xs-12 col-md-12 col-lg-6">
             <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Салат из морепродуктов</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">350</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish11.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Уха</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">280</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish17.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Вареники</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">320</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Гречка</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">90</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Тирамису</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">250</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
+          <section id="sixCard" class="col-xs-12 col-md-12 col-lg-6">
+            <article class="dish dish_active">
               <article class="dish__info-container">
                 <div class="dish__name">
                   <h2 class="dish__name-text">Язык говяжий с хреном</h2>
@@ -355,8 +919,118 @@
                   alt="Язык говяжий"
                 />
               </article>
+            </article> 
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Селедка под шубой</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">300</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish12.png"
+                  alt="Сельдь"
+                />
+              </article>
             </article>
-          </div>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Суп-лапша</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">270</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="./blocks/desktop.blocks/dish/img/dish18.png"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Котлеты (2 шт)</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">200</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Булгур</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">100</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+            <article class="dish">
+              <article class="dish__info-container">
+                <div class="dish__name">
+                  <h2 class="dish__name-text">Маффин</h2>
+                </div>
+                <div class="dish__price">
+                  <h4 class="dish__price-text">150</h4>
+                  <img
+                    class="dish__currency"
+                    src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
+                    alt="Ruble"
+                  />
+                </div>
+              </article>
+              <article class="dish__photo">
+                <img
+                  class="dish__photo-png"
+                  src="https://picsum.photos/400/320"
+                  alt="Сельдь"
+                />
+              </article>
+            </article>
+          </section>
         </div>
       </div>
     </main>
@@ -509,6 +1183,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="../blocks/common.blocks/modal/modal.js"></script>
+    <!-- <script type="module" src="../blocks/common.blocks/modal/modal.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>

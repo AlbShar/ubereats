@@ -9,7 +9,7 @@ html, body {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
@@ -34,8 +34,29 @@ html, body {
   margin: 0 auto;
   border: 1px solid #888;
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
+}
+
+.form__icon_left {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  bottom: 13px;
+}
+
+.form__icon_right {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 8px;
+  bottom: 23px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.2);
 }
 
 .form__container {
@@ -69,6 +90,12 @@ html, body {
   padding: 0;
 }
 
+.form__list-item {
+  position: relative;
+}
+.form__list-item:nth-child(2) {
+  position: relative;
+}
 .form__list-item:nth-child(3) {
   display: flex;
   justify-content: space-between;
@@ -89,7 +116,7 @@ html, body {
   margin-top: 5px;
   padding-left: 5px;
   width: 100%;
-  height: 30px;
+  height: 40px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 5px;
   outline: none;
@@ -253,7 +280,7 @@ html, body {
   height: 73px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 5px 25px #e0e0e0;
@@ -385,19 +412,19 @@ html, body {
   display: inline-block;
 }
 
-.menu__list-item--active {
-  color: #626262;
-}
-
 .menu__item-link {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin-right: 37px;
   color: #626262;
+  /*&:hover {
+    color: #327430;
+  }*/
 }
-.menu__item-link:hover {
-  color: #327430;
+
+.menu__item-link_active {
+  color: green;
 }
 
 .menu__name {
@@ -407,10 +434,15 @@ html, body {
 }
 
 .menu__name-text {
+  display: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.375rem;
   color: #1d1d1d;
   font-weight: 400;
+}
+
+.menu__name-text_active {
+  display: block;
 }
 
 .restaurant {
@@ -518,7 +550,7 @@ html, body {
 }
 
 .dish {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -581,6 +613,10 @@ html, body {
   height: 1em;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+}
+
+.dish_active {
+  display: flex;
 }
 
 .footer {

@@ -7,8 +7,10 @@
     margin-right: 37px;
     color: #626262;
 
-    &:hover {
+    /*&:hover {
       color: #327430;
-    }
+    }*/
   }
 }
+
+@import "./_active/menu__item-link_active.scss";
