@@ -15,8 +15,9 @@ const setClassActive = (element, index, className) => {
     element[index].classList.add(`${className}` + '_active');
 };
 
+
 const checkoutTabs = (item, index) => {
-    item.addEventListener('click', () => {
+    item.onclick = () => {
     clearClassActive(linkItems, linkItems[index].classList[0]);
     clearClassActive(nameDish, nameDish[index].classList[0]);
 
@@ -39,7 +40,7 @@ const checkoutTabs = (item, index) => {
 
 
     if (item.classList[1].includes('_active')) {return;}
-    });
+    };
 };
 
 linkItems.forEach(checkoutTabs);
