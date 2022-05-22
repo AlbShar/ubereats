@@ -1,92 +1,94 @@
 "use strict";
-const firstPasswordInput = document.querySelector('#pwd');
-const secondPasswordInput = document.querySelector('#pwd2');
-const ListInputFields = document.querySelector('.signup__list');
-const passwordHasLowerLetter = document.querySelector("#lowLetter");
-const passwordHasCapitalLetter = document.querySelector("#capLetter");
-const passwordHasNumber = document.querySelector("#number");
-const passwordLength = document.querySelector("#length");
-const listValidationPassword = document.querySelector("#message");
+const firstPswdInput = document.querySelector('#pwd');
+const secondPswdInput = document.querySelector('#pwd2');
+const listInputs = document.querySelector('.signup__list');
+const listValidatPswd = document.querySelector("#message");
+const itemPswdHasLowLet = document.querySelector("#lowLetter");
+const itemPswdHasCapLet = document.querySelector("#capLetter");
+const itemPswdHasNum = document.querySelector("#number");
+const itemPswdLength = document.querySelector("#length");
 const submitButton = document.querySelector('#btn');
 const dateBirthInput = document.querySelector("#dateBirth");
+const clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 'touchmove');
 
 
 
-firstPasswordInput.onfocus = () => {
-    listValidationPassword.classList.remove('signup__message_invisible');
-    listValidationPassword.classList.add('signup__message_visible');
+
+firstPswdInput.onfocus = () => {
+    listValidatPswd.classList.remove('signup__message_invisible');
+    listValidatPswd.classList.add('signup__message_visible');
 };
 
-firstPasswordInput.onblur = () => {
-    listValidationPassword.classList.remove('signup__message_visible');
-    listValidationPassword.classList.add('signup__message_invisible');
+firstPswdInput.onblur = () => {
+    listValidatPswd.classList.remove('signup__message_visible');
+    listValidatPswd.classList.add('signup__message_invisible');
 };
 
-firstPasswordInput.onkeyup = () => {
+firstPswdInput.onkeyup = () => {
     let lettersAlphabet = 'abcdefghijklmnopqrstuvwxyz';
     let numbers = '0123456789';
-    if (firstPasswordInput.value.length >= 8) {
-        passwordLength.classList.remove('signup__message-item_invalid');
-        passwordLength.classList.add('signup__message-item_valid');
+    if (firstPswdInput.value.length >= 8) {
+        itemPswdLength.classList.remove('signup__message-item_invalid');
+        itemPswdLength.classList.add('signup__message-item_valid');
     } else {
-        passwordLength.classList.remove('signup__message-item_valid');
-        passwordLength.classList.add('signup__message-item_invalid');
+        itemPswdLength.classList.remove('signup__message-item_valid');
+        itemPswdLength.classList.add('signup__message-item_invalid');
     }
 
     for (let item of lettersAlphabet) {
-        if (firstPasswordInput.value.includes(item)) {
-            passwordHasLowerLetter.classList.remove('signup__message-item_invalid');
-            passwordHasLowerLetter.classList.add('signup__message-item_valid');
+        if (firstPswdInput.value.includes(item)) {
+            itemPswdHasLowLet.classList.remove('signup__message-item_invalid');
+            itemPswdHasLowLet.classList.add('signup__message-item_valid');
             break;
         } else {
-            passwordHasLowerLetter.classList.remove('signup__message-item_valid');
-            passwordHasLowerLetter.classList.add('signup__message-item_invalid');
+            itemPswdHasLowLet.classList.remove('signup__message-item_valid');
+            itemPswdHasLowLet.classList.add('signup__message-item_invalid');
         }
     }
 
     for (let item of lettersAlphabet) {
-        if (firstPasswordInput.value.includes(item.toUpperCase())) {
-            passwordHasCapitalLetter.classList.remove('signup__message-item_invalid');
-            passwordHasCapitalLetter.classList.add('signup__message-item_valid');
+        if (firstPswdInput.value.includes(item.toUpperCase())) {
+            itemPswdHasCapLet.classList.remove('signup__message-item_invalid');
+            itemPswdHasCapLet.classList.add('signup__message-item_valid');
             break;
         } else {
-            passwordHasCapitalLetter.classList.remove('signup__message-item_valid');
-            passwordHasCapitalLetter.classList.add('signup__message-item_invalid');
+            itemPswdHasCapLet.classList.remove('signup__message-item_valid');
+            itemPswdHasCapLet.classList.add('signup__message-item_invalid');
         }
     }
 
     for (let item of numbers) {
-        if (firstPasswordInput.value.includes(item)) {
-            passwordHasNumber.classList.remove('signup__message-item_invalid');
-            passwordHasNumber.classList.add('signup__message-item_valid');
+        if (firstPswdInput.value.includes(item)) {
+            itemPswdHasNum.classList.remove('signup__message-item_invalid');
+            itemPswdHasNum.classList.add('signup__message-item_valid');
             break;
         } else {
-            passwordHasNumber.classList.remove('signup__message-item_valid');
-            passwordHasNumber.classList.add('signup__message-item_invalid');
+            itemPswdHasNum.classList.remove('signup__message-item_valid');
+            itemPswdHasNum.classList.add('signup__message-item_invalid');
         }
     }
 };
 
 submitButton.onclick = (event) => {
-    if ((secondPasswordInput.value !== firstPasswordInput.value)) {
+    if ((secondPswdInput.value !== firstPswdInput.value)) {
         event.preventDefault();
-        secondPasswordInput.style.border = '1px solid red';
+        secondPswdInput.style.border = '1px solid red';
         submitButton.disabled = true;
         submitButton.classList.add('signup__submit_disabled');
 
         const errorText = `<div id="error" class="signup__error"> Разные пароли. Проверьте пароль </div>`;
         dateBirthInput.insertAdjacentHTML('beforebegin', errorText);
 
-        secondPasswordInput.onkeyup = () => {
+        secondPswdInput.onkeyup = () => {
             const errorText = document.querySelector('#error');
-            if (secondPasswordInput.value == firstPasswordInput.value) {
-                secondPasswordInput.style.border = '1px solid green';
+            if (secondPswdInput.value == firstPswdInput.value) {
+                secondPswdInput.style.border = '1px solid green';
                 submitButton.disabled = false;
                 submitButton.classList.remove('signup__submit_disabled');
                 submitButton.classList.add('signup__submit_enable');
                 errorText.hidden = true;
             } else {
-                secondPasswordInput.style.border = '1px solid red';
+                secondPswdInput.style.border = '1px solid red';
                 submitButton.disabled = true;
                 submitButton.classList.remove('signup__submit_enable');
                 submitButton.classList.add('signup__submit_disabled');
@@ -97,19 +99,17 @@ submitButton.onclick = (event) => {
     }
 };
 
-function changeTypePasswordInput(event) {
+function changeTypeInput(event) {
     if (event.target.classList.contains('signup__icon-eye')) {
-        if (event.target.id == 'eye1' && (listValidationPassword.classList.contains('signup__message_invisible'))) {
-            listValidationPassword.classList.remove('signup__message_invisible');
-            listValidationPassword.classList.add('signup__message_visible');
-        }
         event.target.previousElementSibling.type = 
-        (event.target.previousElementSibling.type === "password") ? "text" : "password";
-        addOrRemoveSlash(event);
+        (event.target.previousElementSibling.type === "Pswd") ? "text" : "Pswd";
+
+        setClassIconEye(event);
+        stayVisibleValidateList(event);
     }
 }
 
-function addOrRemoveSlash(event) {
+function setClassIconEye(event) {
     if (event.target.classList.contains('fa-eye-slash')) {
         event.target.classList.remove('fa-eye-slash');
         event.target.classList.add('fa-eye');
@@ -119,9 +119,12 @@ function addOrRemoveSlash(event) {
     }
 }
 
+function stayVisibleValidateList(event) {
+    if (event.target.id == 'eye1' && (listValidatPswd.classList.contains('signup__message_invisible'))) {
+        listValidatPswd.classList.remove('signup__message_invisible');
+        listValidatPswd.classList.add('signup__message_visible');
+    }
+}
 
-ListInputFields.addEventListener('click', changeTypePasswordInput);
-ListInputFields.addEventListener('touchstart', changeTypePasswordInput);
-ListInputFields.addEventListener('touchend', changeTypePasswordInput);
-ListInputFields.addEventListener('touchcancel', changeTypePasswordInput);
-ListInputFields.addEventListener('touchmove', changeTypePasswordInput);
+
+listInputs.addEventListener(clickEvent, changeTypeInput);

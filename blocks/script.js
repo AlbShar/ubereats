@@ -1,39 +1,33 @@
-"use sctrict";
-const ListFields = document.querySelector('#list');
+"use strict";
+const listFields = document.querySelector('#list');
 const modalLoginForm = document.querySelector('#modal');
-const closeIcon = document.querySelector('#close');
+const iconClose = document.querySelector('#close');
+const clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 'touchmove');
 
 function closeLoginForm(event) {
-    if (event.target == modalLoginForm || event.target == closeIcon) {
+    if (event.target == modalLoginForm || event.target == iconClose) {
         modalLoginForm.style.display = 'none';
         event.preventDefault();
     }
 }
 
 
-function addOrRemoveSlash(event) {
-    const evTrgt = event.target;
-    if (evTrgt.tagName !== 'I') {return;}
-    if (evTrgt.classList.contains('fa-eye-slash')) {
-        evTrgt.classList.remove('fa-eye-slash');
-        evTrgt.classList.add('fa-eye');
-    } else {
-        evTrgt.classList.remove('fa-eye');
-        evTrgt.classList.add('fa-eye-slash');
-    }
-    evTrgt.previousElementSibling.type = (evTrgt.previousElementSibling.type === "password") ? "text" : "password";
+function changeTypeInput(event) {
+    setClassIconEye(event);
+    event.target.previousElementSibling.type = 
+    (event.target.previousElementSibling.type === "password") ? "text" : "password";
 }
 
+function setClassIconEye(event) {
+    if (event.target.tagName !== 'I') {return;}
+    if (event.target.classList.contains('fa-eye-slash')) {
+        event.target.classList.remove('fa-eye-slash');
+        event.target.classList.add('fa-eye');
+    } else {
+        event.target.classList.remove('fa-eye');
+        event.target.classList.add('fa-eye-slash');
+    }
+}
 
-
-ListFields.addEventListener('click', addOrRemoveSlash);
-ListFields.addEventListener('touchstart', addOrRemoveSlash);
-ListFields.addEventListener('touchend', addOrRemoveSlash);
-ListFields.addEventListener('touchcancel', addOrRemoveSlash);
-ListFields.addEventListener('touchmove', addOrRemoveSlash);
-
-window.addEventListener('click', closeLoginForm);
-window.addEventListener('touchstart', closeLoginForm);
-window.addEventListener('touchend', closeLoginForm);
-window.addEventListener('touchcancel', closeLoginForm);
-window.addEventListener('touchmove', closeLoginForm);
+listFields.addEventListener(clickEvent, changeTypeInput);
+window.addEventListener(clickEvent, closeLoginForm);
