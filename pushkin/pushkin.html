@@ -40,6 +40,7 @@
     />
     <meta name="msapplication-TileColor" content="#00a300" />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="header">
@@ -79,15 +80,16 @@
     </header>
     <main>
       <div class="modal" id="modal">
-        <form class="form" action="#">
+        <form  class="form" action="#">
           <span
+            id="close"
             class="form__close"
             onclick="document.getElementById('modal').style.display='none'"
             title="Close Modal"
             >&times;</span
           >
-          <div class="form__container">
-            <ul class="form__list">
+          <div  class="form__container">
+            <ul id="list" class="form__list">
               <li class="form__list-item">
                 <label class="form__label" for="uname">Имя:</label>
                 <input
@@ -98,7 +100,7 @@
                   required
                 />
               </li>
-              <li class="form__list-item">
+              <li  class="form__list-item">
                 <label class="form__label" for="pwd">Пароль:</label>
                 <input
                   class="form__input"
@@ -107,6 +109,7 @@
                   placeholder="Введите пароль"
                   required
                 />
+                <i id="eye" style="bottom: 18px; right: 5px;" class="signup__icon-eye form__icon_right fa fa-eye"></i>
               </li>
               <li class="form__list-item">
                 <div>
@@ -115,7 +118,7 @@
                     >Запомнить меня</label
                   >
                 </div>
-                <div class="form__text"><a href="#">Забыли пароль?</a></div>
+                <div  class="form__text"><a href="#">Забыли пароль?</a></div>
               </li>
               <li class="form__list-item">
                 <button class="form__submit" type="submit">Войти</button>

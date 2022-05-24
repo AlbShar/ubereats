@@ -1,4 +1,8 @@
 "use strict";
+const modalLoginForm = document.querySelector('#modal');
+const iconClose = document.querySelector('#close');
+const listFields = document.querySelector('#list');
+const pswdInput = document.querySelector('#pwd');
 const linkItems = Array.from(document.querySelectorAll('.menu__item-link'));
 const slider = document.querySelector('.slider__container');
 const itemsSlider = Array.from(document.querySelectorAll('.slider__dish-text'));
@@ -49,7 +53,6 @@ const checkoutTabs = (item, index) => {
         setClassActive(dessertsCards, index, dessertsCards[index].classList[0]);
         setClassActive(itemsSlider, index, itemsSlider[index].classList[0]);
         indexElementClick = index;
-        console.log(indexElementClick);
         if (item.classList[1].includes('_active')) {return;}
     });
 };
@@ -58,7 +61,11 @@ const checkoutTabs = (item, index) => {
 slider.addEventListener(clickEvent, (event) => {
 
         if (event.target === leftButtonSlider) {
-            if (indexElementClick == 0) {return;}
+            if (indexElementClick == 0) {
+                indexElementClick = 6;
+            }
+            leftButtonSlider.style.backgroundColor = '';
+
             clearClassActive(itemsSlider, 'slider__dish-text');
             setClassActive(itemsSlider, indexElementClick-1, 'slider__dish-text');
 
@@ -91,8 +98,10 @@ slider.addEventListener(clickEvent, (event) => {
             indexElementClick--;
         } 
         else if (event.target === rightButtonSlider) {
-            console.log(indexElementClick);
-            if (indexElementClick == (itemsSlider.length - 1)) {return;}
+            if (indexElementClick == (itemsSlider.length - 1)) {
+                indexElementClick = -1;
+            } 
+
             clearClassActive(itemsSlider, 'slider__dish-text');
             setClassActive(itemsSlider, indexElementClick+1, 'slider__dish-text');
 
@@ -126,6 +135,41 @@ slider.addEventListener(clickEvent, (event) => {
         }
 });
 
+function changeTypeInput(event) {
+    if (event.target.tagName !== 'I') {return;}
+    setClassIconEye(event);
+    event.target.previousElementSibling.type = 
+    (event.target.previousElementSibling.type === "password") ? "text" : "password";
+}
+
+function setClassIconEye(event) {
+    if (event.target.classList.contains('fa-eye-slash')) {
+        event.target.classList.remove('fa-eye-slash');
+        event.target.classList.add('fa-eye');
+    } else {
+        event.target.classList.remove('fa-eye');
+        event.target.classList.add('fa-eye-slash');
+    }
+}
+
+function closeLoginForm(event) {
+    if (event.target == modalLoginForm || event.target == iconClose) {
+        modalLoginForm.style.display = 'none';
+        event.preventDefault();
+        pswdInput.value = '';
+}
+}
 
 linkItems.forEach(checkoutTabs);
 
+listFields.addEventListener('click', changeTypeInput);
+listFields.addEventListener('touchstart', changeTypeInput);
+listFields.addEventListener('touchend', changeTypeInput);
+listFields.addEventListener('touchcancel', changeTypeInput);
+listFields.addEventListener('touchmove', changeTypeInput);
+
+window.addEventListener('click', closeLoginForm);
+window.addEventListener('touchstart', closeLoginForm);
+window.addEventListener('touchend', closeLoginForm);
+window.addEventListener('touchcancel', closeLoginForm);
+window.addEventListener('touchmove', closeLoginForm);

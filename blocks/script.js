@@ -1,4 +1,5 @@
 "use strict";
+const pswdInput = document.querySelector('#pwd');
 const listFields = document.querySelector('#list');
 const modalLoginForm = document.querySelector('#modal');
 const iconClose = document.querySelector('#close');
@@ -7,6 +8,7 @@ const clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 't
 function closeLoginForm(event) {
     if (event.target == modalLoginForm || event.target == iconClose) {
         modalLoginForm.style.display = 'none';
+        pswdInput.value = '';
         event.preventDefault();
     }
 }
