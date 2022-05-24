@@ -1,0 +1,7 @@
+.slider{
+    &__dish-text {
+        &_active {
+            display: block;
+        }
+    }
+}

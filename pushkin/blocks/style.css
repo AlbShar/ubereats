@@ -1104,9 +1104,14 @@ html, body {
   }
 
   .slider__dish-text {
+    display: none;
     font-family: "Roboto", sans-serif;
     font-size: 1.375rem;
     font-weight: 400;
+  }
+
+  .slider__dish-text_active {
+    display: block;
   }
 
   .slider__button {
