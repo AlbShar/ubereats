@@ -1,5 +1,5 @@
 .dish {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -11,3 +11,4 @@
 @import "__price/dish__price.scss";
 @import "__price-text/dish__price-text.scss";
 @import "__products-text/dish__products-text.scss";
+@import "./_active/dish_active.scss";
