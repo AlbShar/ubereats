@@ -13,4 +13,5 @@ ___
 - HTML, SCSS, vanilla Javascript;
 - Linter JSHint;
 - Methodology BEM;
+- Perfect Pixel;
 - Grid system flexboxgrid2.
