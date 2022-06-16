@@ -2,7 +2,7 @@
 
 ### The project has following functions:
 ### 1. Filter/Search List on main page.
-![](https://github.com/AlbShar/ubereats/blob/features/Filter_list/gifs/filter_list.gif)
+![](https://github.com/AlbShar/ubereats/blob/master/gifs/filter_list.gif)
 ___
 ### 2. Slider and tabs on page of Pushkin's restuarant.
 ![](https://github.com/AlbShar/ubereats/blob/master/gifs/slider_tabs.gif)
