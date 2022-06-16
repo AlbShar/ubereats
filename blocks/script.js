@@ -3,7 +3,24 @@ const pswdInput = document.querySelector('#pwd');
 const listFields = document.querySelector('#list');
 const modalLoginForm = document.querySelector('#modal');
 const iconClose = document.querySelector('#close');
+const searchForm = document.querySelector('#search');
 const clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 'touchmove');
+
+
+searchForm.onkeyup = () => {
+    let inputValue = searchForm.value.toUpperCase();
+    let cardWrapper = document.querySelectorAll("#card_wrapper");
+    let a, textValue;
+    for (let i = 0; i < cardWrapper.length; i++) {
+        a = cardWrapper[i].querySelector('.card');
+        textValue = a.textContent || a.innerText;
+        if (~textValue.toUpperCase().indexOf(inputValue)) {
+            cardWrapper[i].style.display = '';
+        } else {
+            cardWrapper[i].style.display = 'none';
+        }
+    }
+};
 
 function closeLoginForm(event) {
     if (event.target == modalLoginForm || event.target == iconClose) {
