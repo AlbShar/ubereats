@@ -1,56 +1,17 @@
 "use strict";
-const pswdInput = document.querySelector('#pwd');
+let clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 'touchmove');
 const listFields = document.querySelector('#list');
-const modalLoginForm = document.querySelector('#modal');
-const iconClose = document.querySelector('#close');
-const searchForm = document.querySelector('#search');
-const clickEvent = ('click' || 'touchstart' || 'touchend' || 'touchcancel' || 'touchmove');
 
+import {searchCard} from "./project.blocks/search-form/searchCard.js";
+import { closeLoginForm } from "./common.blocks/form/closeLoginForm.js";
+import { changeTypeInput } from "./common.blocks/form/changeTypeInput.js";
 
-searchForm.onkeyup = () => {
-    let inputValue = searchForm.value.toUpperCase();
-    let cardWrapper = document.querySelectorAll("#card_wrapper");
-    let a, textValue;
-    for (let i = 0; i < cardWrapper.length; i++) {
-        a = cardWrapper[i].querySelector('.card');
-        textValue = a.textContent || a.innerText;
-        if (~textValue.toUpperCase().indexOf(inputValue)) {
-            cardWrapper[i].style.display = '';
-        } else {
-            cardWrapper[i].style.display = 'none';
-        }
-    }
-};
-
-function closeLoginForm(event) {
-    if (event.target == modalLoginForm || event.target == iconClose) {
-        modalLoginForm.style.display = 'none';
-        pswdInput.value = '';
-        event.preventDefault();
-    }
-}
-
-function changeTypeInput(event) {
-    if (event.target.tagName !== 'I') {return;}
-    setClassIconEye(event);
-    event.target.previousElementSibling.type = 
-    (event.target.previousElementSibling.type === "password") ? "text" : "password";
-}
-
-function setClassIconEye(event) {
-    if (event.target.classList.contains('fa-eye-slash')) {
-        event.target.classList.remove('fa-eye-slash');
-        event.target.classList.add('fa-eye');
-    } else {
-        event.target.classList.remove('fa-eye');
-        event.target.classList.add('fa-eye-slash');
-    }
-}
-
-listFields.addEventListener(clickEvent, changeTypeInput);
-
+searchCard();
 window.addEventListener('click', closeLoginForm);
 window.addEventListener('touchstart', closeLoginForm);
 window.addEventListener('touchend', closeLoginForm);
 window.addEventListener('touchcancel', closeLoginForm);
 window.addEventListener('touchmove', closeLoginForm);
+listFields.addEventListener(clickEvent, changeTypeInput);
+
+
