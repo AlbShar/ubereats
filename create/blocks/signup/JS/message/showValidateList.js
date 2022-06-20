@@ -1,4 +1,4 @@
-import {listValidatPswd} from "../__input/changeTypeInput.js";
+import {listValidatPswd} from "../input/changeTypeInput.js";
 const firstPswdInput = document.querySelector('#pwd');
 
 function showValidateList() {

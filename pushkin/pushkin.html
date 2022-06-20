@@ -59,9 +59,9 @@
               </div>
               <div class="actions">
                 <button
-                  onclick="document.getElementById('modal').style.display='block'"
                   class="actions__sign-in"
                   name="top"
+                  id="signIn"
                 >
                   <span class="actions__sign-in-text"> Войти </span>
                 </button>
@@ -108,7 +108,7 @@
                   placeholder="Введите пароль"
                   required
                 />
-                <i id="eye" style="bottom: 18px; right: 5px;" class="signup__icon-eye form__icon_right fa fa-eye"></i>
+                <i id="eye" class="signup__icon-eye form__icon_right fa fa-eye"></i>
               </li>
               <li class="form__list-item">
                 <div>
@@ -131,11 +131,10 @@
           </div>
           <div class="form__footer">
             <div class="form__quest">Нет аккаунта?</div>
-
             <button
               class="form__registr"
-              onclick="document.getElementById('modal').style.display='none'"
               type="button"
+              id="registr"
             >
               <a href="../create/index.html" class="form__tosignup"
                 >Зарегистрироваться</a
@@ -1190,7 +1189,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script type="module" src="../blocks/common.blocks/modal/modal.js"></script> -->
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

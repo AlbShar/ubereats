@@ -5,7 +5,9 @@ const listFields = document.querySelector('#list');
 import {searchCard} from "./project.blocks/search-form/searchCard.js";
 import { closeLoginForm } from "./common.blocks/form/closeLoginForm.js";
 import { changeTypeInput } from "./common.blocks/form/changeTypeInput.js";
+import { showLoginForm } from "./common.blocks/actions/showLoginForm.js";
 
+showLoginForm();
 searchCard();
 window.addEventListener('click', closeLoginForm);
 window.addEventListener('touchstart', closeLoginForm);

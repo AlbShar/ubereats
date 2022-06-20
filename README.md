@@ -4,12 +4,13 @@
 ### 1. Filter/Search List on main page.
 ![](https://github.com/AlbShar/ubereats/blob/master/gifs/filter_list.gif)
 ___
-### 2. Slider and tabs on page of Pushkin's restuarant.
-![](https://github.com/AlbShar/ubereats/blob/master/gifs/slider_tabs.gif)
-___
-### 3. Login form and signup page with password validation and password visibility on create page.
+### 2. Login form and signup page with password validation and password visibility on create page.
 ![](https://github.com/AlbShar/ubereats/blob/master/gifs/signup_form.gif)
 ___
+### 3. Slider and tabs on page of Pushkin's restuarant.
+![](https://github.com/AlbShar/ubereats/blob/master/gifs/slider_tabs.gif)
+___
+
 <br>
 
 ### For creating the project were use:

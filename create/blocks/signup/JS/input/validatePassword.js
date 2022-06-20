@@ -1,4 +1,4 @@
-import {firstPswdInput} from "../__message/showValidateList.js";
+import {firstPswdInput} from "../message/showValidateList.js";
 
 export function validatePassword() {
     const itemPswdHasLowLet = document.querySelector("#lowLetter");

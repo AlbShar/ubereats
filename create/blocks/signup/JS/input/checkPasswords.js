@@ -1,4 +1,4 @@
-import {firstPswdInput} from "../__message/showValidateList.js"
+import {firstPswdInput} from "../message/showValidateList.js"
 export function checkPasswords() {
     const secondPswdInput = document.querySelector('#pwd2');
     const submitButton = document.querySelector('#btn');

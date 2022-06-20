@@ -1,5 +1,5 @@
 import {firstPswdInput} from "./showValidateList.js";
-import {listValidatPswd} from "../__input/changeTypeInput.js";
+import {listValidatPswd} from "../input/changeTypeInput.js";
 
 
 export function hideValidateList() {
