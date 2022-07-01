@@ -2,12 +2,15 @@
     &__list-item {
         position: relative;
         margin-bottom: 1rem;
-        @include font($font-family, 500, 0.8125rem, $color_black);
+        font: 500 0.8125rem var(--font-family);
+        color: var(--color-text-title);
         text-transform: uppercase;
         width: 100%;
         max-width: 300px;
 
-        
+        @media screen and (max-width:459.8px) {
+            max-width: 240px;
+        }
 
         &:last-child {
         margin-bottom: 0;

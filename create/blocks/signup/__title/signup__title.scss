@@ -1,8 +1,9 @@
 .signup {
     &__title{
         margin: 70px 0 20px 0;
-        background-color: #59bd5a;
-        @include font($font-family, 700, 1rem, $color_white);
+        background-color: #39b43b;
+        font: 700 1rem var(--font-family);
+        color: #0a0a21;
         height: 70px;
         text-transform: uppercase;
         display: flex;

@@ -2,8 +2,11 @@
   &__item {
     margin-top: -5px;
     margin-left: -5px;
-    @include font($font-family, 400, 0.6875rem, $color_white);
-    line-height: 40px;
     list-style-type: none;
+
+    @media screen and (min-width: 767.8px) {
+      margin-top: 15px;
+    }
+
   }
 }

@@ -1,18 +1,23 @@
 .footer {
  &__container {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding-top: 55px;
     position: relative;
-    padding-bottom: 15px;
-
+    
+    
     &:after {
       content: "";
       position: absolute;
-      background-color: $color_gray;
+      background-color: #626262;
       width: 96%;
       left: 2%;
       top: 116px;
       height: 1px;
+
+      @media screen and (min-width: 767.8px) {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }

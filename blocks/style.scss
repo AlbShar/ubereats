@@ -4,13 +4,13 @@
 @import "common.blocks/modal/modal.scss";
 @import "common.blocks/form/form.scss";
 @import "common.blocks/socialmedia/socialmedia.scss";
-@import "common.blocks/container/container.scss";
 @import "common.blocks/row/row.scss";
 @import "common.blocks/header/header.scss";
+@import "common.blocks/switch/switch.scss";
 @import "common.blocks/logo/logo.scss";
 @import "common.blocks/actions/actions.scss";
-@import "common.blocks/animation/animation.scss";
 @import "project.blocks/search-form/search-form.scss";
+@import "./common.blocks/main/main.scss";
 @import "project.blocks/title/title.scss";
 @import "common.blocks/list/list.scss";
 @import "project.blocks/card/card.scss";
@@ -21,4 +21,3 @@
 @import "common.blocks/shop/shop.scss";
 @import "common.blocks/infosite/infosite.scss";
 @import "common.blocks/buttonup/buttonup.scss";
-@import "project.blocks/media/media.scss";

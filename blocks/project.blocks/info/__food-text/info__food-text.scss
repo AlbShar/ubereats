@@ -1,6 +1,7 @@
 .info {
  &__food-text {
-    @include font($font-family, 400, 0.875rem, #626262);
+    font: 400 0.875rem var(--font-family);
+    color: var(--color-text-subtitle);
     margin-left: 2px;
   }
 }

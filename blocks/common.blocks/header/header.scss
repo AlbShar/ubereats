@@ -4,8 +4,8 @@
   top: 0;
   z-index: 2;
   width: 100%;
-  background-color: $color_white;
-  box-shadow: 0 5px 25px #e0e0e0;
+  background-color: var(--color-bg);
+  box-shadow: 0 5px 25px var(--color-shadow);
 }
 
 @import "__container/header__container.scss";

@@ -1,12 +1,21 @@
 .actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 128px;
-  
+    @media screen and (max-width: 766.8px) {
+        max-width: 290px;
+    }
+
+    @media screen and (min-width: 767.8px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 1123.8px) {
+        max-width: 310px;
+        box-sizing: border-box;    
+    }
 }
 
-@import "./__signup/actions__signup.scss";
+@import "./__list/actions__list.scss";
+@import "./__list-item/actions__list-item.scss";
 @import "./__signup-link/actions__signup-link.scss";
 @import "__sign-in/actions__sign-in.scss";
 @import "__sign-in-text/actions__sign-in-text.scss";
+@import "./__basket/actions__basket.scss";

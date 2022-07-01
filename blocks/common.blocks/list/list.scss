@@ -5,6 +5,15 @@
     padding: 0;
     flex-wrap: wrap;
     width: 90%;
+
+    @media screen and (max-width: 766.8px) {
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    @media screen and (min-width: 1123.8px) {
+        width: 800px;
+    }
 }
 
 @import "__item/list__item.scss";
+@import "./__link/list__link.scss";

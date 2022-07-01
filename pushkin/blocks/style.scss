@@ -4,11 +4,12 @@
 @import "../../blocks/common.blocks/modal/modal.scss";
 @import "../../blocks/common.blocks/form/form.scss";
 @import "../../blocks/common.blocks/socialmedia/socialmedia.scss";
-@import "desktop.blocks/container/container.scss";
 @import "../../blocks/common.blocks/header/header.scss";
 @import "../../blocks/common.blocks/logo/logo.scss";
+@import "../../blocks/common.blocks/switch/switch.scss";
 @import "../../blocks/common.blocks/actions/actions.scss";
-@import "../../blocks/common.blocks/animation/animation.scss";
+@import "./desktop.blocks/actions/actions.scss";
+@import "../../blocks/common.blocks/main/main.scss";
 @import "desktop.blocks/menu/menu.scss";
 @import "desktop.blocks/restaurant/restaurant.scss";
 @import "desktop.blocks/dish/dish.scss";
@@ -19,11 +20,5 @@
 @import "../../blocks/common.blocks/infosite/infosite.scss";
 @import "../../blocks/common.blocks/list/list.scss";
 @import "../../blocks/common.blocks/buttonup/buttonup.scss";
-@import "mobile.blocks/media/media.scss";
 @import "../../blocks/common.blocks/form/__icon/form__icon.scss";
-
-
-@media (max-width: 768px) 
-{     
-    @import "mobile.blocks/slider/slider.scss";
-}
+@import "mobile.blocks/slider/slider.scss";

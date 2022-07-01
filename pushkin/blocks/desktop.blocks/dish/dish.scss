@@ -1,3 +1,30 @@
+[data-cart-num="1"] {
+  .dish {
+    &__info-container {
+      @media screen and (min-width: 767.8px) {
+        background-color: rgba(117, 117, 117, 0.04);
+      }
+    }
+
+    &__name-text {
+      @media screen and (min-width: 767.8px) {
+        height: 27px;
+      }
+    }
+
+    &__price {
+      margin-top: 20px;
+      @media screen and (min-width: 767.8px) {
+        margin-top: 68px;
+      }
+    }
+
+    &__products-text {
+      font-size: 0.8125rem;
+    }
+  }
+}
+
 .dish {
   display: none;
   justify-content: space-between;

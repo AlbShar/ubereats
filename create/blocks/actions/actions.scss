@@ -1,0 +1,7 @@
+.actions {
+    max-width: 200px;
+
+    @media screen and (max-width: 766.8px) {
+      max-width: 150px;
+    }
+  }

@@ -1,6 +1,7 @@
 .signup {
     &__explanation {
-        @include font($font-family, 500, 0.8125rem, $color_black);
+        font: 500 0.8125rem var(--font-family);
+        color: var(--color-text-title);
         width: 70%;
         max-width: 300px;
     }

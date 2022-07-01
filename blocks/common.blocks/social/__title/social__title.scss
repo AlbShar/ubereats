@@ -1,7 +1,8 @@
 .social {
   &__title {
     margin-top: 31px;
-    @include font($font-family, 400, 1rem, $color_white);
+    font: 400 1rem var(--font-family);
+    color: var(--color-textFooter);
 
     &:before {
       content: "#";

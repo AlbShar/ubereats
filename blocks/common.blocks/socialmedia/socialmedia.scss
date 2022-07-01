@@ -11,9 +11,10 @@
         &:before{
             position: absolute;
             content: "ИЛИ";
-            @include font($font-family, 400, 1rem, rgba(128, 128, 128));
+            font: 400 1rem var(--font-family);
+            color: var(--color-text-subtitle);
             top: -30px;
-            background-color: white;
+            background-color: var(--color-bg);
             width: 50px;
             text-align: center;
         }

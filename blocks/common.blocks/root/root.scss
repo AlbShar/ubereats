@@ -1,6 +1,60 @@
-html,body {
+html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // variables
+  --color-bg: #FFFFFF;
+  --color-bgReverse: #262626;
+  --color-btnUp: #57AD56;
+  --color-logo: #235c20;
+  --color-text-title: #1D1D1D;
+  --color-text-subtitle: #626262;
+  --color-textBtn: #FFFFFF;
+  --color-switch: #fede40;
+  --color-border: #E0E0E0;
+  --color-hover-bg: #1D1D1D;
+  --color-hover-text: #FFFFFF;
+  --color-btnClose: #1D1D1D;
+  --color-formFooter: rgba(128, 128, 128, 0.5);
+  --color-msgBg: rgba(128,128,128,0.2);
+  --color-bgGoogle: #dd4b39;
+  --color-bgTwitter: #55acee;
+  --color-bgVK: #3b5998;
+  --color-focus: #00A3D9;
+  --color-btnSubmit:  #59bd5a;
+  --color-shadow: #E0E0E0;
+  --color-textForgetPsd: blue;
+  --color-textFooter: #FFFFFF;
+  --color-line: rgba(128, 128, 128);
+  --color-textplaceholder: #979797;
+  --filter: none; 
+  --font-family: "Roboto", sans-serif;
+
+  &.dark-theme {
+    --color-bg: #262626;
+    --color-logo: #54d64d;
+    --color-bgReverse: #FFFFFF;
+    --color-text-title: #FFFFFF;
+    --color-text-subtitle: #FFFFFF;
+    --color-textBtn: #1D1D1D;
+    --color-switch: #F7EAC6;
+    --color-border: #FFFFFF;
+    --color-hover-bg: #FFFFFF;
+    --color-hover-text: #1D1D1D;
+    --filter: invert(1) contrast(2); 
+    --color-btnClose: #FFFFFF;
+    --color-textForgetPsd: #FFFFFF;
+    --color-textplaceholder: #FFFFFF;
+    --color-shadow: #3a3a3a;
+    --color-msgBg: #FFFFFF;
+
+  }
 }

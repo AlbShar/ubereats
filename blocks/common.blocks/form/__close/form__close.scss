@@ -1,5 +1,6 @@
 .form{
     &__close{
+        border: none;
         position: absolute;
         top: 16px;
         right: 16px;
@@ -10,8 +11,9 @@
         justify-content: center;
         align-items: center;
         border-radius: 0 3px 0 0;
+        color:var(--color-btnClose);
+        background-color: var(--color-bg);
         &:hover{
-            background-color: rgba(128, 128, 128, 0.5);
             cursor: pointer;
         }
     }

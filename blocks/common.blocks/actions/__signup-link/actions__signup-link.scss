@@ -3,6 +3,17 @@
         list-style-type: none;
         padding: 5px;
         text-decoration: none;
-        @include font($font-family, 500, 0.8125rem, $color_black);
+        font: 500 0.8125rem var(--font-family);
+        color: var(--color-text-title);
+        background-color: var(--color-bg);
+        border: 1px solid var(--color-border);
+        padding: 11.5px 8px;
+        margin-right: 10px;
+
+        &:hover {
+            color: var(--color-hover-text);
+            background-color: var(--color-hover-bg);
+            transition: 0.7s;
+        }
     }
 }

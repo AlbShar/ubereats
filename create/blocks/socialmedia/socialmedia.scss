@@ -10,6 +10,22 @@
         width: 100%;
         text-align: left;
     }
+
+    @media screen and (min-width:767.8px) {
+        position: absolute;
+        top: 185px;
+        right: 30px;
+        max-width: 350px;
+    }
+
+    @media screen and (min-width:991.8px) {
+        right: 280px;
+    }
+
+    @media screen and (min-width:1199.8px) {
+        right: 490px; 
+    }
+
 }
 
 @import "__item/socialmedia__item.scss"

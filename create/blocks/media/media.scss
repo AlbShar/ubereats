@@ -1,50 +1,57 @@
-@media screen and (max-width:320px) {
-    .signup {
-        &__list-item {
-            max-width: 240px;
-        }
-    }
-}
-
-@media screen and (min-width:768px) {
-    .socialmedia {
-        position: absolute;
-        top: 185px;
-        right: 30px;
-        max-width: 350px;
-    }
-
-    .signup {
-        &__submit{
-            margin-bottom: 0px;
-        }
-    }
-
-    .signup__message {
-        box-sizing: border-box;
-        position: absolute;
-        right: 25px;
-        top: 190px;
-        width: 100%;
-        max-width: 350px;
-    }
+@media screen and (max-width:459.8px) {
+    // .signup {
+    //     &__list-item {
+    //         max-width: 240px;
+    //     }
+    // }
 }
 
 
-@media screen and (min-width:992px) {
-    .socialmedia {
-        right: 280px;
-    }
-    .signup__message {
-        right: 270px;
-    }
+@media screen and (min-width:767.8px) {
+    // .socialmedia {
+    //     position: absolute;
+    //     top: 185px;
+    //     right: 30px;
+    //     max-width: 350px;
+    // }
+
+    // .signup {
+    //     &__submit{
+    //         margin-bottom: 0px;
+    //     }
+    // }
+
+    // .signup__message {
+    //     box-sizing: border-box;
+    //     position: absolute;
+    //     right: 25px;
+    //     top: 190px;
+    //     width: 100%;
+    //     max-width: 350px;
+    // }
 }
 
-@media screen and (min-width:1200px) {
-    .socialmedia {
-        right: 490px;
-    }
-    .signup__message {
-        right: 480px;
-    }
+@media screen and (max-width: 766.8px) {
+    // .actions {
+    //     max-width: 50px;
+    // }
+}
+
+
+@media screen and (min-width:991.8px) {
+    // .socialmedia {
+    //     right: 280px;
+    // }
+    // .signup__message {
+    //     right: 270px;
+    // }
+}
+
+@media screen and (min-width:1199.8px) {
+    // .socialmedia {
+    //     right: 490px;
+    // }
+    // .signup__message {
+    //     right: 480px;
+    // }
 }

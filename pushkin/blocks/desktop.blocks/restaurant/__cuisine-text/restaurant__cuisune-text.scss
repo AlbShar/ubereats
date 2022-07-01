@@ -1,12 +1,10 @@
 .restaurant {
 &__cuisine-text {
     width: 100px;
-    color: $color_gray;
-    font-size: 0.875rem;
     text-align: justify;
-    font-weight: 400;
     margin: 0;
-    font-family: $font-family;
     margin-left: 4px;
+    font: 400 0.875rem var(--font-family);
+    color: var(--color-text-subtitle);
   }
 }

@@ -4,6 +4,15 @@
       height: 42px;
       padding: 8px;
       position: relative;
+
+      @media screen and (min-width: 1123.8px) {
+        height: 40px;
+        margin-left: 6.5%;
+      }
+
+      @media screen and (min-width: 1199.8px) {
+        margin-left: 0;
+      }
       
   
       &:after {
@@ -14,6 +23,17 @@
         top: 57px;
         left: 0;
         background-color: rgba(117, 117, 117, 0.2);
+
+        @media screen and (min-width: 1123.8px) {
+          width: 107%;
+          top: 57px;
+          left: -7%;
+        }
+
+        @media screen and (min-width: 1199.8px) {
+          left: 0;
+          width: 100%;
+        } 
       }
     }
 }

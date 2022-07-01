@@ -1,13 +1,14 @@
 .search-form {
   &__input {
     border: {
-      color: transparent transparent rgba(151, 151, 151, 0.3) transparent;
+      color: transparent transparent var(--color-border) transparent;
       width: 1px;
       radius: 0;
     }
     width: 99%;
     -webkit-appearance: none;
-    color: rgb(151, 151, 151);
+    background-color: var(--color-bg);
+    color: var(--color-text-subtitle);
 
     // .search-form__input:invalid
     &:invalid {
@@ -20,7 +21,8 @@
     }
 
     &::placeholder {
-      @include font($font-family, 400, 1rem, $color_gray);
+      font: 400 1rem var(--font-family);
+      color: var(--color-text-subtitle);
       line-height: 24px;
       display: flex;
       align-items: center;

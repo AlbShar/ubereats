@@ -1,5 +1,5 @@
 .shop {
-box-sizing: border-box;
+    box-sizing: border-box;
     margin-top: 50px;
     padding-top: 7px;
     position: relative;
@@ -8,19 +8,21 @@ box-sizing: border-box;
     &:before {
       content: "";
       position: absolute;
-      background-color: $color_gray;
+      background-color: var(--color-line);
+      color: var(--color-line);
       width: 100%;
       left: 0%;
-      top: -1px;
+      top: -17px;
       height: 1px;
     }
 
     &:after {
       content: "";
       position: absolute;
-      background-color: $color_gray;
+      background-color: var(--color-line);
+      color: var(--color-line);
       width: 100%;
-      bottom: -1px;
+      bottom: -20px;
       height: 1px;
     }
 }

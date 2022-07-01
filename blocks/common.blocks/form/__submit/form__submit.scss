@@ -1,10 +1,11 @@
 .form{
     &__submit{
         position: relative;
-        @include font($font-family, 400, 0.9rem, $color_black);
+        font: 400 0.9rem var(--font-family);
+        color: var(--color-textBtn);
         display: block;
         box-sizing: border-box;
-        background-color: #59bd5a;
+        background-color: var(--color-btnSubmit);
         padding: 10px 0;
         width: 100%;
         display: flex;
@@ -16,7 +17,7 @@
 
         &:hover{
             cursor: pointer;
-            background-color: rgba(128, 128, 128, 0.5);
+            opacity: 0.8;
         }
 
         &:after{
@@ -25,8 +26,8 @@
             bottom: -20px;
             width: 100%;
             height: 1px;
-            color:rgba(128, 128, 128);
-            background-color:rgba(128, 128, 128);
+            color: var(--color-line);
+            background-color: var(--color-line);
         }
     }
 }

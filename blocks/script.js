@@ -6,9 +6,11 @@ import {searchCard} from "./project.blocks/search-form/searchCard.js";
 import { closeLoginForm } from "./common.blocks/form/closeLoginForm.js";
 import { changeTypeInput } from "./common.blocks/form/changeTypeInput.js";
 import { showLoginForm } from "./common.blocks/actions/showLoginForm.js";
+import {changeTheme} from "./common.blocks/switch/switch.js";
 
 showLoginForm();
 searchCard();
+changeTheme();
 window.addEventListener('click', closeLoginForm);
 window.addEventListener('touchstart', closeLoginForm);
 window.addEventListener('touchend', closeLoginForm);

@@ -1,7 +1,7 @@
 .form {
     &__footer{
         box-sizing: border-box;
-        background-color: rgba(128, 128, 128, 0.5);
+        background-color: var(--color-formFooter);
         display: flex;
         justify-content: space-between;
         align-items: center;

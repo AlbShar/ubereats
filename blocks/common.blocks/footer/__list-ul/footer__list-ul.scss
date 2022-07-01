@@ -2,5 +2,9 @@
 &__list-ul {
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 459.8px) {
+      margin: 33px 0 -32px 0;
+    }
   }
 }

@@ -1,0 +1,16 @@
+.switch{
+    &__checkbox{
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+
+        &:checked + .switch__slider::before{
+            transform: translateX(20px);
+        }
+
+        &:checked  + .switch__slider::after{
+            transform: translateX(54px);
+        }
+    }
+}

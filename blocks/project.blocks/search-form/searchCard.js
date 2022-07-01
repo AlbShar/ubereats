@@ -2,7 +2,7 @@ function searchCard() {
     const searchForm = document.querySelector('#search');
     searchForm.onkeyup = () => {
         let inputValue = searchForm.value.toUpperCase();
-        let cardWrapper = document.querySelectorAll("#card_wrapper");
+        let cardWrapper = document.querySelectorAll("[data-about='card_wrapper']");
         let a, textValue;
         for (let i = 0; i < cardWrapper.length; i++) {
             a = cardWrapper[i].querySelector('.card');

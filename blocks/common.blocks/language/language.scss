@@ -1,7 +1,11 @@
 .language {
-position: relative;
+  position: relative;
   width: 173px;
   height: 40px;
+
+  @media screen and (min-width: 1123.8px) {
+    width: 227px;
+  }
 }
 
 @import "__arrowDown/language__arrowDown.scss";

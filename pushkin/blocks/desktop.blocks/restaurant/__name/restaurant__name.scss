@@ -3,5 +3,10 @@
     margin-top: 22px;
     width: 100%;
     height: 28px;
+
+    @media screen and (min-width: 767.8px) {
+      margin-top: 39px;
+      height: 42px;
+  }
   }
 }

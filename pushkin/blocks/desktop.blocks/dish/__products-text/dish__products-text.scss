@@ -1,10 +1,8 @@
 .dish {
 &__products-text {
-    font-size: 0.8125rem;
-    color: $color_gray;
+  font: 400 0.8125rem var(--font-family);
+    color: var(--color-text-subtitle);
     margin: 0;
     height: 1em;
-    font-weight: 400;
-    font-family: $font-family;
   }
 }

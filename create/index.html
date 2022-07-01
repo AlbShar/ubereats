@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./script.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css"
@@ -64,30 +65,31 @@
           <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="header__container">
               <div class="logo">
-                <a class="logo__link" href="#">
-                  <img
-                    class="logo__svg"
-                    src="../blocks/common.blocks/logo/logo.svg"
-                    alt="Logo"
-                  />
+                <a tabindex="0" class="logo__link" href="#">
+                  <span class="logo__text">UBER <span>EATS</span> </span>
                 </a>
               </div>
-              <div class="actions">
-                <button
-                  style="visibility: hidden"
-                  class="actions__sign-in"
-                  name="top"
-                >
-                  <span class="actions__sign-in-text"> Войти </span>
-                </button>
-                <div class="actions__basket">
+              <nav role="navigation" class="actions" tabindex="0">
+                <ul class="actions__list">
+                  <li class="actions__list-item switch" tabindex="-1">
+                      <label for="check" tabindex="-1">
+                        <input id="check" tabindex="0" role="checkbox" class="switch__checkbox" type="checkbox" tabindex="-1">
+                        <span type="button" tabindex="0" id="switch" class="switch__slider" aria-label="Переключить тему"></span>    
+                      </label>
+                  </li>
+                  </li> 
+                  <li class="actions__list-item">
+                    <div class="actions__basket">
                   <img
+                  tabindex="0"
                     class="actions__basket-svg"
                     src="../blocks/common.blocks/actions/cart.svg"
-                    alt="Basket"
+                    alt="Корзина"
                   />
                 </div>
-              </div>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -98,20 +100,21 @@
         <div class="row">
           <div class="col-xs-12 col-md-12 col-lg-12">
             <form action="#" class="signup main__signup" method="post" autocomplete="off">
-              <h1 class="signup__title">Создание нового пользователя</h1>
+              <h1 tabindex = "0" class="signup__title">Создание нового пользователя</h1>
               <ul class="signup__list">
                 <li class="signup__list-item">
                   <label class="signup__label" for="uname"
                     > <h2 class="signup__name-field">Имя пользователя:</h2>
                     <strong> <abbr title="required">*</abbr></strong>
                   </label>
-                  <i class="form__icon_left fa fa-user"></i>
+                  <i role="img" aria-hidden="true" class="form__icon_left fa fa-user"></i>
                   <input
                     maxlength="20"
                     class="signup__input"
                     id="uname"
                     type="text"
                     placeholder="Введите имя"
+                    autocomplete="name"
                     required
                   />
                 </li>
@@ -120,12 +123,13 @@
                     > <h2 class="signup__name-field">адрес email:</h2>
                     <strong> <abbr title="required">*</abbr></strong>
                   </label>
-                  <i class="form__icon_left fa fa-at"></i>
+                  <i role="img" aria-hidden="true" class="form__icon_left fa fa-at"></i>
                   <input
                     class="signup__input"
                     id="email"
                     type="email"
                     placeholder="Введите email"
+                    autocomplete="email"
                     required
                   />
                 </li>
@@ -134,7 +138,7 @@
                     > <h2 class="signup__name-field">Пароль:</h2>
                     <strong> <abbr title="required">*</abbr></strong>
                   </label>
-                  <i class="form__icon_left fa fa-lock"></i>
+                  <i role="img" aria-hidden="true" class="form__icon_left fa fa-lock"></i>
                   <input
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     class="signup__input"
@@ -143,7 +147,7 @@
                     placeholder="Введите пароль"
                     required
                   />
-                  <i id="eye1" style="bottom: 8px; transform: scale(1.4);" class="signup__icon-eye form__icon_right fa fa-eye"></i>
+                  <span id="eye1" style="bottom: 8px; transform: scale(1.4);" class="signup__icon-eye form__icon_right fa fa-eye"></span>
                 </li>
                 <ol
                   class="signup__message signup__message_invisible"
@@ -182,7 +186,7 @@
                     > <h2 class="signup__name-field">Повторите пароль:</h2>
                     <strong> <abbr title="required">*</abbr></strong>
                   </label>
-                  <i class="form__icon_left fa fa-lock"></i>
+                  <i role="img" aria-hidden="true" class="form__icon_left fa fa-lock"></i>
                   <input
                     class="signup__input"
                     id="pwd2"
@@ -190,7 +194,7 @@
                     placeholder="Введите пароль повторно"
                     required
                   />
-                  <i id="eye2" style="bottom: 8px; transform: scale(1.4);" class="signup__icon-eye form__icon_right fa fa-eye"></i>
+                  <span id="eye2" style="bottom: 8px; transform: scale(1.4);" class="signup__icon-eye form__icon_right fa fa-eye"></span>
                 </li>
                 <li class="signup__list-item">
                   <label id="dateBirth" class="signup__label" for="date"> <h2 class="signup__name-field">Дата рождения:</h2> </label>
@@ -198,7 +202,7 @@
                     class="signup__input"
                     id="date"
                     type="date"
-                    placeholder="Введите пароль"
+                    autocomplete="bday"
                   />
                 </li>
                 <li class="signup__list-item">
@@ -215,9 +219,9 @@
                 Необходимые поля для заполнения обозначены знаком
                 <strong><abbr title="required">*</abbr> </strong>
               </div>
-              <div class="signup__agree">
+              <div class="signup__agree agree">
                 Создавая аккаунт в UberEats, вы соглашаетесь с нашим
-                <a href="#">Пользовательским соглашением.</a>
+                <a class="agree__link" href="#">Пользовательским соглашением.</a>
               </div>
               <button id="btn" class="signup__submit " type="submit">
                 создать аккаунт
@@ -232,7 +236,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
+    <footer  class="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12 col-lg-12">
@@ -241,15 +245,15 @@
                 <a class="footer__logo-link" href="#">
                   <img
                     class="footer__logo-svg"
-                    src="../blocks/common.blocks/footer/footer.svg"
-                    alt="Logo"
+                    src="../blocks/common.blocks/footer/logo.svg"
+                    alt="UberEats logo"
                   />
                 </a>
               </div>
               <div class="footer__row">
                 <div class="footer__column">
                   <div class="language">
-                    <select class="language__select" id="lang">
+                    <select tabindex="0" class="language__select" id="lang">
                       <option>Выбрать язык</option>
                       <option value="/en/">English</option>
                       <option value="/ru/">Русский</option>
@@ -258,85 +262,85 @@
                       <img
                         class="language__world-svg"
                         src="../blocks/common.blocks/language/svg/World.svg"
-                        alt="World"
+                        alt=""
                       />
                     </div>
                     <div class="language__arrowDown">
                       <img
                         class="language__arrowDown-svg"
                         src="../blocks/common.blocks/language/svg/ArrowDown.svg"
-                        alt="Down"
+                        alt=""
                       />
                     </div>
                   </div>
-                  <div class="social">
+                  <nav class="social" aria-label="social networks" tabindex="0">
                     <div class="social__title">UberEats</div>
-                    <div class="social__icons">
-                      <div class="social__facebook">
-                        <a
+                    <ul  class="social__icons">
+                      <li class="social__facebook">
+                        <a tabindex="0" role="link"
                           class="social__facebook-link"
                           href="https://www.facebook.com/UberEats/"
-                          target="_blank"
+                           
                         >
                           <img
                             class="social__facebook-svg"
                             src="../blocks/common.blocks/social/svg/Facebook.svg"
-                            alt="Facebook"
+                            alt="Открыть сайт UberEats на Facebook"
                           />
                         </a>
-                      </div>
-                      <div class="social__twitter">
-                        <a
+                      </li>
+                      <li class="social__twitter">
+                        <a role="link" tabindex="0"
                           class="social__twitter-link"
                           href="https://twitter.com/UberEats?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                          target="_blank"
+                           
                         >
                           <img
                             class="social__twitter-svg"
                             src="../blocks/common.blocks/social/svg/Twitter.svg"
-                            alt="Twitter"
+                            alt="Открыть сайт UberEats в Twitter"
                           />
                         </a>
-                      </div>
-                      <div class="social__instagram">
-                        <a
+                      </li>
+                      <li class="social__instagram">
+                        <a role="link" tabindex="0"
                           class="social__instagram-link"
                           href="https://www.instagram.com/ubereats/"
-                          target="_blank"
+                           
                         >
                           <img
                             class="social__instagram-svg"
                             src="../blocks/common.blocks/social/svg/Instagram.svg"
-                            alt="Instagram"
+                            alt="Открыть сайт UberEats в Instagram"
                           />
                         </a>
-                      </div>
-                    </div>
-                  </div>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="footer__lists">
+                <nav class="footer__lists" aria-label="info" tabindex="0">
                   <ul class="footer__list-ul">
-                    <li class="footer__item">Об UberEats</li>
-                    <li class="footer__item">Станьте партнёром по доставке</li>
-                    <li class="footer__item">Станьте парнёром-рестораном</li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#"> Об UberEats </a> </li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#"> Станьте партнёром по доставке </a> </li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#"> Станьте парнёром-рестораном </a> </li>
                   </ul>
-                </div>
-                <div class="footer__lists">
+                </nav>
+                <nav class="footer__lists" aria-label="info" tabindex="0">
                   <ul class="footer__list-ul">
-                    <li class="footer__item">Все города</li>
-                    <li class="footer__item">Цены</li>
-                    <li class="footer__item">Помощь</li>
-                    <li class="footer__item">FAQs</li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#">Все города</a> </li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#">Цены</a> </li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#">Помощь</a> </li>
+                    <li class="footer__item"> <a class="footer__link" tabindex="0" href="#">FAQs</a> </li>
                   </ul>
-                </div>
+                </nav>
               </div>
               <div class="shop">
                 <div class="shop__wrapper">
                   <div class="shop__appstore">
-                    <a
+                    <a role="link" tabindex="0"
                       class="shop__link"
                       href="https://apps.apple.com/ru/app/uber-eats-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B5%D0%B4%D1%8B/id1058959277/"
-                      target="_blank"
+                       
                     >
                       <img
                         class="shop__png"
@@ -346,10 +350,10 @@
                     </a>
                   </div>
                   <div class="shop__googleplay">
-                    <a
+                    <a role="link" tabindex="0"
                       class="shop__link"
                       href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=ru&gl=US"
-                      target="_blank"
+                       
                     >
                       <img
                         class="shop__png"
@@ -360,27 +364,26 @@
                   </div>
                 </div>
               </div>
-              <div class="infosite infosite__pos">
+              <nav aria-label="info" class="infosite infosite__pos" tabindex="0">
                 <ul class="list">
-                  <li class="list__item">© 2017 Uber Technologies Inc.</li>
-                  <li class="list__item">Обработка персональных данных</li>
-                  <li class="list__item">Пользовательское соглашение</li>
+                  <li class="list__item"> <a class="footer__link" tabindex="0" href="#">© 2017 Uber Technologies Inc.</a> </li>
+                  <li class="list__item"> <a class="footer__link" tabindex="0" href="#">Обработка персональных данных</a> </li>
+                  <li class="list__item"> <a class="footer__link" tabindex="0" href="#">Пользовательское соглашение</a> </li>
                 </ul>
                 <div class="infosite__buttonup buttonup">
-                  <a class="buttonup__uplink" href="#top">
+                  <a tabindex="0" role="link" class="buttonup__uplink" href="#top">
                     <img
                       class="buttonup__svg"
                       src="../blocks/common.blocks/buttonup/ArrowUp.svg"
-                      alt="Up"
+                      alt="Наверх страницы"
                     />
                   </a>
                 </div>
-              </div>
+              </nav>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script type="module" src="./script.js"></script>
   </body>
 </html>

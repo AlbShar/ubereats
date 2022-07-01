@@ -1,5 +1,6 @@
 .info {
 &__time-text {
-    @include font($font-family, 400, 0.8125rem, $color_black);
+    color: var(--color-text-title);
+    font: 400 0.8125rem var(--font-family);
   }
 }
