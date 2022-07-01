@@ -9,7 +9,22 @@
         line-height: 1.2;
         margin-bottom: 10px;
         border-radius: 10px;
-        background-color: rgba(128,128,128,0.1);
+        background-color: var(--color-msgBg);
+
+        @media screen and (min-width:767.8px) {
+            position: absolute;
+            right: 25px;
+            top: 190px;
+            max-width: 350px;    
+        }
+
+        @media screen and (min-width:991.8px) {
+            right: 270px;
+        }
+
+        @media screen and (min-width:1199.8px) {
+            right: 480px;
+        }
     }
 }
 

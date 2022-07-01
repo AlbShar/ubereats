@@ -1,0 +1,25 @@
+.logo {
+    &__text {
+        font: 700 1rem var(--font-family);
+        color: var(--color-text-title);
+        text-decoration: none;
+        display: inline-block;
+        width: 125px;
+        text-align: justify;
+        letter-spacing: 2.2px;
+        word-spacing: -2px;
+
+        & span {
+            font-weight: 500;
+            color: var(--color-logo);
+            letter-spacing: 3px;
+
+        }
+
+        @media screen and (min-width: 1123.8px) {
+            font-size: 1.1rem; 
+        }
+    }
+    
+    
+}

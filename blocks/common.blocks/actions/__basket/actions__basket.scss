@@ -1,0 +1,13 @@
+.actions {
+    &__basket {
+        filter: var(--filter);
+
+        @media screen and (max-width: 766.8px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1123.8px) {
+            margin-right: 15px;
+        }
+    }
+}

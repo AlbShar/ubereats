@@ -1,10 +1,11 @@
 .form {
     &__text > a{
-        @include font($font-family, 400, 0.9rem, $color_black);
+        font: 400 0.9rem var(--color-text-title);
         text-decoration: none;
-        color: blue;
+        color: var(--color-textForgetPsd);
     }
     &__text {
-        @include font($font-family, 400, 0.9rem, $color_black);
+        font: 400 0.9rem var(--color-text-title);
+        color: var(--color-text-title);
     }
 }

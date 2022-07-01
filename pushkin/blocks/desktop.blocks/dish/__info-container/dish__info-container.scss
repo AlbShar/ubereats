@@ -8,5 +8,19 @@
     width: 67%;
     height: 101px;
     margin-bottom: 17px;
+
+    @media screen and (min-width: 767.8px) {
+      border: 1px solid rgba(117, 117, 117, 0.2);
+      width: 552px;
+      height: 163px;
+      padding-top: 20px;
+      padding-left: 23px;
+      margin-bottom: 29px;
+    }
+
+    @media screen and (min-width: 991.8px) {
+      margin-bottom: 46px;
+      width: 63%;
+    }
   }
 }

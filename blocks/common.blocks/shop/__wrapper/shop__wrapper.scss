@@ -6,5 +6,15 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+
+    @media screen and (min-width: 767.8px) {
+      max-width: 295px;
+      margin-left: 32%;
+    }
+
+    @media screen and (min-width: 1123.8px) {
+      margin-left: 35.2%;
+
+    }
     }
 }

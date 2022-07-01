@@ -1,12 +1,16 @@
 
 .dish{
 &__price-text {
-    font-size: 0.8125rem;
-    color: $color_black;
-    font-family: $font-family;
+    font: 500 0.8125rem var(--font-family);
+    color: var(--color-text-title);
     margin: 0;
-    line-height: 21px;
-    font-weight: 500;
+    line-height: 0.62rem;
     margin-right: 8px;
+
+    @media screen and (min-width: 767.8px) {
+      font-size: 0.9375rem;
+      margin-right: 3px;
+  }
+
   }
 }

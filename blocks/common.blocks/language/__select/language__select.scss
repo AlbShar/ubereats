@@ -8,6 +8,7 @@
     border: transparent;
     -webkit-appearance: none;
     cursor: pointer;
-    @include font($font-family, 400, 0.8125rem, $color_white);
+    font: 400 0.8125rem var(--font-family);
+    color: var(--color-textFooter)
   }
 }

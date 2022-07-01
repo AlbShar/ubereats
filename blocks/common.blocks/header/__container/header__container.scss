@@ -10,5 +10,9 @@
         left: auto;
         right: auto;
       }
+
+      @media screen and (min-width: 767.8px) {
+        padding: 0;
+      }
     }
   }

@@ -1,5 +1,5 @@
 .restaurant {
 &__currency-svg {
-    margin: 0;
+    filter: var(--filter);
   }
 }

@@ -9,5 +9,15 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 767.8px) {
+      flex-wrap: nowrap;
+      width: 330px;
+      margin-top: 52px;
+    }
+    @media screen and (min-width: 1123.8px) {
+      margin-left: 10%;
+      width: 319px;
+    }
   }
 }

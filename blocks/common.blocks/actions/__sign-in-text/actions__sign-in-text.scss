@@ -1,6 +1,7 @@
 .actions {
   &__sign-in-text {
-    @include font($font-family, 500, 0.8125rem, $color_black);
+    font: 500 0.8125rem var(--font-family);
+    color: var(--color-text-title);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -8,6 +9,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;  
+    
+    &:hover {
+      color: var(--color-hover-text);
+      transition: 0.7s;
+    }
   }
 }

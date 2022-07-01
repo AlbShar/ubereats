@@ -1,0 +1,12 @@
+.footer {
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font: 400 0.8125rem var(--font-family);
+        line-height: 0.86rem; // 15px
+        
+        &:hover {
+            border-bottom: 1px solid #FFF 
+        }
+    }
+}

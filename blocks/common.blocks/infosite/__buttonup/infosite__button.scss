@@ -3,5 +3,14 @@
       position: absolute;
       right: 0;
       bottom: 0;
+
+      @media screen and (max-width: 766.8px) {
+        bottom: 30%;
+      }
+
+      @media screen and (min-width: 767.8px){
+        width: 80px;
+        height: 80px;  
+      }
   }
 }

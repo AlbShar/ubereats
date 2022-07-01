@@ -2,5 +2,16 @@
  &__photo {
     width: 33%;
     height: 101px;
+
+    @media screen and (min-width: 767.8px) {
+      width: 201px;
+      height: 163px;
+  }
+
+  @media screen and (min-width: 991.8px) {
+    width: 38%;
+
+  }
+
   }
 }

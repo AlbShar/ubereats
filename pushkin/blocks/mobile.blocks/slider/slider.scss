@@ -2,3 +2,9 @@
 @import "__dish/slider__dish.scss";
 @import "__dish-text/slider__dish-text.scss";
 @import "__button/slider__button.scss";
+
+.slider {
+    @media screen and (min-width: 767.8px) {
+        display: none;  
+    }
+}

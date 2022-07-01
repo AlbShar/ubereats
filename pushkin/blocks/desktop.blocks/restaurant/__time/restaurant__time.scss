@@ -8,7 +8,12 @@
     align-items: center;
     width: 98px;
     height: 32px;
-    background-color: #262626;
+    background-color: var(--color-bgReverse);
     border-radius: 15px;
+
+    @media screen and (min-width: 767.8px) {
+      margin: 0;
+    }
+
   }
 }

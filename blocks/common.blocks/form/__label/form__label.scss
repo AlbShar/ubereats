@@ -1,5 +1,6 @@
 .form{
     &__label{
-        @include font($font-family, 700, 1rem, $color_black);
+        font: 700 1rem var(--font-family);
+        color: var(--color-text-title)
     }
 }

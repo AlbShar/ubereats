@@ -1,0 +1,39 @@
+.switch{
+    &__slider{
+        -webkit-appearance: none;
+        position: absolute;
+        background-color: var(--color-bg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+
+
+        &::before, &::after{
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            
+        }
+
+        &::after {
+            height: 20px;
+            left: -36px;
+            bottom: 4px;
+            background-color: var(--color-bg);
+            border: none;
+            transition: 0.1s;
+        }
+        &::before {
+            background-color: var(--color-switch);
+            left: 5px;
+            bottom: 5px;
+            transition: 0.3s;
+        }
+    }
+}

@@ -8,6 +8,10 @@
   height: 255px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 767.8px) {
+    height: 364px;
+  }
 }
 
 @import "__pos/restaurant__pos.scss";
