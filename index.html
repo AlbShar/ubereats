@@ -76,8 +76,8 @@
                 <ul class="actions__list">
                   <li class="actions__list-item switch" tabindex="-1">
                       <label for="check" tabindex="-1">
-                        <input aria-checked="false" id="check" class="switch__checkbox" type="checkbox" tabindex="-1">
-                        <div role="button" tabindex="0" id="switch" class="switch__slider" aria-label="Переключить тему"></div> 
+                        <input  id="check" class="switch__checkbox" type="checkbox" tabindex="-1">
+                        <div role="switch" tabindex="0" id="switch" class="switch__slider" aria-label="Сменить тему" aria-checked="false"></div> 
                       </label>
                   </li>
                   <li class="actions__list-item">
@@ -115,6 +115,7 @@
           <button
             class="form__close"
             id="close"
+            aria-label="Закрыть форму логина"
             >&times;</button
           >
           <div class="form__container">
@@ -178,7 +179,7 @@
       </div>
       <div class="container">
         <section class="row">
-          <article class="col-xs-12 col-md-12 col-lg-12">
+          <article role="search" class="col-xs-12 col-md-12 col-lg-12">
             <form class="search-form" action="#">
               <input
                 id="search"
@@ -236,11 +237,15 @@
                   class="card__link"
                   href="pushkin/pushkin.html"
                 > 
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card1.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card1.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card1.png"
                     alt="Картошка фри, бургер, нагетсы"
                   />
+                </picture>
                   </a> 
               </div>
               <div class="card__info info">
@@ -278,11 +283,16 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card2.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card2.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card2.png"
                     alt="Азиатская еда. Суши на доске, лапша в коробке, пельмени в тарелке"
                   />
+                </picture>
+                  
                 </a>
               </div>
               <div class="card__info info">
@@ -317,11 +327,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card3.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card3.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card3.png"
                     alt="Американская еда. Хот-дог на доске"
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -356,11 +370,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card4.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card4.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card4.png"
                     alt="Вьетнамская еда. Рулеты, салаты в тарелках."
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -398,11 +416,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card5.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card5.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card5.png"
                     alt="Вьетнамская еда. Супы, лапша в миске"
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -440,11 +462,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card6.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card6.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card6.png"
                     alt="Кексы, булочки, коктейли"
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -484,11 +510,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card7.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card7.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card7.png"
                     alt="Пицца, спаггети в тарелках"
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -526,11 +556,15 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card8.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card8.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card8.png"
                     alt="Японская еда. Набор суши на тарелках"
                   />
+                </picture>
                 </a>
               </div>
               <div class="card__info info">
@@ -568,11 +602,16 @@
                   href="pushkin/pushkin.html"
                    
                 >
+                <picture>
+                  <source type="image/webp" srcset="./blocks/project.blocks/card/img/card9.webp">
+                  <source type="image/png" srcset="./blocks/project.blocks/card/img/card9.png">
                   <img
                     class="card__png"
                     src="blocks/project.blocks/card/img/card9.png"
                     alt="Европейская еда. Стейк на доске, картофель фри"
                   />
+                </picture>
+                  
                 </a>
               </div>
               <div class="card__info info">

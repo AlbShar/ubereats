@@ -176,6 +176,9 @@ body.dark-theme {
   text-decoration: none;
 }
 
+.actions {
+  outline: inherit;
+}
 @media screen and (max-width: 766.8px) {
   .actions {
     max-width: 290px;

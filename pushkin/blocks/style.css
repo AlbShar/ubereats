@@ -118,8 +118,10 @@ body.dark-theme {
   top: 16px;
   right: 16px;
   transform: scale(3);
-  width: 1rem;
-  height: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,6 +368,7 @@ body.dark-theme {
   border-radius: 50px;
   overflow: hidden;
   border: 1px solid var(--color-border);
+  margin: 0 10px 0 0;
 }
 
 .switch__checkbox {
@@ -414,6 +417,9 @@ body.dark-theme {
   transition: 0.3s;
 }
 
+.actions {
+  outline: inherit;
+}
 @media screen and (max-width: 766.8px) {
   .actions {
     max-width: 290px;
@@ -469,7 +475,7 @@ body.dark-theme {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 }
 .actions__sign-in:hover {
   background-color: var(--color-hover-bg);

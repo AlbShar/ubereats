@@ -58,8 +58,8 @@
                 <ul class="actions__list">
                   <li class="actions__list-item switch" tabindex="-1">
                       <label for="check" tabindex="-1">
-                        <input id="check"  role="checkbox" class="switch__checkbox" type="checkbox" tabindex="-1">
-                        <div tabindex="0" aria-label="Переключить тему" role="button" id="switch" class="switch__slider"></div>    
+                        <input id="check" aria-pressed="false"  role="checkbox" class="switch__checkbox" type="checkbox" tabindex="-1">
+                        <div role="switch" tabindex="0" id="switch" class="switch__slider" aria-label="Сменить тему" aria-checked="false"></div> 
                       </label>
                   </li>
                   <li class="actions__list-item">
@@ -95,6 +95,7 @@
           <button
             class="form__close"
             id="close"
+            aria-label="Закрыть форму логина"
             >&times;</button
           >
           <div class="form__container">
@@ -135,9 +136,9 @@
             </ul>
           </div>
           <div class="socialmedia">
-            <a href="#" class="socialmedia__item">Вконтакте</a>
-            <a href="#" class="socialmedia__item">Twitter</a>
-            <a href="#" class="socialmedia__item">Google</a>
+            <a href="#" class="socialmedia__item" aria-label="Войти через Вконтакте">Вконтакте</a>
+            <a href="#" class="socialmedia__item" aria-label="Войти через Twitter">Twitter</a>
+            <a href="#" class="socialmedia__item" aria-label="Войти через Google">Google</a>
           </div>
           <div class="form__footer">
             <div class="form__quest">Нет аккаунта?</div>
@@ -221,12 +222,12 @@
           </li>
         </ul>
         <div class="menu__name">
-          <h2 class="menu__name-text menu__name-text_active">Закуски</h2>
-          <h2 class="menu__name-text">Салаты</h2>
-          <h2 class="menu__name-text">Супы</h2>
-          <h2 class="menu__name-text">Горячие блюда</h2>
-          <h2 class="menu__name-text">Гарниры</h2>
-          <h2 class="menu__name-text">Десерты</h2> 
+          <h2 class="menu__name-text menu__name-text_active" tabindex="0">Закуски</h2>
+          <h2 class="menu__name-text" tabindex="0">Салаты</h2>
+          <h2 class="menu__name-text" tabindex="0">Супы</h2>
+          <h2 class="menu__name-text" tabindex="0">Горячие блюда</h2>
+          <h2 class="menu__name-text" tabindex="0">Гарниры</h2>
+          <h2 class="menu__name-text" tabindex="0">Десерты</h2> 
         </div>
       </nav>
       <div class="container">
@@ -241,7 +242,7 @@
                   <h3 class="dish__products-text">С яйцом и огурцом</h3>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">240</h3>
+                  <h3 tabindex="0" aria-label="240 рублей" class="dish__price-text">240</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -249,13 +250,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
-                <img
+              <picture class="dish__photo">
+                  <source srcset="./blocks/desktop.blocks/dish/img/dish1.webp" type="image/webp">
+                  <source srcset="./blocks/desktop.blocks/dish/img/dish1.png" type="image/png">
+                  <img
                   class="dish__photo-png"
                   src="blocks/desktop.blocks/dish/img/dish1.png"
                   alt="Сельдь"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -266,7 +269,7 @@
                   <h3 class="dish__products-text">С яйцом и рыбой</h3>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">200</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="200 рублей">200</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -274,13 +277,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish7.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish7.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish7.png"
-                  alt="Сельдь"
+                  alt="Мимоза на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -291,7 +296,7 @@
                   <h3 class="dish__products-text">С картофелем и колбасой</h3>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">300</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="300 рублей">300</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -299,13 +304,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish13.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish13.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish13.png"
-                  alt="Сельдь"
+                  alt="Окрошка с картофелем и колбасой на кефире в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -316,7 +323,7 @@
                   <h3 class="dish__products-text">С бараниной</h3>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">380</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="380 рублей">380</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -324,13 +331,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish19.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish19.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish19.png"
-                  alt="Сельдь"
+                  alt="Плов с бараниной в тарелке"
                 />
-              </article>
+              </pictu>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -338,7 +347,7 @@
                   <h2 tabindex="0" class="dish__name-text">Овощи</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">180</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="180 рублей">180</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -346,13 +355,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish25.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish25.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish25.png"
-                  alt="Сельдь"
+                  alt="Варенная капуста, морвокь, грибы на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -360,7 +371,7 @@
                   <h2 tabindex="0" class="dish__name-text">Торт Наполеон</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">250</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="250 рублей">250</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -368,13 +379,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish31.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish31.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish31.png"
-                  alt="Сельдь"
+                  alt="Кусок торта Наполеон"
                 />
-              </article>
+              </picture>
             </article>
           </section>
           <section data-cart-num="2" id="secondCard" class="col-xs-12 col-md-12 col-lg-6">
@@ -384,7 +397,7 @@
                   <h2 tabindex="0" class="dish__name-text">Соленья ассорти</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">320</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="320 рублей">320</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -392,13 +405,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish2.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish2.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="blocks/desktop.blocks/dish/img/dish2.png"
                   alt="Соленья ассорти"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -406,7 +421,7 @@
                   <h2 tabindex="0" class="dish__name-text">Оливье</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">260</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="260 рублей">260</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -414,13 +429,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish8.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish8.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish8.png"
-                  alt="Сельдь"
+                  alt="Оливье в миске"
                 />
-              </article>
+              </з>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -428,7 +445,7 @@
                   <h2 tabindex="0" class="dish__name-text">Борщ</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">350</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="350 рублей">350</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -436,13 +453,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish14.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish14.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish14.png"
-                  alt="Сельдь"
+                  alt="Борщ с укропом с глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -450,7 +469,7 @@
                   <h2 tabindex="0" class="dish__name-text">Мясо по-франзузски</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">380</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="380 рублей">380</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -458,13 +477,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish20.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish20.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish20.png"
-                  alt="Сельдь"
+                  alt="Мясо по-франзузски с помидорами и плавленным сыром на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -472,7 +493,7 @@
                   <h2 tabindex="0" class="dish__name-text">Спаггети</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">100</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="100 рублей">100</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -480,13 +501,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish26.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish26.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish26.png"
-                  alt="Сельдь"
+                  alt="Спагетти на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -494,7 +517,7 @@
                   <h2 tabindex="0" class="dish__name-text">Чизкейк</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">200</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="200 рублей">200</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -502,13 +525,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish32.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish32.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish32.png"
-                  alt="Сельдь"
+                  alt="Кусок Чизкейка с вишней, политый шоколадом, в тарелке"
                 />
-              </article>
+              </pictu>
             </article>
           </section>
           <section data-cart-num="3" id="thirdCard" class="col-xs-12 col-md-12 col-lg-6">
@@ -518,7 +543,7 @@
                   <h2 tabindex="0" class="dish__name-text">Грибы маринованные</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">300</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="300 рублей">300</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -526,13 +551,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish3.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish3.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="blocks/desktop.blocks/dish/img/dish3.png"
                   alt="Грибы маринованные"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -540,7 +567,7 @@
                   <h2 tabindex="0" class="dish__name-text">Винегрет</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">220</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="220 рублей">220</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -548,13 +575,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish9.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish9.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish9.png"
-                  alt="Сельдь"
+                  alt="Винегрет в тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -562,7 +591,7 @@
                   <h2 tabindex="0" class="dish__name-text">Щи</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">310</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="310 рублей">310</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -570,13 +599,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish15.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish15.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish15.png"
-                  alt="Сельдь"
+                  alt="Щи с овощами в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -584,7 +615,7 @@
                   <h2 tabindex="0" class="dish__name-text">Манты</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">450</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="450 рублей">450</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -592,13 +623,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish21.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish21.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish21.png"
-                  alt="Сельдь"
+                  alt="Манты (5шт) с говядиной и картошкой на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -606,7 +639,7 @@
                   <h2 tabindex="0" class="dish__name-text">Макароны</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">100</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="100 рублей">100</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -614,13 +647,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish27.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish27.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish27.png"
-                  alt="Сельдь"
+                  alt="Макароны пенне с укропом на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -628,7 +663,7 @@
                   <h2 tabindex="0" class="dish__name-text">Крем-брюле</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">150</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="150 рублей">150</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -636,13 +671,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <pictire class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish33.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish33.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish33.png"
-                  alt="Сельдь"
+                  alt="Крем-брюле с черникой и малиной в стаканчике"
                 />
-              </article>
+              </pictire>
             </article>
           </section>
           <section data-cart-num="4" id="forthCard" class="col-xs-12 col-md-12 col-lg-6">
@@ -652,7 +689,7 @@
                   <h2 tabindex="0" class="dish__name-text">Сало домашнее с горчицей</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">320</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="320 рублей">320</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -660,13 +697,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish4.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish4.png" type="image/png">
                 <img
                   class="dish__photo-png"
-                  src="blocks/desktop.blocks/dish/img/dish3.png"
+                  src="blocks/desktop.blocks/dish/img/dish4.png"
                   alt="Сало домашнее"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -674,7 +713,7 @@
                   <h2 tabindex="0" class="dish__name-text">Крабовый салат</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">250</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="250 рублей">250</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -682,13 +721,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish10.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish10.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish10.png"
-                  alt="Сельдь"
+                  alt="Салат крабовый с укропом на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -696,7 +737,7 @@
                   <h2 tabindex="0" class="dish__name-text">Рассольник</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">290</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="290 рублей">290</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -704,13 +745,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish16.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish16.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish16.png"
-                  alt="Сельдь"
+                  alt="Рассольник со сметанной и укропом в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -718,7 +761,7 @@
                   <h2 tabindex="0" class="dish__name-text">Курица с картофелем</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">380</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="380 рублей">380</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -726,13 +769,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish22.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish22.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish22.png"
-                  alt="Сельдь"
+                  alt="Картофель фри с жаренной курицей в тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -740,7 +785,7 @@
                   <h2 tabindex="0" class="dish__name-text">Рис</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">90</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="90 рублей">90</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -748,13 +793,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish28.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish28.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish28.png"
-                  alt="Сельдь"
+                  alt="Белый рис с петрушкой в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -762,7 +809,7 @@
                   <h2 tabindex="0" class="dish__name-text">Вишневый пирог</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">300</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="300 рублей">300</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -770,13 +817,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish34.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish34.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish34.png"
-                  alt="Сельдь"
+                  alt="Кусок вишневого пирога, посыпанного сахарной пудрой, в тарелке"
                 />
-              </article>
+              </з>
             </article>
           </section>
           <section data-cart-num="5" id="fifthCard" class="col-xs-12 col-md-12 col-lg-6">
@@ -786,7 +835,7 @@
                   <h2 tabindex="0" class="dish__name-text">Малосольная семга</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">390</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="390 рублей">390</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -794,13 +843,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish5.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish5.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="blocks/desktop.blocks/dish/img/dish5.png"
                   alt="Семга"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -808,7 +859,7 @@
                   <h2 tabindex="0" class="dish__name-text">Салат из морепродуктов</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">350</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="350 рублей">350</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -816,13 +867,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish11.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish11.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish11.png"
-                  alt="Сельдь"
+                  alt="Салат из морепродуктов с листьями салата на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -830,7 +883,7 @@
                   <h2 tabindex="0" class="dish__name-text">Уха</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">280</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="280 рублей">280</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -838,13 +891,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish17.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish17.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish17.png"
-                  alt="Сельдь"
+                  alt="Уха со свежей рыбой и укропом в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -852,7 +907,7 @@
                   <h2 tabindex="0" class="dish__name-text">Вареники</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">320</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="320 рублей">320</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -860,13 +915,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish23.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish23.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish23.png"
-                  alt="Сельдь"
+                  alt="Вареники с картофелем в тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -874,7 +931,7 @@
                   <h2 tabindex="0" class="dish__name-text">Гречка</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">90</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="90 рублей">90</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -882,13 +939,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish29.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish29.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish29.png"
-                  alt="Сельдь"
+                  alt="Гречка в тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -896,7 +955,7 @@
                   <h2 tabindex="0" class="dish__name-text">Тирамису</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">250</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="250 рублей">250</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -904,13 +963,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish35.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish35.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish35.png"
-                  alt="Сельдь"
+                  alt="Кусок тирамису, посыпанного тертым шоколадом, на тарелке"
                 />
-              </article>
+              </pictu>
             </article>
           </section>
           <section data-cart-num="6" id="sixCard" class="col-xs-12 col-md-12 col-lg-6">
@@ -920,7 +981,7 @@
                   <h2 tabindex="0" class="dish__name-text">Язык говяжий с хреном</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">350</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="350 рублей">350</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -928,13 +989,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish6.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish6.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="blocks/desktop.blocks/dish/img/dish6.png"
                   alt="Язык говяжий"
                 />
-              </article>
+              </picture>
             </article> 
             <article class="dish">
               <article class="dish__info-container">
@@ -942,7 +1005,7 @@
                   <h2 tabindex="0" class="dish__name-text">Селедка под шубой</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">300</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="300 рублей">300</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -950,13 +1013,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish12.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish12.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish12.png"
-                  alt="Сельдь"
+                  alt="Селедка под шубой на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -964,7 +1029,7 @@
                   <h2 tabindex="0" class="dish__name-text">Суп-лапша</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">270</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="270 рублей">270</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -972,13 +1037,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish18.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish18.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish18.png"
-                  alt="Сельдь"
+                  alt="Суп-лапша в глубокой тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -986,7 +1053,7 @@
                   <h2 tabindex="0" class="dish__name-text">Котлеты (2 шт)</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">200</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="200 рублей">200</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -994,13 +1061,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish24.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish24.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish24.png"
-                  alt="Сельдь"
+                  alt="Котлеты (2шт) с говядиной на тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -1008,7 +1077,7 @@
                   <h2 tabindex="0" class="dish__name-text">Булгур</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">100</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="100 рублей">100</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -1016,13 +1085,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish30.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish30.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish30.png"
-                  alt="Сельдь"
+                  alt="Булгур с помидорами и укропом в тарелке"
                 />
-              </article>
+              </picture>
             </article>
             <article class="dish">
               <article class="dish__info-container">
@@ -1030,7 +1101,7 @@
                   <h2 tabindex="0" class="dish__name-text">Маффин</h2>
                 </div>
                 <div class="dish__price">
-                  <h3 tabindex="0" class="dish__price-text">150</h3>
+                  <h3 tabindex="0" class="dish__price-text" aria-label="150 рублей">150</h3>
                   <img
                     class="dish__currency"
                     src="blocks/desktop.blocks/dish/Rouble_official_sign_bold.svg"
@@ -1038,13 +1109,15 @@
                   />
                 </div>
               </article>
-              <article class="dish__photo">
+              <picture class="dish__photo">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish36.webp" type="image/webp">
+                <source srcset="./blocks/desktop.blocks/dish/img/dish36.png" type="image/png">
                 <img
                   class="dish__photo-png"
                   src="./blocks/desktop.blocks/dish/img/dish36.png"
-                  alt="Сельдь"
+                  alt="Мафин в коричневой обертке"
                 />
-              </article>
+              </picture>
             </article>
           </section>
         </div>

@@ -118,8 +118,10 @@ body.dark-theme {
   top: 16px;
   right: 16px;
   transform: scale(3);
-  width: 1rem;
-  height: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,6 +421,9 @@ body.dark-theme {
   text-decoration: none;
 }
 
+.actions {
+  outline: inherit;
+}
 @media screen and (max-width: 766.8px) {
   .actions {
     max-width: 290px;
