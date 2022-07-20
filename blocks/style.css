@@ -648,6 +648,10 @@ body.stop-scroll {
   transform: none;
 }
 
+.actions__basket-svg {
+  margin: 0 12px 0 13px;
+}
+
 .search-form {
   margin: 128px 0 105px 0;
   padding: 0px;

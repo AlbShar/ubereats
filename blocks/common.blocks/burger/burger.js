@@ -28,14 +28,15 @@ function toggleBurger() {
 
     iconRegistr.style.transform = 'scale(1.3)';
     iconRegistr.className = 'fa fa-user-plus';
-    iconRegistr.style.marginRight = '5px';
-    iconRegistr.style.marginLeft = '10px';
+    iconRegistr.style.marginLeft = '22px';
+    iconRegistr.style.marginRight = '13px';
     iconRegistr.style.filter = 'var(--filter)';
     registWrapper.prepend(iconRegistr);
 
     iconSignIn.style.transform = 'scale(1.5)';
     iconSignIn.className = 'fa fa-user-circle';
-    iconSignIn.style.marginLeft = '10px';
+    iconSignIn.style.marginLeft = '20px';
+    iconSignIn.style.marginRight = '10px';
     iconSignIn.style.filter = 'var(--filter)';
     signInWrapper.prepend(iconSignIn);
 
