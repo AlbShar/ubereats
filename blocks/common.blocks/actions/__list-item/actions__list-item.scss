@@ -1,5 +1,21 @@
 .actions {
     &__list-item {
+        @media screen and (max-width: 459.8px) {
+            margin: 0 auto ;
+            padding: 15px 15px 15px 25%;
+            width: 100vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-top: 1px solid var( --color-text-subtitle);
+        }
         
     }
+
+    &__list-item:last-child {
+        @media screen and (max-width: 459.8px) {
+            margin-bottom: 0;
+        }
+    }
+
 }

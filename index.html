@@ -72,16 +72,19 @@
                   <span ><h1 class="logo__text">UBER <span>EATS</span></h1> </span>
                 </a>
               </div>
-              <nav class="actions" aria-label="menu" tabindex="0">
+              <nav class="actions" id="menu" aria-label="menu" tabindex="0">
                 <ul class="actions__list">
-                  <li class="actions__list-item switch" tabindex="-1">
+                  <li id = "switchWrapper" class="actions__list-item" tabindex="-1">
+                    <div  class="switch">
                       <label for="check" tabindex="-1">
                         <input  id="check" class="switch__checkbox" type="checkbox" tabindex="-1">
                         <div role="switch" tabindex="0" id="switch" class="switch__slider" aria-label="Сменить тему" aria-checked="false"></div> 
                       </label>
+                    </div>
                   </li>
-                  <li class="actions__list-item">
+                  <li id="signInWrapper" class="actions__list-item">
                     <button
+                      data-about="actions_item"
                       class="actions__sign-in"
                       name="top"
                       id="signIn"
@@ -89,21 +92,24 @@
                   <span class="actions__sign-in-text"> Войти </span>
                 </button>
                   </li>
-                  <li class="actions__list-item">
-                    <a href="./create/index.html" class="actions__signup-link">Регистрация</a>
+                  <li id="registWrapper" class="actions__list-item">
+                    <a  data-about="actions_item" href="./create/index.html" class="actions__signup-link">Регистрация</a>
                   </li>
-                  <li class="actions__list-item">
-                    <div class="actions__basket">
+                  <li id="basketWrapper" class="actions__list-item">
+                    <div  data-about="actions_item" class="actions__basket">
                   <img
                   tabindex="0"
                     class="actions__basket-svg"
                     src="blocks/common.blocks/actions/cart.svg"
                     alt="Корзина"
-                  />
+                  /> 
                 </div>
                   </li>
                 </ul>
               </nav>
+              <button class="header__burger burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+              </button>
             </div>
           </div>
         </div>

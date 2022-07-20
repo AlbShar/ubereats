@@ -37,6 +37,7 @@ body {
   --color-textplaceholder: #979797;
   --filter: none; 
   --font-family: "Roboto", sans-serif;
+  --icon-signIn: 'fa fa-user-circle';
 
   &.dark-theme {
     --color-bg: #262626;
@@ -55,6 +56,16 @@ body {
     --color-textplaceholder: #FFFFFF;
     --color-shadow: #3a3a3a;
     --color-msgBg: #FFFFFF;
+    --icon-signIn: 'fa fa-user-circle-o';
+  }
 
+  &.stop-scroll {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 459.9px) {
+    .fa.fa-user-plus, .fa.fa-user-circle, .switch__text, .actions__basket-text {
+      display: none;
+    }
   }
 }

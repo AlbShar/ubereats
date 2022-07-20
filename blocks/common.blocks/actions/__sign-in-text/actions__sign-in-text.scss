@@ -15,5 +15,9 @@
       color: var(--color-hover-text);
       transition: 0.7s;
     }
+
+    @media screen and (max-width: 459.8px) {
+      font-size: 1rem;
+   }
   }
 }

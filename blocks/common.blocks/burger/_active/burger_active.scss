@@ -1,0 +1,18 @@
+.burger {
+    &_active {
+        .burger {
+            &__line {
+                opacity: 0;
+            }
+        }
+
+        &::before {
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        &::after {
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+    }
+}

@@ -15,5 +15,12 @@
             background-color: var(--color-hover-bg);
             transition: 0.7s;
         }
+
+        @media screen and (max-width: 459.8px) {
+            margin: 0;
+            font-size: 1rem;
+            border: none;
+        }
     }
 }
+
