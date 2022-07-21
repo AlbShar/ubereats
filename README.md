@@ -11,9 +11,9 @@ https://albshar.github.io/ubereats/
 ## Features
 
 - Light/dark mode toggle
-- Filter/Search list on main page
-- Login form and signup page with password validation and password visibility on create page
-- Slider and tabs on page of Pushkin's restuarant
+- Filter/Search list
+- Login form and signup page 
+- Slider and tabs
 
 
 ## Preview
