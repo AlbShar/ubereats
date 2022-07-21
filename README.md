@@ -30,10 +30,6 @@ https://albshar.github.io/ubereats/
 - Grid system flexboxgrid2.
 
 
-## Optimizations
-
-- Using semantic HTML and ARIA attributes for improving accessibility of the site 
-- Using Webp image for increasing site loading speed
 ## Feedback
 
 If you have any feedback, please reach out to me at sharipov.albert1991@gmail.com
