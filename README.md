@@ -1,6 +1,6 @@
 # UberEats
 
-The site for searching some dishes from different countries.
+The site for searching and ordering some dishes of different countries.
 
 
 ## Demo
