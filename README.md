@@ -36,5 +36,5 @@ https://albshar.github.io/ubereats/
 - Using Webp image for increasing site loading speed
 ## Feedback
 
-If you have any feedback, please reach out to us at sharipov.albert1991@gmail.com
+If you have any feedback, please reach out to me at sharipov.albert1991@gmail.com
 
